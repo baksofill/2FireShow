@@ -5,6 +5,11 @@ body{
   font-family: Arial;
   margin: 0;
   padding: 0;
+  font-family:HeliosCondThin;
+//  font-size:3em;
+@font-face {
+  font-family:'HeliosCondThin';
+  src: url('../fonts/HeliosCondThin.otf ');
 }
 
 header, .content, footer{

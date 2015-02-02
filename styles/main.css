@@ -4,9 +4,14 @@ body {
   font-family: Arial;
   margin: 0;
   padding: 0;
+  font-family: HeliosCondThin;
 }
 
-/* line 10, main.scss */
+@font-face {
+  font-family: 'HeliosCondThin';
+  src: url("../fonts/HeliosCondThin.otf ");
+}
+/* line 16, main.scss */
 header, .content, footer {
   width: 1000px;
   margin: 50px auto;
@@ -15,21 +20,21 @@ header, .content, footer {
   border: 1px solid red;
 }
 @media only screen and (min-width: 911px) and (max-width: 1250px) {
-  /* line 10, main.scss */
+  /* line 16, main.scss */
   header, .content, footer {
     width: 800px;
     border-color: green;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 910px) {
-  /* line 10, main.scss */
+  /* line 16, main.scss */
   header, .content, footer {
     width: 500px;
     border-color: blue;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 10, main.scss */
+  /* line 16, main.scss */
   header, .content, footer {
     width: 300px;
     border-color: pink;

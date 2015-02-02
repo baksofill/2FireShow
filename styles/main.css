@@ -1,0 +1,1028 @@
+/* line 3, main.scss */
+body {
+  background-color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  /*min-width: 1240px;*/
+}
+
+/* line 10, main.scss */
+.row {
+  width: 940px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 640px) {
+  /* line 10, main.scss */
+  .row {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 10, main.scss */
+  .row {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 911px) and (max-width: 1250px) {
+  /* line 10, main.scss */
+  .row {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+/*header*/
+/* line 27, main.scss */
+header {
+  border-bottom: 2px solid  red;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  /* line 27, main.scss */
+  header {
+    height: 130px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 27, main.scss */
+  header {
+    height: 80px;
+  }
+}
+/* line 37, main.scss */
+header .logo {
+  width: 216px;
+  height: 33px;
+  background-image: url("../img/logo.png");
+  margin: 20px 0 20px 10px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 37, main.scss */
+  header .logo {
+    margin: 5px auto;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 37, main.scss */
+  header .logo {
+    margin: 10px auto;
+  }
+}
+/* line 49, main.scss */
+header .contacts {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 18px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 49, main.scss */
+  header .contacts {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 49, main.scss */
+  header .contacts {
+    bottom: 0;
+    top: inherit;
+  }
+}
+/* line 65, main.scss */
+header .phone {
+  display: inline-block;
+  font-size: 20px;
+  color: grey;
+  text-align: right;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 65, main.scss */
+  header .phone {
+    margin-right: 10px;
+    width: 350px;
+    margin-top: 10px;
+  }
+}
+/* line 77, main.scss */
+header .phone a {
+  color: grey;
+  text-decoration: initial;
+}
+/* line 81, main.scss */
+header .phone span {
+  font-size: 11px;
+  border-bottom: 1px dotted;
+  color: #256799;
+  margin-right: 8px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 81, main.scss */
+  header .phone span {
+    display: none;
+  }
+}
+/* line 90, main.scss */
+header .phone span:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #256799;
+  bottom: 5px;
+  position: absolute;
+}
+/* line 102, main.scss */
+header .phone:before {
+  content: '';
+  width: 12px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  background-image: url("../img/iPhone.png");
+  background-size: auto 100%;
+}
+@media only screen and (max-width: 640px) {
+  /* line 102, main.scss */
+  header .phone:before {
+    left: 30px;
+    top: 10px;
+  }
+}
+/* line 118, main.scss */
+header .headerChat {
+  border-left: 2px solid gainsboro;
+  display: inline-block;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #256799;
+}
+@media only screen and (max-width: 640px) {
+  /* line 118, main.scss */
+  header .headerChat {
+    border: none;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+}
+/* line 131, main.scss */
+header .headerChat span {
+  font-weight: bold;
+  cursor: pointer;
+}
+/* line 136, main.scss */
+header .online {
+  width: 50px;
+  height: 18px;
+  background: linear-gradient(to top, #54a119, #6eb120);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  display: inline-block;
+}
+
+/* line 150, main.scss */
+.headerImg {
+  width: 100%;
+  height: 474px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../img/headerImg.png");
+  background-size: 100% auto;
+  color: white;
+  position: relative;
+}
+
+/* line 161, main.scss */
+.headerImg > div > div:first-child {
+  font-size: 48px;
+  width: 500px;
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+}
+
+/* line 168, main.scss */
+.headerImg > div > div:first-child::before {
+  content: '';
+  width: 500px;
+  height: 57px;
+  background: #ffbf00;
+  opacity: 0.6;
+  display: block;
+  position: absolute;
+  left: -20px;
+  z-index: -1;
+  transform: skew(-30deg, 0deg);
+}
+
+/* line 180, main.scss */
+.headerImg > div > div:last-child {
+  font-size: 30px;
+  width: 500px;
+  position: absolute;
+  top: 97px;
+  z-index: 1;
+}
+
+/* line 187, main.scss */
+.headerImg > div > div:last-child::before {
+  content: '';
+  width: 500px;
+  height: 37px;
+  background: #ffbf00;
+  opacity: 0.8;
+  display: block;
+  position: absolute;
+  left: -47px;
+  z-index: -1;
+  transform: skew(-30deg, 0deg);
+}
+
+/*main*/
+/* line 201, main.scss */
+.modification {
+  position: relative;
+}
+
+/* line 204, main.scss */
+.modification:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #6eb120;
+  position: absolute;
+  bottom: -16px;
+}
+
+/* line 212, main.scss */
+.classAuto, .diameterTires, .widthTires {
+  font-weight: bold;
+}
+
+/* line 215, main.scss */
+.classAuto {
+  height: 160px;
+}
+@media only screen and (max-width: 640px) {
+  /* line 215, main.scss */
+  .classAuto {
+    height: 550px;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 215, main.scss */
+  .classAuto {
+    height: 320px;
+  }
+}
+@media only screen and (min-width: 911px) and (max-width: 1250px) {
+  /* line 215, main.scss */
+  .classAuto {
+    height: 280px;
+  }
+}
+
+/* line 228, main.scss */
+.smollAuto, .midleAuto, .premiumAuto, .bigAuto {
+  display: inline-block;
+  position: relative;
+  width: 230px;
+  height: 130px;
+}
+
+/* line 234, main.scss */
+.box11, .box12, .box13, .box14 {
+  width: 230px;
+  height: 25px;
+  background-color: #cccccc;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  top: 20px;
+}
+
+/* line 243, main.scss */
+.choice {
+  display: inline-table;
+  width: 230px;
+  height: 30px;
+  background-color: #eeeeee;
+  color: grey;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 45px;
+  /*border-top: 20px solid #cccccc ;*/
+  padding: 20px 0 5px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* line 259, main.scss */
+.choice:hover {
+  background-color: #6eb120;
+  color: #fff;
+}
+
+/* line 264, main.scss */
+.box23 {
+  padding: 15px 0 10px 0;
+}
+
+/* line 268, main.scss */
+.box11::before {
+  content: '';
+  width: 139px;
+  height: 78px;
+  background-image: url("../img/cars.png");
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  z-index: 10;
+}
+
+/* line 278, main.scss */
+.box12::before {
+  content: '';
+  width: 136px;
+  height: 77px;
+  background-image: url("../img/cars.png");
+  background-position-y: -195px;
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  z-index: 10;
+}
+
+/* line 289, main.scss */
+.box13::before {
+  content: '';
+  width: 135px;
+  height: 74px;
+  background-image: url("../img/cars.png");
+  background-position-y: -92px;
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  z-index: 10;
+}
+
+/* line 300, main.scss */
+.box14::before {
+  content: '';
+  width: 138px;
+  height: 84px;
+  background-image: url("../img/cars.png");
+  background-position-y: -295px;
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  z-index: 10;
+}
+
+/* line 311, main.scss */
+.counting {
+  text-align: center;
+  /*width: 40px;
+  height: 40px;*/
+  /*background-color: #54a119;*/
+  color: #ffffff;
+  /*border: 1px solid orange;*/
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+  margin-right: 30px;
+}
+
+/* line 325, main.scss */
+.counting:before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: -15px;
+  z-index: -2;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 30px solid #6eb120;
+  border-bottom: 20px solid transparent;
+  transform: rotate(20deg);
+}
+
+/* line 338, main.scss */
+.active.counting:before {
+  border-right: 30px solid #f8cc45;
+}
+
+/* line 341, main.scss */
+.diameterTires ul, .widthTires ul {
+  padding: 0;
+  margin-left: 350px;
+}
+
+/* line 345, main.scss */
+.diameterTires li, .widthTires li {
+  display: inline-block;
+  margin-top: 5px;
+  list-style: none;
+  width: 70px;
+  height: 20px;
+  border: 1px solid #cccccc;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* line 356, main.scss */
+.diameterTires li:hover, .widthTires li:hover {
+  background-color: #f1f0f1;
+  /*color: #fff;*/
+}
+
+/* line 361, main.scss */
+.diameterTires li.active, .widthTires li.active {
+  background-color: #6eb120;
+  color: #fff;
+}
+
+/* line 365, main.scss */
+.tovar {
+  position: relative;
+}
+
+/* line 368, main.scss */
+.tovar .row {
+  border-top: 2px solid #6eb120;
+}
+
+/* line 371, main.scss */
+.triangle:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -35px;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border-left: 100px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 35px solid #6eb120;
+}
+
+/* line 384, main.scss */
+.triangle:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 55px;
+  width: 0;
+  height: 0;
+  z-index: 0;
+  border-left: 10px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 35px solid #5c9718;
+}
+
+/* line 397, main.scss */
+.tovar:before {
+  content: '';
+  height: 150px;
+  width: 100%;
+  background-color: #eeeeee;
+  display: block;
+  position: absolute;
+}
+
+/* line 405, main.scss */
+.tovar:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #eeeeee;
+  border-left: 500px solid transparent;
+  z-index: -1;
+}
+
+/* line 417, main.scss */
+.verh span {
+  color: #6eb120;
+}
+
+/* line 420, main.scss */
+.rectangle {
+  width: 288px;
+  height: 380px;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  position: relative;
+  margin: 10px;
+}
+
+/* line 430, main.scss */
+.rectangle p {
+  padding-left: 20px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* line 435, main.scss */
+.rectangle a {
+  width: 110px;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  top: 340px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #256799;
+  padding: 10px 10px 10px 20px;
+}
+
+/* line 446, main.scss */
+.rectangle a:hover {
+  color: #54a119;
+}
+
+/* line 449, main.scss */
+.tovarBlok1, .tovarBlok2, .tovarBlok3, .tovarBlok4, .tovarBlok5, .tovarBlok6 {
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/tovar.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 460, main.scss */
+.tovarLogo2 {
+  width: 100px;
+  height: 39px;
+  background-image: url("../img/adac.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 468, main.scss */
+.tovarLogo3 {
+  width: 51px;
+  height: 46px;
+  background-image: url("../img/auto.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 476, main.scss */
+.tovarLogo6 {
+  width: 36px;
+  height: 32px;
+  background-image: url("../img/eco.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 484, main.scss */
+.parametr {
+  position: absolute;
+  top: 300px;
+}
+
+/* line 488, main.scss */
+.rectangle ul {
+  padding: 0;
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+/* line 493, main.scss */
+.rectangle li {
+  list-style: none;
+  display: inline-block;
+  width: 92px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* line 501, main.scss */
+.rectangle li:first-child {
+  border-right: 2px solid #cccccc;
+}
+
+/* line 504, main.scss */
+.rectangle li:last-child {
+  background: #fff;
+  color: #54a119;
+  font-size: 20px;
+}
+
+/* line 510, main.scss */
+.tovarBatton {
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(to top, #54a119, #6eb120);
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  position: absolute;
+  right: 0;
+  top: 340px;
+  line-height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 525, main.scss */
+.tovarBatton:hover {
+  background: linear-gradient(to top, #5daf1f, #6eb120);
+}
+
+/* line 528, main.scss */
+.niz {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 532, main.scss */
+.niz span {
+  font-weight: bold;
+}
+
+/* line 535, main.scss */
+.niz a {
+  text-decoration: none;
+  color: #256799;
+}
+
+/* line 539, main.scss */
+.niz a:hover {
+  color: #54a119;
+}
+
+/* line 543, main.scss */
+.advantages {
+  text-align: center;
+  background-color: #eeeeee;
+  padding: 10px 0 30px 0;
+}
+
+/* line 548, main.scss */
+.advantages span {
+  color: grey;
+  font-size: 12px;
+}
+
+/* line 552, main.scss */
+.advantages h4 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+/* line 556, main.scss */
+.advantagesBlok1, .advantagesBlok2, .advantagesBlok3, .advantagesBlok4 {
+  width: 230px;
+  display: inline-table;
+  position: relative;
+  /*transition:  2s;*/
+}
+
+/* line 564, main.scss */
+.oval {
+  width: 136px;
+  height: 142px;
+  background: #fff;
+  -moz-border-radius: 67px / 71px;
+  -webkit-border-radius: 68px / 71px;
+  border-radius: 68px / 71px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: 2s;
+  -webkit-transition: 2s;
+}
+
+/* line 579, main.scss */
+.courier {
+  width: 158px;
+  height: 44px;
+  background-image: url("../img/deliverySh.png");
+  margin: 5px auto;
+}
+
+/* line 585, main.scss */
+.advantagesBlok1:before {
+  content: '';
+  width: 138px;
+  height: 41px;
+  background-image: url("../img/autoRia.png");
+  position: absolute;
+  top: 51px;
+  left: 45px;
+  z-index: 2;
+}
+
+/* line 596, main.scss */
+.advantagesBlok2::before {
+  content: '';
+  width: 114px;
+  height: 106px;
+  background-image: url("../img/benefit.png");
+  position: absolute;
+  top: 21px;
+  left: 62px;
+  z-index: 2;
+}
+
+/* line 606, main.scss */
+.advantagesBlok3::before {
+  content: '';
+  width: 156px;
+  height: 104px;
+  background-image: url("../img/payment.png");
+  position: absolute;
+  top: 20px;
+  left: 43px;
+  z-index: 2;
+}
+
+/* line 616, main.scss */
+.advantagesBlok4::before {
+  content: '';
+  width: 116px;
+  height: 99px;
+  background-image: url("../img/work.png");
+  position: absolute;
+  top: 26px;
+  left: 57px;
+  z-index: 2;
+}
+
+/*end main*/
+/*footer*/
+/* line 628, main.scss */
+.questions {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+/* line 632, main.scss */
+.questions h5 {
+  margin: 0;
+}
+
+/* line 635, main.scss */
+.questions a {
+  margin: 5px;
+  position: relative;
+  padding-left: 10px;
+  color: #000;
+  text-decoration: initial;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+/* line 644, main.scss */
+.questions a::before {
+  content: '';
+  width: 12px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-image: url("../img/iPhone.png");
+  background-size: auto 100%;
+}
+
+/* line 654, main.scss */
+.questions span {
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* line 659, main.scss */
+.questionsBlok1, .questionsBlok2, .questionsBlok3 {
+  display: inline-table;
+  width: 300px;
+}
+
+/* line 663, main.scss */
+.manager {
+  text-align: left;
+  position: relative;
+  margin: 20px 0 0 90px;
+}
+
+/* line 668, main.scss */
+.manager::before {
+  content: '';
+  width: 68px;
+  height: 67px;
+  position: absolute;
+  top: 0;
+  left: -80px;
+  background-image: url("../img/manager.png");
+}
+
+/* line 677, main.scss */
+.questionsBatton1, .questionsBatton2 {
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(to top, #54a119, #6eb120);
+  border-radius: 5px;
+  text-align: right;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  line-height: 40px;
+  padding-right: 40px;
+  position: relative;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+/* line 691, main.scss */
+.questionsBatton1:hover, .questionsBatton2:hover {
+  background: linear-gradient(to top, #5daf1f, #6eb120);
+}
+
+/* line 695, main.scss */
+.questionsBatton1::before {
+  content: '';
+  width: 78px;
+  height: 65px;
+  background-image: url("../img/chat.png");
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+
+/* line 704, main.scss */
+.questionsBatton2::before {
+  content: '';
+  width: 50px;
+  height: 72px;
+  background-image: url("../img/iPhone.png");
+  position: absolute;
+  top: -4px;
+  left: 20px;
+}
+
+/* line 713, main.scss */
+.subscription {
+  height: 150px;
+  background-color: #eeeeee;
+  text-align: center;
+  padding-top: 25px;
+}
+
+/* line 719, main.scss */
+.subscription span {
+  color: grey;
+}
+
+/* line 722, main.scss */
+.signUpRow {
+  position: relative;
+}
+
+/* line 725, main.scss */
+.signUp {
+  width: 390px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding-left: 10px;
+}
+
+/* line 732, main.scss */
+.signUpButton {
+  width: 150px;
+  height: 34px;
+  background: linear-gradient(to top, #f7a900, #febe00);
+  border-radius: 5px;
+  border: 1px solid #f7a900;
+  color: white;
+  text-align: left;
+  position: absolute;
+  margin-left: -150px;
+  text-shadow: 1px 1px 1px #f77a00;
+  cursor: pointer;
+}
+
+/* line 745, main.scss */
+.signUpButton:hover {
+  background: linear-gradient(to top, #f7a900, #fcb51c);
+}
+
+/* line 748, main.scss */
+.maailIco {
+  content: '';
+  width: 27px;
+  height: 20px;
+  /*background-image: url("../img/mail.png");*/
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAUCAMAAABLXLayAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMA99MqCZTx5t+rZ1I3EF0E+5+LYUwexMKYHJFy1AAAAIpJREFUKM/NkM0WhSAIhMfKLC3t9954/xcNFmWcat+swG8OMALzQE8aIlhd84CajkkA+vaG2l4I2QrwRhEzA5UlEBUlUBYnyA/guo5s204kg2JNwkQjt4FbMQY2jiRCHrP+uPiveQGO9R5Ik5nS5TCos5MKBBVXfwSusay3hhTT+ipzr8hhcW9o2QEb7SuhIj8ZmAAAAABJRU5ErkJggg==);
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  margin-left: 165px;
+}
+
+/*end footer*/
+@media only screen and (max-width: 640px) {
+  /* line 766, main.scss */
+  .headerImg > div {
+    transform: scale(0.5);
+  }
+}
+@media only screen and (max-width: 640px) and (min-width: 641px) and (max-width: 910px) {
+  /* line 766, main.scss */
+  .headerImg > div {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 774, main.scss */
+  .diameterTires ul, .widthTires ul {
+    margin-left: 0;
+  }
+
+  /* line 777, main.scss */
+  .headerImg {
+    height: 150px;
+  }
+
+  /* line 780, main.scss */
+  .triangle {
+    text-align: center;
+  }
+
+  /* line 783, main.scss */
+  .rectangle p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 641px) and (max-width: 910px) {
+  /* line 788, main.scss */
+  .diameterTires ul, .widthTires ul {
+    margin-left: 0;
+  }
+
+  /* line 791, main.scss */
+  .headerImg {
+    height: 230px;
+  }
+
+  /* line 794, main.scss */
+  .triangle {
+    text-align: center;
+  }
+
+  /* line 797, main.scss */
+  .rectangle p {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 911px) and (max-width: 1250px) {
+  /* line 802, main.scss */
+  .headerImg {
+    height: 330px;
+  }
+
+  /* line 806, main.scss */
+  .triangle {
+    text-align: center;
+  }
+
+  /* line 809, main.scss */
+  .rectangle p {
+    text-align: left;
+  }
+}

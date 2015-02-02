@@ -1,0 +1,19 @@
+$mobyleSize: 640px;
+$tabletSize: 910px ;
+$noteBookSize: 1250px;
+
+@mixin mobyle {
+  @media only screen and (max-width: $mobyleSize){
+    @content;
+  }
+}
+@mixin tablet {
+  @media only screen and (min-width: $mobyleSize + 1px) and (max-width: $tabletSize) {
+    @content;
+  }
+}
+@mixin notebook {
+  @media only screen and (min-width: $tabletSize + 1px)and (max-width: $noteBookSize) {
+    @content;
+  }
+}

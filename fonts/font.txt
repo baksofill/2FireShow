@@ -1,0 +1,12 @@
+<style>
+@font-face {
+font-family:'HeliosCondThin';
+src: url('http://shrift.ucoz.ru/Tonkie/HeliosCondThin.otf');
+}
+body {
+font-family:HeliosCondThin;
+font-size:3em;
+color: red;
+}
+</style>
+Винницкий Театр Огня

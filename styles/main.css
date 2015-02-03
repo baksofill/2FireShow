@@ -12,7 +12,7 @@ body {
   src: url("../fonts/HeliosCondThin.otf ");
 }
 /* line 16, main.scss */
-header, .content, footer {
+header {
   width: 1000px;
   margin: 50px auto;
   padding: 20px;
@@ -21,7 +21,7 @@ header, .content, footer {
 }
 @media only screen and (min-width: 911px) and (max-width: 1250px) {
   /* line 16, main.scss */
-  header, .content, footer {
+  header {
     width: 800px;
     border-color: green;
     border-radius: 15px;
@@ -29,14 +29,14 @@ header, .content, footer {
 }
 @media only screen and (min-width: 641px) and (max-width: 910px) {
   /* line 16, main.scss */
-  header, .content, footer {
+  header {
     width: 500px;
     border-color: blue;
   }
 }
 @media only screen and (max-width: 640px) {
   /* line 16, main.scss */
-  header, .content, footer {
+  header {
     width: 300px;
     border-color: pink;
   }

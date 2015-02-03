@@ -13,12 +13,23 @@ body {
   src: url('../fonts/HeliosCondThin.otf ');
 }
 
-header, .content, footer{
+header {
   width: 1000px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
   border: 1px solid red;
+  .logo {
+
+  }
+  .speach {
+
+    .phone {
+
+    }
+  }
+
+
 
   @include notebook{
     width: 800px;
@@ -34,4 +45,7 @@ header, .content, footer{
     border-color: pink;
   }
 
+}
+
+.content {
 }

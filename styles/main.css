@@ -24,6 +24,7 @@ header, .content, footer {
   header, .content, footer {
     width: 800px;
     border-color: green;
+    border-radius: 15px;
   }
 }
 @media only screen and (min-width: 641px) and (max-width: 910px) {

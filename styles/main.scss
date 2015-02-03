@@ -1,12 +1,13 @@
 @import "_lib";
 
-body{
+body {
   background-color: white;
   font-family: Arial;
   margin: 0;
   padding: 0;
-  font-family:HeliosCondThin;
-//  font-size:3em;
+  font-family: HeliosCondThin;
+  //  font-size:3em;
+}
 @font-face {
   font-family:'HeliosCondThin';
   src: url('../fonts/HeliosCondThin.otf ');
@@ -22,6 +23,7 @@ header, .content, footer{
   @include notebook{
     width: 800px;
     border-color: green;
+    border-radius: 15px;
   }
   @include tablet{
     width: 500px;
@@ -31,6 +33,5 @@ header, .content, footer{
     width: 300px;
     border-color: pink;
   }
-
 
 }

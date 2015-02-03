@@ -9,7 +9,7 @@ $(document).ready(function(){
 
             messege = $.extend(true, dataErrors[0], dataGame[0],  dataCommon[0]);
 
-            console.log(messege);
+            console.log(messege2);
 
         });
 

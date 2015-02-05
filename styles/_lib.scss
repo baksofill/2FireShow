@@ -25,6 +25,15 @@ $kindleHDX7-max-width: 600px !default;
 }
 
 
+
+@mixin mobile-landscape {
+  @media only screen and (min-width: 480px) and (max-width: 640px) and (#{$landscape}) {
+    @content;
+  }
+}
+
+
+
 @mixin tablet {
   @media only screen and (min-width: $phone-max-size - 1)  and (#{$portrait}),
   (min-width: $tablet-min-size) and (min-height: $phone-max-size + 1px) and (#{$landscape}){

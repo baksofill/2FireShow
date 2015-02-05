@@ -2,9 +2,6 @@ $landscape: "min-aspect-ratio: 4/3";
 $portrait : "max-aspect-ratio: 4/3";
 
 
-$mobyleSize: 640px;
-$tabletSize: 910px;
-$noteBookSize: 1250px;
 
 
 $phone-max-size: 600px !default;
@@ -40,32 +37,27 @@ $kindleHDX7-max-width: 600px !default;
     @content;
   }
 }
-
 @mixin tablet-portrait {
   @media only screen and (min-width: $phone-max-size - 1)  and (#{$portrait}) {
     @content;
   }
 }
-
 @mixin  tablet-landscape {
   @media only screen and (min-width: $tablet-min-size) and (min-height: $phone-max-size + 1px) and (#{$landscape}) {
     @content;
   }
 }
-
 @mixin  minitab {
   @media only screen and (min-width: $phone-max-size - 1px) and (max-width: $phone-max-size+1px)  and (#{$portrait}),
   (max-width: $tablet-min-size) and (max-height: $phone-max-size) and (#{$landscape}){
     @content;
   }
 }
-
 @mixin  minitab-portrait {
   @media only screen and (min-width: $phone-max-size - 1px) and (max-width: $phone-max-size+1px)  and (#{$portrait}) {
     @content;
   }
 }
-
 @mixin  minitab-landscape {
   @media only screen  and (max-width: $tablet-min-size) and (max-height: $phone-max-size) {
     @content;
@@ -129,19 +121,3 @@ $kindleHDX7-max-width: 600px !default;
 
 
 
-
-@mixin mobyle {
-  @media only screen and (max-width: $mobyleSize){
-    @content;
-  }
-}
-@mixin tablet {
-  @media only screen and (min-width: $mobyleSize + 1px) and (max-width: $tabletSize) {
-    @content;
-  }
-}
-@mixin notebook {
-  @media only screen and (min-width: $tabletSize + 1px)and (max-width: $noteBookSize) {
-    @content;
-  }
-}

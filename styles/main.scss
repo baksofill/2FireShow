@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: HeliosCondThin;
-  //  font-size:3em;
+  font-size: 110%;
 }
 @font-face {
   font-family:'HeliosCondThin';
@@ -14,37 +14,105 @@ body {
 }
 
 header {
-  width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  min-height: 550px;
+  margin: 0px auto;
+  display: block;
   text-align: center;
-  border: 1px solid red;
-  .logo {
+  background: url("../img/skyBG.png") no-repeat;
+  background-position: top;
+  background-size: auto 100%;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: url("../img/earthBG.png") no-repeat;
+    background-position: top;
+    background-size: auto 100%;
+
+  }
+
+  a, .logo {
+    margin: 5px auto;
+    display: block;
+    width: 200px;
+    height: 80px;
+  }
+  .topMenu {
+    color: #000;
+    padding: 5px;
+    background: url("../img/menuBG.png") no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20px;
 
   }
   .speach {
-
+    display: block;
+    position: absolute;
+    bottom: 200px;
+    width: 174px;
+    height: 122px;
+    color: #000;
+    left: 5%;
+    z-index: 2;
+    background: url("../img/speachWithShadow.png") no-repeat;
+    background-size: 100% auto;
+    p {
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
     .phone {
+      width: 125px;
+      text-align: right;
+      margin: -2px auto;
+      border: 1px solid red;
+      border-radius: 5px;
+      padding: 4px;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: '';
+        width: 35px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        background: red;
 
+      }
+      &:after {
+        content: '';
+        width: 30px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 2px;
+        display: block;
+        background: url("../img/menuIcons.png") no-repeat;
+        background-size: 800% auto;
+        background-position: -210px 0px;
+      }
     }
   }
+  .tarzan {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 60px;
+    width: 148px;
+    height: 248px;
+    left: 40%;
 
-
-
-  @include notebook{
-    width: 800px;
-    border-color: green;
-    border-radius: 15px;
+    background: url("../img/man.png") no-repeat;
+    background-size: 100% auto;
   }
-  @include tablet{
-    width: 500px;
-    border-color: blue;
-  }
-  @include mobyle{
-    width: 300px;
-    border-color: pink;
-  }
-
 }
 
 .content {

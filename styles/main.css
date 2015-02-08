@@ -25,7 +25,6 @@ header {
   background-position: top;
   background-size: auto 100%;
 }
-
 /* line 27, main.scss */
 header:before {
   content: '';
@@ -38,7 +37,6 @@ header:before {
   background-position: top;
   background-size: auto 100%;
 }
-
 /* line 40, main.scss */
 header a, header .logo {
   margin: 5px auto;
@@ -46,7 +44,6 @@ header a, header .logo {
   width: 200px;
   height: 80px;
 }
-
 /* line 46, main.scss */
 header .topMenu {
   color: #000;
@@ -56,7 +53,19 @@ header .topMenu {
   margin-top: 20px;
 }
 
-/* line 54, main.scss */
+/* line 52, main.scss */
+header .topMenu ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 55, main.scss */
+header .topMenu ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* line 62, main.scss */
 header .speach {
   display: block;
   position: absolute;
@@ -70,13 +79,13 @@ header .speach {
   background-size: 100% auto;
 }
 
-/* line 65, main.scss */
+/* line 73, main.scss */
 header .speach p {
   line-height: 1.5;
   text-transform: uppercase;
 }
 
-/* line 69, main.scss */
+/* line 77, main.scss */
 header .speach .phone {
   width: 125px;
   text-align: right;
@@ -88,7 +97,7 @@ header .speach .phone {
   overflow: hidden;
 }
 
-/* line 78, main.scss */
+/* line 86, main.scss */
 header .speach .phone:before {
   content: '';
   width: 35px;
@@ -100,21 +109,21 @@ header .speach .phone:before {
   background: red;
 }
 
-/* line 89, main.scss */
+/* line 97, main.scss */
 header .speach .phone:after {
   content: '';
   width: 30px;
   height: 100%;
   position: absolute;
-  top: 0;
-  left: 2px;
+  top: -1px;
+  left: 0px;
   display: block;
   background: url("../img/menuIcons.png") no-repeat;
-  background-size: 800% auto;
-  background-position: -210px 0px;
+  background-size: 1050% auto;
+  background-position: -280px 0px;
 }
 
-/* line 103, main.scss */
+/* line 111, main.scss */
 header .tarzan {
   content: '';
   display: block;

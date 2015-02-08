@@ -49,6 +49,14 @@ header {
     background: url("../img/menuBG.png") no-repeat;
     background-size: 100% 100%;
     margin-top: 20px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
 
   }
   .speach {
@@ -91,12 +99,12 @@ header {
         width: 30px;
         height: 100%;
         position: absolute;
-        top: 0;
-        left: 2px;
+        top: -1px;
+        left: 0px;
         display: block;
         background: url("../img/menuIcons.png") no-repeat;
-        background-size: 800% auto;
-        background-position: -210px 0px;
+        background-size: 1050% auto;
+        background-position: -280px 0px;
       }
     }
   }

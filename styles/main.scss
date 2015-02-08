@@ -61,9 +61,10 @@ header {
     position: relative;
     @include mobile-landscape{
       background: url("../img/menuBGVert.png") no-repeat;
-      margin-left: 100px;
+      margin-left: 80px;
       width: 99px;
       margin-top: 25px;
+      background-size: 100% 100%;
     }
     ul {
       margin: 0;
@@ -73,7 +74,7 @@ header {
         margin-right: 5px;
         @include mobile-landscape{
           display: block;
-          margin-top: 5px;
+          margin: 20px 5px;
         }
         & > a {
           text-decoration: inherit;

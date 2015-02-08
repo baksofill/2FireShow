@@ -17,7 +17,7 @@ header {
   position: relative;
   color: #fff;
   width: 100%;
-  min-height: 550px;
+  min-height: 500px;
   margin: 0px auto;
   display: block;
   text-align: center;
@@ -37,7 +37,6 @@ header {
     background: url("../img/earthBG.png") no-repeat;
     background-position: top;
     background-size: auto 100%;
-
   }
 
   &>a>.logo {
@@ -59,6 +58,7 @@ header {
     background-size: 100% 100%;
     margin-top: 20px;
     z-index: 10;
+    position: relative;
     @include mobile-landscape{
       background: url("../img/menuBGVert.png") no-repeat;
       margin-left: 100px;
@@ -75,8 +75,13 @@ header {
           display: block;
           margin-top: 5px;
         }
+        & > a {
+          text-decoration: inherit;
+          color: #000;
+        }
       }
     }
+
   }
   .speach {
     display: block;

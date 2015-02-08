@@ -17,7 +17,7 @@ header {
   position: relative;
   color: #fff;
   width: 100%;
-  min-height: 550px;
+  min-height: 500px;
   margin: 0px auto;
   display: block;
   text-align: center;
@@ -43,7 +43,8 @@ header:before {
   background-position: top;
   background-size: auto 100%;
 }
-/* line 43, main.scss */
+
+/* line 42, main.scss */
 header > a > .logo {
   margin: 0 auto;
   display: block;
@@ -53,13 +54,14 @@ header > a > .logo {
   position: relative;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 43, main.scss */
+  /* line 42, main.scss */
   header > a > .logo {
     left: 25px;
     margin: 0;
   }
 }
-/* line 55, main.scss */
+
+/* line 54, main.scss */
 header .topMenu {
   color: #000;
   padding: 5px;
@@ -67,9 +69,10 @@ header .topMenu {
   background-size: 100% 100%;
   margin-top: 20px;
   z-index: 10;
+  position: relative;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 55, main.scss */
+  /* line 54, main.scss */
   header .topMenu {
     background: url("../img/menuBGVert.png") no-repeat;
     margin-left: 100px;
@@ -94,7 +97,14 @@ header .topMenu ul li {
     margin-top: 5px;
   }
 }
-/* line 81, main.scss */
+
+/* line 78, main.scss */
+header .topMenu ul li > a {
+  text-decoration: inherit;
+  color: #000;
+}
+
+/* line 86, main.scss */
 header .speach {
   display: block;
   position: absolute;
@@ -108,18 +118,20 @@ header .speach {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 81, main.scss */
+  /* line 86, main.scss */
   header .speach {
     left: 45%;
     top: 35px;
   }
 }
-/* line 96, main.scss */
+
+/* line 101, main.scss */
 header .speach p {
   line-height: 1.5;
   text-transform: uppercase;
 }
-/* line 100, main.scss */
+
+/* line 105, main.scss */
 header .speach .phone {
   width: 125px;
   text-align: right;
@@ -130,7 +142,8 @@ header .speach .phone {
   position: relative;
   overflow: hidden;
 }
-/* line 109, main.scss */
+
+/* line 114, main.scss */
 header .speach .phone:before {
   content: '';
   width: 35px;
@@ -141,7 +154,8 @@ header .speach .phone:before {
   display: block;
   background: red;
 }
-/* line 120, main.scss */
+
+/* line 125, main.scss */
 header .speach .phone:after {
   content: '';
   width: 30px;
@@ -154,7 +168,8 @@ header .speach .phone:after {
   background-size: 1050% auto;
   background-position: -280px 0px;
 }
-/* line 134, main.scss */
+
+/* line 139, main.scss */
 header .tarzan {
   content: '';
   display: block;
@@ -168,7 +183,7 @@ header .tarzan {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 134, main.scss */
+  /* line 139, main.scss */
   header .tarzan {
     left: 65%;
     top: 50px;

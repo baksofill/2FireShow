@@ -27,6 +27,9 @@ header {
   @include mobile-landscape{
     min-height: 320px;
   }
+  @include tablet {
+    min-height: 1050px;
+  }
   &:before {
     content: '';
     width: 100%;
@@ -37,6 +40,9 @@ header {
     background: url("../img/earthBG.png") no-repeat;
     background-position: top;
     background-size: auto 100%;
+    @include tablet {
+      height: 400px;
+    }
   }
 
   &>a>.logo {
@@ -49,6 +55,9 @@ header {
     @include mobile-landscape{
       left: 25px;
       margin: 0;
+    }
+    @include tablet {
+      top: 30px;
     }
   }
   .topMenu {
@@ -66,6 +75,13 @@ header {
       margin-top: 25px;
       background-size: 100% 100%;
     }
+    @include tablet {
+      width: 450px;
+      height: 40px;
+      margin: 0 auto;
+      top: 50px;
+      line-height: 2;
+    }
     ul {
       margin: 0;
       padding: 0;
@@ -76,6 +92,9 @@ header {
           display: block;
           margin: 20px 5px;
         }
+        @include tablet {
+          margin-right: 15px;
+        }
         & > a {
           text-decoration: inherit;
           color: #000;
@@ -83,6 +102,33 @@ header {
       }
     }
 
+  }
+  .clouds {
+    & > ul > li {
+      content: '';
+      list-style: none;
+      width: 150px;
+      height: 50px;
+      background: url("../img/clouds.png") no-repeat;
+      background-position: top;
+      background-size: 100% auto;
+      overflow: hidden;
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      &:nth-child(2) {
+        top: 240px;
+        left: 80px;
+        transform: scale(0.7);
+        background-position: bottom;
+      }
+      &:nth-child(3) {
+        transform: scale(0.4);
+        top: 210px;
+        left: 340px;
+
+      }
+    }
   }
   .speach {
     display: block;
@@ -98,6 +144,10 @@ header {
     @include mobile-landscape{
       left: 45%;
       top: 35px;
+    }
+    @include tablet {
+      left: 10px;
+      bottom: 270px;
     }
     p {
       line-height: 1.5;
@@ -153,6 +203,108 @@ header {
       left: 65%;
       top: 50px;
     }
+    @include tablet {
+      left: 90px;
+      bottom: 130px;
+    }
+  }
+  .wood {
+    display: none;
+    @include tablet {
+      display: block;
+      content: '';
+      width: 322px;
+      height: 402px;
+      position: absolute;
+      background: url("../img/wood.png") no-repeat;
+      background-position: top;
+      background-size: auto 100%;
+      bottom: 130px;
+      right: 10px;
+
+      & > ul {
+        position: relative;
+        top: 50px;
+        margin: 0;
+        padding: 0;
+        & > li {
+          content: '';
+          width: 60px;
+          height: 60px;
+          background: url("../img/socialIcons.png") no-repeat;
+          background-position: top;
+          background-size: 100% auto;
+          list-style: none;
+          display: inline-block;
+          margin-right: 10px;
+          position: relative;
+          &:nth-child(2) {
+            background-position-y: -65px;
+            -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+            top: 20px;
+          }
+          &:nth-child(3) {
+            background-position-y: -130px;
+            -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+          }
+          &:nth-child(4) {
+            background-position-y: -195px;
+            top: 15px;
+            -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+          }
+          &:nth-child(5) {
+            background: red;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 200%;
+            width: 200px;
+            height: 40px;
+            top: 40px;
+            -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+            & > a {
+              position: relative;
+              top: -40px;
+              text-decoration: inherit;
+              color: #fff;
+              letter-spacing: 5px;
+              width: auto;
+              height: auto;
+            }
+            &:before {
+              top: -35px;
+            }
+          }
+          & > a {
+            content: '';
+            position: relative;
+            width: 60px;
+            height: 60px;
+            top: -30px;
+            display: block;
+          }
+
+          &:before {
+            content: '';
+            display: block;
+            width: 30px;
+            height: 40px;
+            background: url("../img/fix.png") no-repeat;
+            background-size: 100% auto;
+            position: relative;
+            margin: 0px auto;
+            top: -25px;
+          }
+        }
+      }
+    }
+  }
+  .mailBox {
+    display: none;
   }
 }
 

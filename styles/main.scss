@@ -24,6 +24,9 @@ header {
   background: url("../img/skyBG.png") no-repeat;
   background-position: top;
   background-size: auto 100%;
+  @include mobile-landscape{
+    min-height: 320px;
+  }
   &:before {
     content: '';
     width: 100%;
@@ -37,11 +40,17 @@ header {
 
   }
 
-  a, .logo {
-    margin: 5px auto;
+  &>a>.logo {
+    margin: 0 auto;
     display: block;
     width: 200px;
     height: 80px;
+    top: 5px;
+    position: relative;
+    @include mobile-landscape{
+      left: 25px;
+      margin: 0;
+    }
   }
   .topMenu {
     color: #000;
@@ -49,15 +58,25 @@ header {
     background: url("../img/menuBG.png") no-repeat;
     background-size: 100% 100%;
     margin-top: 20px;
+    z-index: 10;
+    @include mobile-landscape{
+      background: url("../img/menuBGVert.png") no-repeat;
+      margin-left: 100px;
+      width: 99px;
+      margin-top: 25px;
+    }
     ul {
       margin: 0;
       padding: 0;
       li {
         display: inline-block;
         margin-right: 5px;
+        @include mobile-landscape{
+          display: block;
+          margin-top: 5px;
+        }
       }
     }
-
   }
   .speach {
     display: block;
@@ -70,6 +89,10 @@ header {
     z-index: 2;
     background: url("../img/speachWithShadow.png") no-repeat;
     background-size: 100% auto;
+    @include mobile-landscape{
+      left: 45%;
+      top: 35px;
+    }
     p {
       line-height: 1.5;
       text-transform: uppercase;
@@ -120,6 +143,10 @@ header {
 
     background: url("../img/man.png") no-repeat;
     background-size: 100% auto;
+    @include mobile-landscape{
+      left: 65%;
+      top: 50px;
+    }
   }
 }
 

@@ -12,6 +12,7 @@ body {
   font-family: 'HeliosCondThin';
   src: url("../fonts/HeliosCondThin.otf ");
 }
+
 /* line 16, main.scss */
 header {
   position: relative;
@@ -31,14 +32,12 @@ header {
     min-height: 320px;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
   /* line 16, main.scss */
   header {
     min-height: 1050px;
   }
 }
-
 /* line 33, main.scss */
 header:before {
   content: '';
@@ -51,14 +50,12 @@ header:before {
   background-position: top;
   background-size: auto 100%;
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
   /* line 33, main.scss */
   header:before {
     height: 400px;
   }
 }
-
 /* line 48, main.scss */
 header > a > .logo {
   margin: 0 auto;
@@ -75,14 +72,12 @@ header > a > .logo {
     margin: 0;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
   /* line 48, main.scss */
   header > a > .logo {
     top: 30px;
   }
 }
-
 /* line 63, main.scss */
 header .topMenu {
   color: #000;
@@ -97,12 +92,12 @@ header .topMenu {
   /* line 63, main.scss */
   header .topMenu {
     background: url("../img/menuBGVert.png") no-repeat;
-    margin-left: 100px;
+    margin-left: 80px;
     width: 99px;
     margin-top: 25px;
+    background-size: 100% 100%;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
   /* line 63, main.scss */
   header .topMenu {
@@ -113,70 +108,72 @@ header .topMenu {
     line-height: 2;
   }
 }
-
-/* line 84, main.scss */
+/* line 85, main.scss */
 header .topMenu ul {
   margin: 0;
   padding: 0;
 }
-
-/* line 87, main.scss */
+/* line 88, main.scss */
 header .topMenu ul li {
   display: inline-block;
   margin-right: 5px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 87, main.scss */
+  /* line 88, main.scss */
   header .topMenu ul li {
     display: block;
-    margin-top: 5px;
+    margin: 20px 5px;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
-  /* line 87, main.scss */
+  /* line 88, main.scss */
   header .topMenu ul li {
     margin-right: 15px;
   }
 }
-
-/* line 97, main.scss */
+/* line 98, main.scss */
 header .topMenu ul li > a {
   text-decoration: inherit;
   color: #000;
 }
-
-/* line 106, main.scss */
-header .clouds > ul > li {
-  content: '';
-  list-style: none;
-  width: 150px;
-  height: 50px;
-  background: url("../img/clouds.png") no-repeat;
-  background-position: top;
-  background-size: 100% auto;
-  overflow: hidden;
-  position: absolute;
-  top: 50px;
-  left: 20px;
+/* line 107, main.scss */
+header .clouds {
+  display: none;
 }
-
-/* line 118, main.scss */
-header .clouds > ul > li:nth-child(2) {
-  top: 240px;
-  left: 80px;
-  transform: scale(0.7);
-  background-position: bottom;
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
+  /* line 107, main.scss */
+  header .clouds {
+    display: block;
+  }
+  /* line 111, main.scss */
+  header .clouds > ul > li {
+    content: '';
+    list-style: none;
+    width: 150px;
+    height: 50px;
+    background: url("../img/clouds.png") no-repeat;
+    background-position: top;
+    background-size: 100% auto;
+    overflow: hidden;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+  }
+  /* line 124, main.scss */
+  header .clouds > ul > li:nth-child(2) {
+    top: 240px;
+    left: 80px;
+    transform: scale(0.7);
+    background-position: bottom;
+  }
+  /* line 130, main.scss */
+  header .clouds > ul > li:nth-child(3) {
+    transform: scale(0.4);
+    top: 210px;
+    left: 340px;
+  }
 }
-
-/* line 124, main.scss */
-header .clouds > ul > li:nth-child(3) {
-  transform: scale(0.4);
-  top: 210px;
-  left: 340px;
-}
-
-/* line 132, main.scss */
+/* line 141, main.scss */
 header .speach {
   display: block;
   position: absolute;
@@ -190,28 +187,25 @@ header .speach {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 132, main.scss */
+  /* line 141, main.scss */
   header .speach {
     left: 45%;
     top: 35px;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
-  /* line 132, main.scss */
+  /* line 141, main.scss */
   header .speach {
     left: 10px;
     bottom: 270px;
   }
 }
-
-/* line 151, main.scss */
+/* line 160, main.scss */
 header .speach p {
   line-height: 1.5;
   text-transform: uppercase;
 }
-
-/* line 155, main.scss */
+/* line 164, main.scss */
 header .speach .phone {
   width: 125px;
   text-align: right;
@@ -222,8 +216,7 @@ header .speach .phone {
   position: relative;
   overflow: hidden;
 }
-
-/* line 164, main.scss */
+/* line 173, main.scss */
 header .speach .phone:before {
   content: '';
   width: 35px;
@@ -234,8 +227,7 @@ header .speach .phone:before {
   display: block;
   background: red;
 }
-
-/* line 175, main.scss */
+/* line 184, main.scss */
 header .speach .phone:after {
   content: '';
   width: 30px;
@@ -248,8 +240,7 @@ header .speach .phone:after {
   background-size: 1050% auto;
   background-position: -280px 0px;
 }
-
-/* line 189, main.scss */
+/* line 198, main.scss */
 header .tarzan {
   content: '';
   display: block;
@@ -263,28 +254,25 @@ header .tarzan {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 189, main.scss */
+  /* line 198, main.scss */
   header .tarzan {
     left: 65%;
     top: 50px;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
-  /* line 189, main.scss */
+  /* line 198, main.scss */
   header .tarzan {
     left: 90px;
     bottom: 130px;
   }
 }
-
-/* line 210, main.scss */
+/* line 219, main.scss */
 header .wood {
   display: none;
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 601px) and (min-aspect-ratio: 4 / 3) {
-  /* line 210, main.scss */
+  /* line 219, main.scss */
   header .wood {
     display: block;
     content: '';
@@ -297,16 +285,14 @@ header .wood {
     bottom: 130px;
     right: 10px;
   }
-
-  /* line 224, main.scss */
+  /* line 233, main.scss */
   header .wood > ul {
     position: relative;
     top: 50px;
     margin: 0;
     padding: 0;
   }
-
-  /* line 229, main.scss */
+  /* line 238, main.scss */
   header .wood > ul > li {
     content: '';
     width: 60px;
@@ -319,31 +305,27 @@ header .wood {
     margin-right: 10px;
     position: relative;
   }
-
-  /* line 240, main.scss */
+  /* line 249, main.scss */
   header .wood > ul > li:nth-child(2) {
     background-position-y: -65px;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
     top: 20px;
   }
-
-  /* line 246, main.scss */
+  /* line 255, main.scss */
   header .wood > ul > li:nth-child(3) {
     background-position-y: -130px;
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
-
-  /* line 251, main.scss */
+  /* line 260, main.scss */
   header .wood > ul > li:nth-child(4) {
     background-position-y: -195px;
     top: 15px;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
-
-  /* line 257, main.scss */
+  /* line 266, main.scss */
   header .wood > ul > li:nth-child(5) {
     background: red;
     padding: 5px;
@@ -356,8 +338,7 @@ header .wood {
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
-
-  /* line 268, main.scss */
+  /* line 277, main.scss */
   header .wood > ul > li:nth-child(5) > a {
     position: relative;
     top: -40px;
@@ -367,13 +348,11 @@ header .wood {
     width: auto;
     height: auto;
   }
-
-  /* line 277, main.scss */
+  /* line 286, main.scss */
   header .wood > ul > li:nth-child(5):before {
     top: -35px;
   }
-
-  /* line 281, main.scss */
+  /* line 290, main.scss */
   header .wood > ul > li > a {
     content: '';
     position: relative;
@@ -382,8 +361,7 @@ header .wood {
     top: -30px;
     display: block;
   }
-
-  /* line 290, main.scss */
+  /* line 299, main.scss */
   header .wood > ul > li:before {
     content: '';
     display: block;
@@ -396,8 +374,7 @@ header .wood {
     top: -25px;
   }
 }
-
-/* line 305, main.scss */
+/* line 314, main.scss */
 header .mailBox {
   display: none;
 }

@@ -16,6 +16,16 @@ $(document).ready(function(){
     /*
      * Plugin intialization
      */
+
+    $(window).load(function () {
+        $('.loader').delay(1000).fadeOut(600);
+
+    });
+
+
+
+
+
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['main', 'programs', 'artistes', 'blog'],
@@ -29,19 +39,18 @@ $(document).ready(function(){
         },
         afterLoad: function(anchorLink, index){
             //using index
-            if(index == 3){
+            if (index == 0) {
+                //$('.loader').hide(1000);
                 //console.error("Section 3 ended loading");
             }
 
             //using anchorLink
-            if(anchorLink == 'Блог'){
+            if (anchorLink == 'main') {
                 //console.error("Section 2 ended loading");
             }
         }
 
     });
-
-
 
 
 });

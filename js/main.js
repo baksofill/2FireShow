@@ -18,7 +18,7 @@ $(document).ready(function(){
      */
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['Винницкий Театр Огня', 'Программы', 'Артисты', 'Блог'],
+        anchors: ['main', 'programs', 'artistes', 'blog'],
         sectionsColor: ['#000', 'green', '#ee005a', '#39C'],
         navigation: {
             'position': 'right',

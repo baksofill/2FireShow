@@ -4,58 +4,76 @@
     <meta charset='utf-8'/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
     <meta name="format-detection" content="telephone=no"/>
+
+
     <script type="text/javascript"  src="js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.pagepiling.js"></script>
     <script type="text/javascript"  src="js/main.js"></script>
 
+
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+
     <title>Винницкий Театр Огня</title>
 </head>
 <body>
-<header class="topSlider">
-    <a href="#"><img src="./img/logo.png" class="logo"></a>
-
-    <div class="topMenu">
-        <ul>
-            <li><a href="#">ФАЕРШОУ</a></li>
-            <li><a href="#">ГАЛЕРЕЯ</a></li>
-            <li><a href="#">КАЛЕНДАРЬ</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
-        </ul>
-    </div>
-    <div class="clouds">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-    <div class="speach">
-        <p>Заказать ФаерШоу?</p>
-        <div class="phone">098 33 20 640</div>
-    </div>
-    <div class="tarzan"></div>
-    <div class="wood">
-        <ul class="social">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#">ПАРТНЕРЫ</a></li>
-
-        </ul>
-    </div>
-    <div class="mailBox">
-        <a href="mailto:FireShow@fierydream.com"> FireShow@fierydream.com </a>
-        <a href="tel:+380983320640"> 098 33 20 640 </a>
-    </div>
-    </header>
 
 
-<footer class="footer"><!--Сюда пока ничего не ставим--></footer>
+
+    <div id="pagepiling">
+        <div class="section" id="section1">
+            <div class="mainSlider">
+                <a href=""><img src="./img/logo.png" class="logo"></a>
+
+                <div id="menu" class="topMenu">
+                    <ul>
+                        <li data-menuanchor="page1" class="active"><a href="#Винницкий Театр Огня">Главная</a></li>
+                        <li data-menuanchor="page2"><a href="#Программы">Программы</a></li>
+                        <li data-menuanchor="page3"><a href="#Артисты">Артисты</a></li>
+                        <li data-menuanchor="page4"><a href="#Блог">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="clouds">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="speach">
+                    <p>Заказать ФаерШоу?</p>
+                    <div class="phone">098 33 20 640</div>
+                </div>
+                <div class="tarzan"></div>
+                <div class="wood">
+                    <ul class="social">
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">ПАРТНЕРЫ</a></li>
+
+                    </ul>
+                </div>
+                <div class="mailBox">
+                    <a href="mailto:FireShow@fierydream.com"> FireShow@fierydream.com </a>
+                    <a href="tel:+380983320640"> 098 33 20 640 </a>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="programs"> Типы наших программ: Огненный Мир, Украина, Гаваи</div>
+        </div>
+        <div class="section" id="section3">
+            <div class="artistes"> Артисты театра: Nika, Алинка, Пашок, Миня, Главнюк</div>
+        </div>
+        <div class="section" id="section4">
+            <div class="blog"> Новости об этом и о том</div>
+        </div>
+    </div>
+
 </body>
 </html>

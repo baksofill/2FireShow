@@ -6,6 +6,19 @@
   margin: 0 auto 60px;
   padding: 0;
   *zoom: 1;
+
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+
+  width: 1000px !important;
+  @include tablet {
+    width: 1000px !important;
+
+  }
+
+
 }
 
 .bx-wrapper img {
@@ -91,12 +104,12 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-  left: 10px;
+  left: -50px;
   background: url(../img/controls.png) no-repeat 0 -32px;
 }
 
 .bx-wrapper .bx-next {
-  right: 10px;
+  right: -50px;
   background: url(../img/controls.png) no-repeat -43px -32px;
 }
 

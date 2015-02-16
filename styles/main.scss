@@ -407,17 +407,32 @@ body {
   }
   .imgOM {
     display: inline-block;
-    width: 50%;
+    float: right;
+    width: 500px;
+
   }
   .titlePr {
+    width: 1000px;
+    margin: 0 auto;
+
     ul {
-      margin: 0 auto;
+
       text-align: center;
       li {
         display: inline-block;
         margin-right: 50px;
+
       }
 
+    }
+  }
+
+  .bxslider {
+    & > li {
+      padding: 20px;
+    }
+    & > li:nth-child(1) {
+      padding: 20px;
     }
   }
 }

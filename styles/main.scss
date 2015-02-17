@@ -73,9 +73,13 @@ body {
   background: url("../img/skyBG.png") no-repeat;
   background-position: top;
   background-size: auto 100%;
+
   @include mobile-landscape {
   }
   @include tablet {
+  }
+  @include desktop {
+    background-size: 100% auto;
   }
   &:before {
     content: '';
@@ -90,298 +94,389 @@ body {
     @include tablet {
       height: 400px;
     }
-  }
-
-  & > a.logo {
-    content: '';
-    margin: 0 auto;
-    display: block;
-    width: 200px;
-    height: 60px;
-    top: 5px;
-    position: relative;
-    background: url("../img/logo.png") no-repeat;
-    background-position: top;
-    background-size: auto 100%;
-
-    @include mobile-landscape {
-      left: 25px;
-      margin: 0;
-      height: 80px;
-    }
-    @include tablet {
-      width: 300px;
-      height: 120px;
-      top: 30px;
+    @include desktop {
+      background-size: 100% auto;
+      background-position: bottom;
+      height: 600px;
     }
   }
-  .topMenu {
-    color: #000;
-    padding: 5px;
-    background: url("../img/menuBG.png") no-repeat;
-    background-size: 100% 100%;
-    margin: 20px 10px;
-    z-index: 10;
-    position: relative;
-
-    @include landscape {
-      max-width: 450px;
-      margin: 0 auto;
-      top: 30px;
-    }
-    @include mobile-landscape {
-      background: url("../img/menuBGVert.png") no-repeat;
-      margin-left: 80px;
-      width: 99px;
-      margin-top: 25px;
-      background-size: 100% 100%;
-      top: 70px;
-      position: absolute;
-    }
-    @include tablet {
-      width: 450px;
-      height: 40px;
-      margin: 0 auto;
-      top: 50px;
-      line-height: 2;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        display: inline-block;
-        margin-right: 5px;
-        @include mobile-landscape {
-          display: block;
-          margin: 20px 5px;
-        }
-        @include tablet {
-          margin-right: 15px;
-        }
-        & > a {
-          text-decoration: inherit;
-          color: #000;
-
-        }
-      }
-    }
-
-  }
-  .clouds {
-    display: none;
-    @include tablet {
-      display: block;
-      & > ul > li {
-        content: '';
-        list-style: none;
-
-        width: 150px;
-        height: 50px;
-        background: url("../img/clouds.png") no-repeat;
-        background-position: top;
-        background-size: 100% auto;
-        overflow: hidden;
-        position: absolute;
-        top: 50px;
-        left: 20px;
-        &:nth-child(2) {
-          top: 240px;
-          left: 80px;
-          transform: scale(0.7);
-          background-position: bottom;
-        }
-        &:nth-child(3) {
-          transform: scale(0.4);
-          top: 210px;
-          left: 340px;
-
-        }
-      }
-    }
-
-  }
-  .speach {
-    display: block;
-    position: absolute;
-    bottom: 150px;
-    width: 174px;
-    height: 122px;
-    color: #000;
-    left: 40%;
-    margin-left: -85px;
-    z-index: 2;
-    background: url("../img/speachWithShadow.png") no-repeat;
-    background-size: 100% auto;
-    @include mobile-landscape {
-      left: 65%;
-    }
-    @include tablet {
-      left: 10px;
-      bottom: 270px;
-    }
-    @include tablet-landscape {
-      left: 50%;
-      margin-left: -85px;
-    }
-    p {
-      line-height: 3;
-      text-transform: uppercase;
-    }
-    .phone {
-      width: 125px;
-      text-align: right;
-      margin: -2px auto;
-      border: 1px solid red;
-      border-radius: 5px;
-      padding: 4px;
-      position: relative;
-      overflow: hidden;
-      &:before {
-        content: '';
-        width: 35px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        background: red;
-
-      }
-      &:after {
-        content: '';
-        width: 30px;
-        height: 100%;
-        position: absolute;
-        top: -1px;
-        left: 0px;
-        display: block;
-        background: url("../img/menuIcons.png") no-repeat;
-        background-size: 1050% auto;
-        background-position: -280px 0px;
-      }
-    }
-  }
-  .tarzan {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    width: 148px;
-    height: 248px;
-    left: 40%;
-
-    background: url("../img/man.png") no-repeat;
-    background-size: 100% auto;
-    @include mobile-landscape {
-      left: 65%;
-    }
-    @include tablet {
-      left: 90px;
-      bottom: 130px;
-    }
-    @include tablet-landscape {
-      left: 50%;
-    }
-  }
-  .wood {
-    display: none;
-    @include tablet {
-      display: block;
+  .wrapper {
+    & > a.logo {
       content: '';
-      width: 322px;
-      height: 402px;
-      position: absolute;
-      background: url("../img/wood.png") no-repeat;
+      margin: 0 auto;
+      display: block;
+      width: 200px;
+      height: 60px;
+      top: 5px;
+      position: relative;
+      background: url("../img/logo.png") no-repeat;
       background-position: top;
       background-size: auto 100%;
-      bottom: 130px;
-      right: 50px;
 
-      & > ul {
+      @include mobile-landscape {
+        left: 25px;
+        margin: 0;
+        height: 80px;
+      }
+      @include tablet {
+        width: 300px;
+        height: 120px;
+        top: 30px;
+      }
+      @include tablet-landscape {
+        width: 300px;
+        height: 120px;
+        top: 30px;
+        position: absolute;
+      }
+      @include desktop {
         position: relative;
+      }
+    }
+    .topMenu {
+      color: #000;
+      padding: 5px;
+      background: url("../img/menuBG.png") no-repeat;
+      background-size: 100% 100%;
+      margin: 20px 10px;
+      z-index: 10;
+      position: relative;
+
+      @include landscape {
+        max-width: 450px;
+        margin: 0 auto;
+        top: 30px;
+      }
+      @include mobile-landscape {
+        background: url("../img/menuBGVert.png") no-repeat;
+        margin-left: 80px;
+        width: 99px;
+        margin-top: 25px;
+        background-size: 100% 100%;
+        top: 70px;
+        position: absolute;
+      }
+      @include tablet {
+        width: 450px;
+        height: 40px;
+        margin: 0 auto;
         top: 50px;
+        line-height: 2;
+      }
+      @include tablet-landscape {
+        top: 80px;
+        margin-left: 350px;
+      }
+      ul {
         margin: 0;
         padding: 0;
-        & > li {
-          content: '';
-          width: 60px;
-          height: 60px;
-          background: url("../img/socialIcons.png") no-repeat;
-          background-position: top;
-          background-size: 100% auto;
-          list-style: none;
+        li {
           display: inline-block;
-          margin-right: 10px;
-          position: relative;
-          &:nth-child(2) {
-            background-position-y: -65px;
-            -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-            top: 20px;
+          margin-right: 5px;
+          @include mobile-landscape {
+            display: block;
+            margin: 20px 5px;
           }
-          &:nth-child(3) {
-            background-position-y: -130px;
-            -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-          }
-          &:nth-child(4) {
-            background-position-y: -195px;
-            top: 15px;
-            -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
-          }
-          &:nth-child(5) {
-            background: red;
-            padding: 5px;
-            text-align: center;
-            border-radius: 5px;
-            font-size: 200%;
-            width: 200px;
-            height: 40px;
-            top: 40px;
-            -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
-            & > a {
-              position: relative;
-              top: -40px;
-              text-decoration: inherit;
-              color: #fff;
-              letter-spacing: 5px;
-              width: auto;
-              height: auto;
-            }
-            &:before {
-              top: -35px;
-            }
+          @include tablet {
+            margin-right: 15px;
           }
           & > a {
+            text-decoration: inherit;
+            color: #000;
+
+          }
+        }
+      }
+
+    }
+    .clouds {
+      display: none;
+      @include tablet {
+        display: block;
+        & > ul > li {
+          content: '';
+          list-style: none;
+
+          width: 150px;
+          height: 50px;
+          background: url("../img/clouds.png") no-repeat;
+          background-position: top;
+          background-size: 100% auto;
+          overflow: hidden;
+          position: absolute;
+          top: 50px;
+          left: 20px;
+          &:nth-child(2) {
+            top: 240px;
+            left: 80px;
+            transform: scale(0.7);
+            background-position: bottom;
+          }
+          &:nth-child(3) {
+            transform: scale(0.4);
+            top: 210px;
+            left: 340px;
+
+          }
+        }
+      }
+      @include tablet {
+        display: block;
+        & > ul > li {
+          content: '';
+          top: 90px;
+          left: inherit;
+          right: 20px;
+          &:nth-child(2) {
+
+          }
+          &:nth-child(3) {
+
+          }
+        }
+      }
+
+    }
+    .speach {
+      display: block;
+      position: absolute;
+      bottom: 150px;
+      width: 174px;
+      height: 122px;
+      color: #000;
+      left: 40%;
+      margin-left: -85px;
+      z-index: 2;
+      background: url("../img/speachWithShadow.png") no-repeat;
+      background-size: 100% auto;
+      @include mobile-landscape {
+        left: 65%;
+      }
+      @include tablet {
+        left: 90px;
+        bottom: 270px;
+      }
+      @include tablet-landscape {
+        left: 50%;
+        margin-left: -85px;
+        bottom: 150px;
+      }
+      p {
+        line-height: 3;
+        text-transform: uppercase;
+      }
+      .phone {
+        width: 125px;
+        text-align: right;
+        margin: -2px auto;
+        border: 1px solid red;
+        border-radius: 5px;
+        padding: 4px;
+        position: relative;
+        overflow: hidden;
+        a {
+          color: #000;
+        }
+        &:before {
+          content: '';
+          width: 35px;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          background: red;
+
+        }
+        &:after {
+          content: '';
+          width: 30px;
+          height: 100%;
+          position: absolute;
+          top: -1px;
+          left: 0px;
+          display: block;
+          background: url("../img/menuIcons.png") no-repeat;
+          background-size: 1050% auto;
+          background-position: -280px 0px;
+        }
+      }
+    }
+    .tarzan {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      bottom: 10px;
+      width: 148px;
+      height: 248px;
+      left: 40%;
+
+      background: url("../img/man.png") no-repeat;
+      background-size: 100% auto;
+      @include mobile-landscape {
+        left: 65%;
+      }
+      @include tablet {
+        left: 90px;
+        bottom: 130px;
+      }
+      @include tablet-landscape {
+        left: 50%;
+        bottom: 10px;
+      }
+    }
+    .wood {
+      display: none;
+      @include tablet {
+        display: block;
+        content: '';
+        width: 322px;
+        height: 402px;
+        position: absolute;
+        background: url("../img/wood.png") no-repeat;
+        background-position: top;
+        background-size: auto 100%;
+        bottom: 130px;
+        right: 50px;
+
+        & > ul {
+          position: relative;
+          top: 50px;
+          margin: 0;
+          padding: 0;
+          & > li {
             content: '';
-            position: relative;
             width: 60px;
             height: 60px;
-            top: -30px;
-            display: block;
-          }
+            background: url("../img/socialIcons.png") no-repeat;
+            background-position: top;
+            background-size: 100% auto;
+            list-style: none;
+            display: inline-block;
+            margin-right: 10px;
+            position: relative;
+            &:nth-child(2) {
+              background-position-y: -65px;
+              -webkit-transform: rotate(-10deg);
+              transform: rotate(-10deg);
+              top: 20px;
+            }
+            &:nth-child(3) {
+              background-position-y: -130px;
+              -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+            }
+            &:nth-child(4) {
+              background-position-y: -195px;
+              top: 15px;
+              -webkit-transform: rotate(5deg);
+              transform: rotate(5deg);
+            }
+            &:nth-child(5) {
+              background: red;
+              padding: 5px;
+              text-align: center;
+              border-radius: 5px;
+              font-size: 200%;
+              width: 200px;
+              height: 40px;
+              top: 40px;
+              -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
+              & > a {
+                position: relative;
+                top: -40px;
+                text-decoration: inherit;
+                color: #fff;
+                letter-spacing: 5px;
+                width: auto;
+                height: auto;
+              }
+              &:before {
+                top: -35px;
+              }
+            }
+            & > a {
+              content: '';
+              position: absolute;
+              width: 60px;
+              height: 60px;
+              top: 0px;
+              display: block;
+            }
 
+            &:before {
+              content: '';
+              display: block;
+              width: 30px;
+              height: 40px;
+              background: url("../img/fix.png") no-repeat;
+              background-size: 100% auto;
+              position: relative;
+              margin: 0px auto;
+              top: -25px;
+            }
+          }
+        }
+      }
+      @include tablet-landscape {
+        bottom: 5px;
+        right: 40px;
+      }
+    }
+    .mailBox {
+      display: none;
+      @include tablet-landscape {
+        display: block;
+        width: 266px;
+        height: 224px;
+        background: url("../img/mailBox.png") no-repeat;
+        position: absolute;
+        bottom: 10px;
+        left: 100px;
+        a {
+          display: block;
+          color: #fff;
+          position: relative;
+          top: 60px;
+          left: 45px;
+          transform: skew(0deg, -15deg);
+          -webkit-transform: skew(0deg, -15deg);
+        }
+        .telInBox {
+          font-size: 180%;
+        }
+        .mailInBox {
           &:before {
             content: '';
-            display: block;
             width: 30px;
-            height: 40px;
-            background: url("../img/fix.png") no-repeat;
-            background-size: 100% auto;
-            position: relative;
-            margin: 0px auto;
-            top: -25px;
+            height: 140px;
+            background: url("../img/forMailBox.png") no-repeat;
+            position: absolute;
+            top: -95px;
+            left: 45px;
+            transition: 1s;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+          }
+          &:hover:before {
+            transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+
           }
         }
       }
     }
+    @include desktop {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+    }
+
   }
-  .mailBox {
-    display: none;
-  }
+
 }
 
 .programs {
@@ -391,6 +486,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
+  display: none;
 
   img {
     width: 150px;

@@ -79,7 +79,7 @@ body {
   @include tablet {
   }
   @include desktop {
-    background-size: 100% auto;
+    //    background-size: 100% auto;
   }
   &:before {
     content: '';

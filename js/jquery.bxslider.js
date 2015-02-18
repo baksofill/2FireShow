@@ -642,6 +642,10 @@
             }
             // assign the pager click binding
             slider.pagerEl.on('click', 'a', clickPagerBind);
+
+            slider.pipi = $('.titlePr');
+
+            slider.pipi.on('click', 'a', clickPagerBind);
         }
 
         /**
@@ -774,6 +778,7 @@
             // if auto show is running, stop it
             if (slider.settings.auto) el.stopAuto();
             var pagerLink = $(e.currentTarget);
+            //var pagerLink = $('.bx-pager-link');
             if (pagerLink.attr('data-slide-index') !== undefined) {
                 var pagerIndex = parseInt(pagerLink.attr('data-slide-index'));
                 // if clicked pager link is not active, continue with the goToSlide call

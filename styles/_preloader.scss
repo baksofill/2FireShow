@@ -1,0 +1,236 @@
+$size: 10px;
+$gap: 90px;
+$count: 6;
+$time: 0.45s;
+$amount: 40px;
+
+.firstLoader {
+  height: 10px;
+  width: $count * $size * 2;
+  margin: auto;
+}
+
+.loader {
+  background: #ecf0f1;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #7f8c8d, #ecf0f1, #95a5a6);
+  background-repeat: no-repeat;
+}
+
+.dot {
+  float: left;
+  height: $size;
+  width: $size;
+  border-radius: 50%;
+  background-color: #000;
+  background-image: linear-gradient(rgba(white, 0.3), transparent), radial-gradient(red, #6e0202);
+  background-position: top center;
+  margin: $gap ($size * 0.25);
+  animation: bounce $time infinite ease alternate;
+  -webkit-animation: bounce $time infinite ease alternate;
+
+  $inc: (($time / $count) * -1) * 1;
+  @for $i from 1 through $count {
+    &:nth-child(#{$i}) {
+      -webkit-animation-delay: $inc * $i;
+    }
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(0);
+    box-shadow: 0 ($size * 0.25) 1px rgba(mix(black, #8e44ad), 0.2);
+  }
+  100% {
+    transform: translateY($amount * -1);
+    box-shadow: 0 ($size + ($amount * 2)) 12px rgba(black, 0.1);
+  }
+}
+
+@include desktop {
+  .firstLoader {
+    display: none;
+  }
+  .loader {
+    background-image: initial;
+  }
+
+  $brightness: 1.6;
+  $contrast: 10;
+  $blur: 18px;
+
+  $sphere-size: 80px;
+  $intensity: 60%;
+
+  $back-color: #000; // changes will cause bugs
+  $main-color: #f97;
+  $core-color: #ddd;
+
+  .zone-wrap {
+    padding: 80px;
+    overflow: hidden;
+    background: $back-color;
+    filter: brightness($brightness) contrast($contrast);
+    -webkit-filter: brightness($brightness) contrast($contrast);
+  }
+
+  .zone {
+    position: relative;
+    width: $sphere-size;
+    height: $sphere-size;
+    margin: 30px auto;
+    filter: blur($blur);
+    -webkit-filter: blur($blur);
+  }
+
+  .magnets {
+    background: $back-color;
+    white-space: nowrap;
+    div {
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 30px;
+      border-radius: 30%;
+      background: transparent;
+      &:nth-child(1) {
+        top: 0;
+        box-shadow: 0 0 90px $main-color;
+        animation: clockwise 3.14s linear infinite;
+        -webkit-animation: clockwise 3.14s linear infinite;
+      }
+      &:nth-child(2) {
+        top: 0;
+        left: -20px;
+        box-shadow: 0 0 70px $main-color;
+        animation: counter-clockwise 4s linear infinite;
+        -webkit-animation: counter-clockwise 4s linear infinite;
+      }
+      &:nth-child(3) {
+        top: 0;
+        left: 20px;
+        box-shadow: 0 0 70px $main-color;
+        animation: clockwise 1.9s linear infinite;
+        -webkit-animation: clockwise 1.9s linear infinite;
+      }
+      &:nth-child(4) {
+        top: -15px;
+        box-shadow: 0 0 800px $main-color;
+        animation: counter-clockwise 2.71s linear infinite;
+        -webkit-animation: counter-clockwise 2.71s linear infinite;
+      }
+      &:nth-child(5) {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: -65px;
+        box-shadow: 0 0 50px $main-color;
+        animation: counter-clockwise 3.71s linear infinite;
+        -webkit-animation: counter-clockwise 3.71s linear infinite;
+
+      }
+      &:nth-child(6) {
+        width: 10px;
+        height: 10px;
+        top: 20px;
+        left: 65px;
+        box-shadow: 0 0 50px $main-color;
+        animation: clockwise 4.71s linear infinite;
+        -webkit-animation: clockwise 4.71s linear infinite;
+
+      }
+    }
+  }
+
+  .sphere {
+    background: $back-color;
+    white-space: nowrap;
+    .core {
+      position: absolute;
+      width: $sphere-size;
+      height: $sphere-size;
+      border-radius: 50%;
+      background: fade($main-color, $intensity);
+      background: rgba(255, 153, 119, 0.6);
+      border-bottom: 15px solid $core-color;
+    }
+  }
+
+  @-webkit-keyframes clockwise {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+      -webkit-transform: translate(-40px, -40px);
+      transform: translate(-40px, -40px);
+    }
+    50% {
+      -webkit-transform: translate(0px, -80px);
+      transform: translate(0px, -80px);
+    }
+    75% {
+      -webkit-transform: translate(40px, -40px);
+      transform: translate(40px, -40px);
+    }
+  }
+
+  @keyframes clockwise {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+      -webkit-transform: translate(-40px, -40px);
+      transform: translate(-40px, -40px);
+    }
+    50% {
+      -webkit-transform: translate(0px, -80px);
+      transform: translate(0px, -80px);
+    }
+    75% {
+      -webkit-transform: translate(40px, -40px);
+      transform: translate(40px, -40px);
+    }
+  }
+
+  @-webkit-keyframes counter-clockwise {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+      -webkit-transform: translate(40px, -40px);
+      transform: translate(40px, -40px);
+    }
+    50% {
+      -webkit-transform: translate(0px, -80px);
+      transform: translate(0px, -80px);
+    }
+    75% {
+      -webkit-transform: translate(-40px, -40px);
+      transform: translate(-40px, -40px);
+    }
+  }
+
+  @keyframes counter-clockwise {
+    0% {
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+    }
+    25% {
+      -webkit-transform: translate(40px, -40px);
+      transform: translate(40px, -40px);
+    }
+    50% {
+      -webkit-transform: translate(0px, -80px);
+      transform: translate(0px, -80px);
+    }
+    75% {
+      -webkit-transform: translate(-40px, -40px);
+      transform: translate(-40px, -40px);
+    }
+  }
+
+}

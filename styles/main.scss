@@ -29,12 +29,9 @@ body {
   position: fixed;
   z-index: 888;
   background-color: #ecf0f1;
-
   background-image: linear-gradient(-45deg, #7f8c8d, #ecf0f1, #95a5a6);
   background-image: -webkit-linear-gradient(-45deg, #7f8c8d, #ecf0f1, #95a5a6);
   background-repeat: no-repeat;
-
-
 
   .loaderText {
     position: absolute;
@@ -89,6 +86,7 @@ body {
   }
   @include desktop{
     background-color: #000;
+    background-image: inherit;
   }
 
 }
@@ -105,7 +103,6 @@ body {
   background: url("../img/skyBG.png") no-repeat;
   background-position: top;
   background-size: auto 100%;
-
   @include mobile-landscape {
   }
   @include tablet {
@@ -113,6 +110,7 @@ body {
   @include desktop {
     //    background-size: 100% auto;
   }
+
   &:before {
     content: '';
     width: 100%;
@@ -132,6 +130,7 @@ body {
       height: 600px;
     }
   }
+
   .wrapper {
     & > a.logo {
       content: '';
@@ -173,9 +172,18 @@ body {
       margin: 20px 10px;
       z-index: 10;
       position: relative;
+      .noMobyle {
+        display: none;
+        @include tablet-landscape {
+          display: inline-block;
+        }
+        @include desktop {
+          display: inline-block;
+        }
+      }
 
       @include landscape {
-        max-width: 450px;
+        width: 450px;
         margin: 0 auto;
         top: 30px;
       }
@@ -197,7 +205,17 @@ body {
       }
       @include tablet-landscape {
         top: 80px;
-        margin-left: 350px;
+        margin: 0 auto;
+        width: 800px;
+        line-height: 50px;
+        height: 50px;
+      }
+      @include desktop {
+        top: 80px;
+        margin: 0 auto;
+        width: 860px;
+        line-height: 50px;
+        height: 50px;
       }
       ul {
         margin: 0;
@@ -205,12 +223,62 @@ body {
         li {
           display: inline-block;
           margin-right: 5px;
+          position: relative;
+          &:nth-child(2):before {
+            background-position-x: -75px;
+          }
+          &:nth-child(3):before {
+            background-position-x: -142px;
+          }
+          &:nth-child(4):before {
+            background-position-x: -176px;
+          }
+          &:nth-child(5):before {
+            background-position-x: -113px;
+          }
+          &:nth-child(6):before {
+            background-position-x: -211px;
+          }
+
           @include mobile-landscape {
             display: block;
             margin: 20px 5px;
           }
           @include tablet {
             margin-right: 15px;
+            margin-left: 40px;
+          }
+          @include desktop {
+            margin-left: 40px;
+
+            &:before {
+              @include tablet-landscape {
+                content: '';
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                left: -33px;
+                display: block;
+                background: url("../img/menuIcons.png") no-repeat;
+                background-size: 1050% auto;
+                background-position-x: -8px;
+              }
+              @include desktop {
+                content: '';
+                width: 40px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                left: -42px;
+                display: block;
+                background: url("../img/menuIcons.png") no-repeat;
+                background-size: 800% auto;
+                background-position-x: 0px;
+
+              }
+            }
+
           }
           & > a {
             text-decoration: inherit;

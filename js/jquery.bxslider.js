@@ -644,7 +644,7 @@
             slider.pagerEl.on('click', 'a', clickPagerBind);
 
             slider.pipi = $('.titlePr');
-
+// my code
             slider.pipi.on('click', 'a', clickPagerBind);
         }
 

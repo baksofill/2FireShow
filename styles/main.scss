@@ -171,15 +171,6 @@ body {
       margin: 20px 10px;
       z-index: 10;
       position: relative;
-      .noMobyle {
-        display: none;
-        @include tablet-landscape {
-          display: inline-block;
-        }
-        @include desktop {
-          display: inline-block;
-        }
-      }
 
       @include landscape {
         width: 450px;
@@ -196,7 +187,7 @@ body {
         position: absolute;
       }
       @include tablet {
-        width: 450px;
+        width: 600px;
         height: 40px;
         margin: 0 auto;
         top: 50px;
@@ -206,7 +197,7 @@ body {
         top: 80px;
         margin: 0 auto;
         margin-left: 300px;
-        width: 800px;
+        width: 700px;
         line-height: 50px;
         height: 50px;
       }
@@ -217,12 +208,22 @@ body {
         line-height: 50px;
         height: 50px;
       }
+
+      .noMobyle {
+        display: none;
+        @include tablet-landscape {
+          display: inline-block;
+        }
+        @include desktop {
+          display: inline-block;
+        }
+      }
       ul {
         margin: 0;
         padding: 0;
         li {
           display: inline-block;
-          margin-right: 5px;
+          margin-right: 4px;
           position: relative;
           &:nth-child(2):before {
             background-position-x: -75px;
@@ -291,6 +292,12 @@ body {
             }
             @include desktop {
               padding-left: 40px;
+            }
+            & > span {
+              display: none;
+              @include tablet {
+                display: inline;
+              }
             }
 
           }
@@ -616,7 +623,6 @@ body {
           &:hover:before {
             transform: rotate(0deg);
             -webkit-transform: rotate(0deg);
-
           }
         }
       }
@@ -642,37 +648,58 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  display: none;
+  //  display: none;
 
   img {
-    width: 150px;
+    width: 120px;
     height: auto;
     display: inline-block !important;
   }
-  .videoOM {
-    content: '';
-    display: inline-block;
-    width: 450px;
-    height: 250px;
-    border: 1px solid red;
-    border-radius: 5px;
+  .ourPr {
+    display: none;
   }
-  .imgOM {
-    display: inline-block;
-    float: right;
-    width: 500px;
+  .videoOM, .videoUA, .videoGAV {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    width: 264px;
+    height: 146px;
+    //    border: 1px solid red;
+    border-radius: 5px;
+    background: url("../img/gallery/videos.jpg");
+    background-size: 100% auto;
+  }
+  .videoUA {
+    background-position: bottom;
+  }
+  .videoGAV {
+    background-position: center;
+  }
+  .imgOM, .imgGAV, .imgUA {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
 
   }
   .titlePr {
-    width: 1000px;
+    width: 100%;
+    display: block;
     margin: 0 auto;
-
     ul {
-
       text-align: center;
+      display: flex;
+      display: -webkit-flex;
       li {
-        display: inline-block;
-        margin-right: 50px;
+        margin: 10px;
+        flex: 1;
+        -webkit-flex: 1;
+        span {
+          display: none;
+          @include tablet {
+            display: inline;
+
+          }
+        }
 
       }
 

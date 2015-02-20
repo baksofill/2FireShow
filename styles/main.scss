@@ -108,7 +108,6 @@ body {
   @include tablet {
   }
   @include desktop {
-    //    background-size: 100% auto;
   }
 
   &:before {
@@ -206,6 +205,7 @@ body {
       @include tablet-landscape {
         top: 80px;
         margin: 0 auto;
+        margin-left: 300px;
         width: 800px;
         line-height: 50px;
         height: 50px;
@@ -246,10 +246,10 @@ body {
           }
           @include tablet {
             margin-right: 15px;
-            margin-left: 40px;
+//            padding-left: 40px;
           }
           @include desktop {
-            margin-left: 40px;
+//            padding-left: 40px;
 
             &:before {
               @include tablet-landscape {
@@ -258,10 +258,10 @@ body {
                 height: 30px;
                 position: absolute;
                 top: 10px;
-                left: -33px;
+                left: 0px;
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;
-                background-size: 1050% auto;
+                background-size: 309px auto;
                 background-position-x: -8px;
               }
               @include desktop {
@@ -270,10 +270,10 @@ body {
                 height: 30px;
                 position: absolute;
                 top: 10px;
-                left: -42px;
+                left: 0px;
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;
-                background-size: 800% auto;
+                background-size: 309px auto;
                 background-position-x: 0px;
 
               }
@@ -283,6 +283,15 @@ body {
           & > a {
             text-decoration: inherit;
             color: #000;
+            @include tablet {
+              padding-left: 40px;
+            }
+            @include tablet-landscape {
+              padding-left: 20px;
+            }
+            @include desktop {
+              padding-left: 40px;
+            }
 
           }
         }
@@ -320,21 +329,56 @@ body {
           }
         }
       }
-      @include tablet {
+      @include tablet-landscape {
         display: block;
         & > ul > li {
           content: '';
-          top: 90px;
+          top: 160px;
           left: inherit;
-          right: 20px;
+          right: 200px;
           &:nth-child(2) {
-
+            top: 260px;
           }
           &:nth-child(3) {
 
           }
         }
       }
+      @include desktop{
+        & > ul > li {
+          content: '';
+          top: 90px;
+          left: 10px;
+
+          &:nth-child(2) {
+            top: 260px;
+          }
+          &:nth-child(3) {
+            top: 130px;
+            left: 300px;
+          }
+          &:nth-child(4) {
+            top: 80px;
+            left: inherit;
+            right: 50px;
+            transform: scaleX(-1.1);
+            background-position: bottom;
+          }
+        }
+
+
+      }
+
+    }
+    .moon {
+      content: '';
+      width: 166px;
+      height: 269px;
+      position: absolute;
+      left: -200px;
+      top: 50px;
+      background: url("../img/moon.png") no-repeat;
+      background-size: auto 100%;
 
     }
     .speach {
@@ -360,6 +404,9 @@ body {
         left: 50%;
         margin-left: -85px;
         bottom: 150px;
+      }
+      @include desktop{
+        bottom: 250px;
       }
       p {
         line-height: 3;
@@ -424,6 +471,9 @@ body {
       @include tablet-landscape {
         left: 50%;
         bottom: 10px;
+      }
+      @include desktop{
+        bottom: 100px;
       }
     }
     .wood {
@@ -524,6 +574,9 @@ body {
         bottom: 5px;
         right: 40px;
       }
+      @include desktop{
+        bottom: 80px;
+      }
     }
     .mailBox {
       display: none;
@@ -566,6 +619,9 @@ body {
 
           }
         }
+      }
+      @include desktop{
+        bottom: 80px;
       }
     }
     @include desktop {

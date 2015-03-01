@@ -672,8 +672,12 @@ body {
   .ourPr {
     display: none;
   }
-  .description {
+
+  .description, .media {
     display: none;
+  }
+  .description.active, .media.active {
+    display: block;
   }
   .buttonReadMore {
     width: 200px;
@@ -690,6 +694,12 @@ body {
     background: url("../img/gallery/videos.jpg");
     background-size: 100% auto;
     @include mobile-landscape {
+      display: inline-block;
+      width: 240px;
+      height: 130px;
+      margin: 20px auto;
+    }
+    @include tablet {
       display: inline-block;
       width: 240px;
       height: 130px;
@@ -713,6 +723,9 @@ body {
       }
     }
     @include mobile-landscape {
+      display: inline-block;
+    }
+    @include tablet {
       display: inline-block;
     }
 

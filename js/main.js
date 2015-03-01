@@ -64,25 +64,31 @@ $(document).ready(function(){
 
     /* -------------  Hiding ReadMore Text -------------- */
     $('.buttonReadMore').click(function () {
-        if (readMoreFlag == 0) {
-            $('.media').hide();
-            $('.description').show();
-            readMoreFlag = 1;
+        if ($('.media').hasClass('active')) {
+            $('.media').removeClass('active');
+            $('.description').addClass('active');
+            //readMoreFlag = 1;
         } else {
-            $('.media').show();
-            $('.description').hide();
-            readMoreFlag = 0;
+            $('.media').addClass('active');
+            $('.description').removeClass('active');
+            //readMoreFlag = 0;
         }
 
     });
+
+
     /* -------------  Hiding ReadMore Text END -------------- */
 
     /* -------------  Parallax moving  -------------- */
-    $('.clouds ul li:nth-child(1)').plaxmove({ratioH: 0.05, ratioV: 0.1, reversed: true, invertH: false});
-    $('.clouds ul li:nth-child(2)').plaxmove({ratioH: 0.07, ratioV: 0.02, reversed: true, invertH: false});
-    $('.clouds ul li:nth-child(3)').plaxmove({ratioH: 0.1, ratioV: 0.05, invertV: true});
-    $('.clouds ul li:nth-child(4)').plaxmove({ratioH: 0.05, ratioV: 0.06, reversed: false, invertH: false});
-    //$('.clouds ul li:nth-child(5)').plaxmove({ratioH:0.09,ratioV:0.1,invertV:true});
+    function paralax() {
+        $('.clouds ul li:nth-child(1)').plaxmove({ratioH: 0.05, ratioV: 0.1, reversed: true, invertH: false});
+        $('.clouds ul li:nth-child(2)').plaxmove({ratioH: 0.07, ratioV: 0.02, reversed: true, invertH: false});
+        $('.clouds ul li:nth-child(3)').plaxmove({ratioH: 0.1, ratioV: 0.05, invertV: true});
+        $('.clouds ul li:nth-child(4)').plaxmove({ratioH: 0.05, ratioV: 0.06, reversed: false, invertH: false});
+
+    }
+
+    paralax();
     /* -------------  Parallax moving END -------------- */
 
 

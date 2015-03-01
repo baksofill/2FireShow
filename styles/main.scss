@@ -115,9 +115,11 @@ body {
   background: url("../img/skyBG.png") no-repeat;
   background-position: top;
   background-size: auto 100%;
+  font-size: 90%;
   @include mobile-landscape {
   }
   @include tablet {
+    font-size: 100%;
   }
   @include desktop {
   }
@@ -237,20 +239,20 @@ body {
           display: inline-block;
           margin-right: 4px;
           position: relative;
-          &:nth-child(2):before {
+          &:nth-child(1):before {
             background-position-x: -75px;
           }
-          &:nth-child(3):before {
+          &:nth-child(2):before {
             background-position-x: -142px;
           }
           &:nth-child(4):before {
             background-position-x: -176px;
           }
-          &:nth-child(5):before {
+          &:nth-child(10):before {
             background-position-x: -113px;
           }
-          &:nth-child(6):before {
-            background-position-x: -211px;
+          &:nth-child(5):before {
+            background-position-x: -203px;
           }
 
           @include mobile-landscape {
@@ -279,7 +281,7 @@ body {
               }
               @include desktop {
                 content: '';
-                width: 40px;
+                width: 35px;
                 height: 30px;
                 position: absolute;
                 top: 10px;
@@ -377,7 +379,7 @@ body {
             left: 300px;
           }
           &:nth-child(4) {
-            top: 80px;
+            top: 20px;
             left: inherit;
             right: 50px;
             transform: scaleX(-1.1);
@@ -674,7 +676,7 @@ body {
     display: none;
   }
   .buttonReadMore {
-    width: 150px;
+    width: 200px;
     margin: 5px auto;
   }
   .videoOM, .videoUA, .videoGAV {

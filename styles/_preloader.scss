@@ -5,60 +5,18 @@ $time: 0.45s;
 $amount: 40px;
 
 .firstLoader {
-  height: 10px;
-  width: $count * $size * 2;
-  margin: auto;
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -60px;
+  margin-left: -16px;
+  z-index: 100;
+  background-image: url("../img/loader.gif");
 }
 
-
-
-.dot {
-  float: left;
-  height: $size;
-  width: $size;
-  border-radius: 50%;
-  background-color: #000;
-  background-image: linear-gradient(rgba(white, 0.3), transparent), radial-gradient(red, #6e0202);
-  background-image: -webkit-linear-gradient(rgba(white, 0.3), transparent), -webkit-radial-gradient(red, #6e0202);
-  background-position: top center;
-  margin: $gap ($size * 0.25);
-  animation: bounce $time infinite ease alternate;
-  -webkit-animation: bounce $time infinite ease alternate;
-
-
-  $inc: (($time / $count) * -1) * 1;
-  @for $i from 1 through $count {
-    &:nth-child(#{$i}) {
-      -webkit-animation-delay: $inc * $i;
-              animation-delay: $inc * $i;
-    }
-  }
-}
-
-@-webkit-keyframes bounce {
-  0% {
-    transform: translateY(0);
-    -webkit-transform:  translateY(0);
-    box-shadow: 0 ($size * 0.25) 1px rgba(mix(black, #8e44ad), 0.2);
-  }
-  100% {
-    transform: translateY($amount * -1);
-    -webkit-transform: translateY($amount * -1);
-    box-shadow: 0 ($size + ($amount * 2)) 12px rgba(black, 0.1);
-  }
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    box-shadow: 0 ($size * 0.25) 1px rgba(mix(black, #8e44ad), 0.2);
-  }
-  100% {
-    transform: translateY($amount * -1);
-    -webkit-transform: translateY($amount * -1);
-    box-shadow: 0 ($size + ($amount * 2)) 12px rgba(black, 0.1);
-  }
-}
 
 @include desktop {
   .firstLoader {

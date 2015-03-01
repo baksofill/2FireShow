@@ -95,6 +95,8 @@ $(document).ready(function(){
 
     /* -------------  Lightbox  -------------- */
     $('.imgOM a').lightBox({fixedNavigation:true});
+    $('.imgUA a').lightBox({fixedNavigation:true});
+    $('.imgGAV a').lightBox({fixedNavigation:true});
     /* -------------  Lightbox END -------------- */
 
 

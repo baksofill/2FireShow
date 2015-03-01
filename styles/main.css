@@ -703,6 +703,153 @@ abbr, acronym {
   display: none;
 }
 
+/**
+ * jQuery lightBox plugin
+ * This jQuery plugin was inspired and based on Lightbox 2 by Lokesh Dhakar (http://www.huddletogether.com/projects/lightbox2/)
+ * and adapted to me for use like a plugin from jQuery.
+ * @name jquery-lightbox-0.5.css
+ * @author Leandro Vieira Pinho - http://leandrovieira.com
+ * @version 0.5
+ * @date April 11, 2008
+ * @category jQuery plugin
+ * @copyright (c) 2008 Leandro Vieira Pinho (leandrovieira.com)
+ * @license CCAttribution-ShareAlike 2.5 Brazil - http://creativecommons.org/licenses/by-sa/2.5/br/deed.en_US
+ * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
+ */
+/* line 14, _jquery.lightbox.scss */
+#jquery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 500px;
+}
+
+/* line 22, _jquery.lightbox.scss */
+#jquery-lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 31, _jquery.lightbox.scss */
+#jquery-lightbox a img {
+  border: none;
+}
+
+/* line 32, _jquery.lightbox.scss */
+#lightbox-container-image-box {
+  position: relative;
+  background-color: #fff;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+/* line 39, _jquery.lightbox.scss */
+#lightbox-container-image {
+  padding: 10px;
+}
+
+/* line 40, _jquery.lightbox.scss */
+#lightbox-loading {
+  position: absolute;
+  top: 40%;
+  left: 0%;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* line 49, _jquery.lightbox.scss */
+#lightbox-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+/* line 57, _jquery.lightbox.scss */
+#lightbox-container-image-box > #lightbox-nav {
+  left: 0;
+}
+
+/* line 58, _jquery.lightbox.scss */
+#lightbox-nav a {
+  outline: none;
+}
+
+/* line 59, _jquery.lightbox.scss */
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+  width: 49%;
+  height: 100%;
+  zoom: 1;
+  display: block;
+}
+
+/* line 65, _jquery.lightbox.scss */
+#lightbox-nav-btnPrev {
+  left: 0;
+  float: left;
+}
+
+/* line 69, _jquery.lightbox.scss */
+#lightbox-nav-btnNext {
+  right: 0;
+  float: right;
+}
+
+/* line 73, _jquery.lightbox.scss */
+#lightbox-container-image-data-box {
+  font: 10px Verdana, Helvetica, sans-serif;
+  background-color: #fff;
+  margin: 0 auto;
+  line-height: 1.4em;
+  overflow: auto;
+  width: 100%;
+  padding: 0 10px 0;
+}
+
+/* line 82, _jquery.lightbox.scss */
+#lightbox-container-image-data {
+  padding: 0 10px;
+  color: #666;
+}
+
+/* line 86, _jquery.lightbox.scss */
+#lightbox-container-image-data #lightbox-image-details {
+  width: 70%;
+  float: left;
+  text-align: left;
+}
+
+/* line 91, _jquery.lightbox.scss */
+#lightbox-image-details-caption {
+  font-weight: bold;
+}
+
+/* line 92, _jquery.lightbox.scss */
+#lightbox-image-details-currentNumber {
+  display: block;
+  clear: left;
+  padding-bottom: 1.0em;
+}
+
+/* line 97, _jquery.lightbox.scss */
+#lightbox-secNav-btnClose {
+  width: 66px;
+  float: right;
+  padding-bottom: 0.7em;
+}
+
 /* line 8, main.scss */
 body {
   overflow: hidden;
@@ -1506,23 +1653,19 @@ body {
 .programs .ourPr {
   display: none;
 }
-
 /* line 676, main.scss */
 .programs .description, .programs .media {
   display: none;
 }
-
 /* line 679, main.scss */
 .programs .description.active, .programs .media.active {
   display: block;
 }
-
 /* line 682, main.scss */
 .programs .buttonReadMore {
   width: 200px;
   margin: 5px auto;
 }
-
 /* line 686, main.scss */
 .programs .videoOM, .programs .videoUA, .programs .videoGAV {
   content: '';
@@ -1543,7 +1686,6 @@ body {
     margin: 20px auto;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
   /* line 686, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
@@ -1553,24 +1695,20 @@ body {
     margin: 20px auto;
   }
 }
-
 /* line 709, main.scss */
 .programs .videoUA {
   background-position: bottom;
 }
-
 /* line 712, main.scss */
 .programs .videoGAV {
   background-position: center;
 }
-
 /* line 715, main.scss */
 .programs .imgOM, .programs .imgGAV, .programs .imgUA {
   display: block;
   width: 250px;
   margin: 0 auto;
 }
-
 /* line 719, main.scss */
 .programs .imgOM .notForMobyle, .programs .imgGAV .notForMobyle, .programs .imgUA .notForMobyle {
   display: none;
@@ -1587,40 +1725,34 @@ body {
     display: inline-block;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
   /* line 715, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     display: inline-block;
   }
 }
-
 /* line 733, main.scss */
 .programs .titlePr {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-
 /* line 737, main.scss */
 .programs .titlePr ul {
   text-align: center;
   display: flex;
   display: -webkit-flex;
 }
-
 /* line 741, main.scss */
 .programs .titlePr ul li {
   margin: 10px;
   flex: 1;
   -webkit-flex: 1;
 }
-
 /* line 745, main.scss */
 .programs .titlePr ul li a {
   color: #000;
 }
-
 /* line 748, main.scss */
 .programs .titlePr ul li span {
   display: none;
@@ -1631,7 +1763,6 @@ body {
     display: inline;
   }
 }
-
 /* line 762, main.scss */
 .programs .bxslider > li {
   padding: 20px;
@@ -1642,7 +1773,6 @@ body {
     padding: 10px;
   }
 }
-
 /* line 768, main.scss */
 .programs .bxslider > li:nth-child(1) {
   padding: 20px;

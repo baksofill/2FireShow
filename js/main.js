@@ -15,6 +15,8 @@ $(document).ready(function(){
     /*
      * Plugin intialization
      */
+
+
     /* -------------  Loader  -------------- */
     $(window).load(function () {
         $('.loader').delay(1000).fadeOut(600);
@@ -91,6 +93,9 @@ $(document).ready(function(){
     paralax();
     /* -------------  Parallax moving END -------------- */
 
+    /* -------------  Lightbox  -------------- */
+    $('.imgOM a').lightBox({fixedNavigation:true});
+    /* -------------  Lightbox END -------------- */
 
 
 });

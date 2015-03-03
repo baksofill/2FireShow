@@ -38,11 +38,11 @@ $(document).ready(function(){
     /* -------------  Main Vertical Slider for navigation -------------- */
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['main', 'programs', 'artistes', 'blog'],
-        sectionsColor: ['#000', 'green', '#ee005a', '#39C'],
+        anchors: ['main', 'programs', 'artistes', 'сalendar', 'feedback'],
+        sectionsColor: ['#000', 'green', '#ee005a', '#39C', 'blue'],
         navigation: {
             'position': 'right',
-            'tooltips': ['Винницкий Театр Огня', 'Программы', 'Артисты', 'Блог']
+            'tooltips': ['Винницкий Театр Огня', 'Программы', 'Артисты', 'Календарь', 'Отзывы']
         },
         afterRender: function () {
             $('#pp-nav').addClass('custom');
@@ -69,11 +69,9 @@ $(document).ready(function(){
         if ($('.media').hasClass('active')) {
             $('.media').removeClass('active');
             $('.description').addClass('active');
-            //readMoreFlag = 1;
         } else {
             $('.media').addClass('active');
             $('.description').removeClass('active');
-            //readMoreFlag = 0;
         }
 
     });
@@ -89,17 +87,114 @@ $(document).ready(function(){
         $('.clouds ul li:nth-child(4)').plaxmove({ratioH: 0.05, ratioV: 0.06, reversed: false, invertH: false});
 
     }
-
     paralax();
     /* -------------  Parallax moving END -------------- */
 
     /* -------------  Lightbox  -------------- */
-    $('.imgOM a').lightBox({fixedNavigation:true});
-    $('.imgUA a').lightBox({fixedNavigation:true});
-    $('.imgGAV a').lightBox({fixedNavigation:true});
+    function LightBox() {
+        $('.imgOM a').lightBox({fixedNavigation: true});
+        $('.imgUA a').lightBox({fixedNavigation: true});
+        $('.imgGAV a').lightBox({fixedNavigation: true});
+    }
+
+    LightBox();
     /* -------------  Lightbox END -------------- */
 
+    /* -------------  Calendar -------------- */
+
+    function cal() {
+        var monthNames = ["Gener", "Февраль", "Март", "Апрель", "Май", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Dicembre"];
+
+        var dayNames = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+
+        var events = [
+            {
+                date: "8/3/2015",
+                title: 'SPORT & WELLNESS',
+                link: 'http://bic.cat',
+                linkTarget: '_blank',
+                color: '',
+                content: '<img src="http://gettingcontacts.com/upload/jornadas/sport-wellness_portada.png" ><br>06-11-2013 - 09:00 <br> Tecnocampus Mataró Auditori',
+                class: '',
+                displayMonthController: true,
+                displayYearController: true,
+                nMonths: 6
+            }
+        ];
+
+        $('#calendari_lateral1').bic_calendar({
+            //list of events in array
+            events: events,
+            //enable select
+            enableSelect: true,
+            //enable multi-select
+            multiSelect: true,
+            //set day names
+            dayNames: dayNames,
+            //set month names
+            monthNames: monthNames,
+            //show dayNames
+            showDays: true,
+            //show month controller
+            displayMonthController: true,
+            //show year controller
+            displayYearController: true,
+            //set ajax call
+            reqAjax: {
+                type: 'get',
+                url: 'http://bic.cat/bic_calendar/index.php'
+            }
+        });
+    }
+
+    cal();
+
+    /* -------------  Calendar END -------------- */
+
+
+    function tabs() {
+        var tabsNum = $(".tabs a").length;
+        var tabHash = document.location.hash;
+        if (tabHash === "") {
+            tabHash = "#tab0"
+        }
+        ;
+        var currentTab = parseInt(tabHash.slice(4));
+        $(".tabs a[href='" + tabHash + "']").addClass("on");
+
+        $(".tabs a").click(function () {
+            $(".tabs a").removeClass("on");
+            $(this).addClass("on");
+            $(this).blur(0);
+            tabHash = $(this).attr("href");
+            currentTab = parseInt(tabHash.slice(4));
+            setTabs();
+        });
+
+        function setTabs() {
+            $("div.tab").hide();
+            $("#tabCont" + currentTab).show();
+        };
+        setTabs();
+
+        $('ul.tabs li').css('cursor', 'pointer');
+        $('ul.tabs.tabs1 li').click(function () {
+            var thisClass = this.className.slice(0, 2);
+            $('div.t1').hide();
+            $('div.t2').hide();
+            $('div.t3').hide();
+            $('div.t4').hide();
+            $('div.' + thisClass).show();
+            $('ul.tabs.tabs1 li').removeClass('tab-current');
+            $(this).addClass('tab-current');
+        });
+
+    }
+
+    tabs();
 
 });
+
+
 
 

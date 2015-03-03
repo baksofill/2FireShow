@@ -12,13 +12,15 @@
     box-shadow: 0 0 5px #ccc;
     border: 5px solid #fff;*/
 
-  width: 300px !important;
+  //  width: 300px !important;
   @include mobile-landscape {
-    width: 500px !important;
+    //    width: 500px !important;
   }
   @include tablet {
-    //    width: 1000px !important;
-
+    width: 720px !important;
+  }
+  @include desktop {
+    width: 1015px !important;
   }
 
 

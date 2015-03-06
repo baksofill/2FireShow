@@ -419,7 +419,7 @@ body {
       left: 40%;
       margin-left: -85px;
       z-index: 2;
-      background: url("../img/speachWithShadow.png") no-repeat;
+//MAN      background: url("../img/speachWithShadow.png") no-repeat;
       background-size: 100% auto;
       @include mobile-landscape {
         left: 65%;
@@ -436,7 +436,69 @@ body {
       @include desktop{
         bottom: 250px;
       }
+      // MAN
+      .speach_bg{
+        .wrapper_1{
+          position: absolute;
+          width: 214px;
+          height: 120px;
+          top: -50px;
+          left: -48px;
+          transform: rotate(-206deg);
+          overflow: hidden;
+          .top_part{
+            width: 170px;
+            height: 93px;
+            position: absolute;
+            top: -43px;
+            left: 13px;
+            transform: rotate(29deg) skew(15deg,0deg);
+            border-radius: 20px 20px 20px 15px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+          }
+        }
+        .wrapper_2{
+          width: 214px;
+          height: 120px;
+          position: absolute;
+          top: 54px;
+          left: 11px;
+          transform: rotate(-26deg);
+          overflow: hidden;
+          .bottom_part{
+            width: 145px;
+            height: 88px;
+            position: absolute;
+            top: -48px;
+            left: 39px;
+            transform: rotate(26deg) skew(-9deg,0deg);
+            border-radius: 0 27px 9px 19px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+          }
+        }
+        .wrapper_3{
+          position: absolute;
+          width: 84px;
+          height: 80px;
+          top: 98px;
+          left: 39px;
+          overflow: hidden;
+          .arrow{
+            width: 41px;
+            height: 29px;
+            position: absolute;
+            top: -31px;
+            left: -11px;
+            transform: rotate(32deg) skew(61deg,0deg);
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,1);
+          }
+        }
+      }
       p {
+        position: relative;// MAN
         line-height: 3;
         text-transform: uppercase;
       }

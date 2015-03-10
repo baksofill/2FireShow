@@ -934,64 +934,96 @@ div.t4 {
 }
 
 /* line 7, _calendar.scss */
+.myPrev {
+  content: '';
+  background: url("../img/quote.png") no-repeat;
+  background-size: 100% 100%;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  left: -40px;
+  cursor: pointer;
+  top: 0;
+}
+
+/* line 19, _calendar.scss */
+.myNext {
+  content: '';
+  background: url("../img/quote.png") no-repeat;
+  transform: scaleX(-1.1);
+  background-size: 100% 100%;
+  width: 30px;
+  height: 100%;
+  position: absolute;
+  right: -40px;
+  top: 0;
+  cursor: pointer;
+}
+
+/* line 34, _calendar.scss */
+.table tbody tr:first-child {
+  display: none;
+}
+
+/* line 40, _calendar.scss */
 .bic_calendar a {
   text-decoration: none;
   color: #333;
   cursor: pointer;
 }
 
-/* line 13, _calendar.scss */
+/* line 46, _calendar.scss */
 .bic_calendar .table tbody > tr > td {
   text-align: center;
   padding: 0px;
 }
 
-/* line 18, _calendar.scss */
+/* line 51, _calendar.scss */
 .bic_calendar td div {
   padding: 5px;
 }
 
-/* line 26, _calendar.scss */
+/* line 59, _calendar.scss */
 .bic_calendar .header {
   padding: 10px 0 10px 0;
 }
 
-/* line 30, _calendar.scss */
+/* line 63, _calendar.scss */
 .bic_calendar .button-month-previous {
   padding: 5px;
   float: left;
 }
 
-/* line 35, _calendar.scss */
+/* line 68, _calendar.scss */
 .bic_calendar .button-month-next {
   padding: 5px;
   float: right;
 }
 
-/* line 40, _calendar.scss */
+/* line 73, _calendar.scss */
 .bic_calendar .button-year-previous {
   padding: 5px;
   float: left;
 }
 
-/* line 45, _calendar.scss */
+/* line 78, _calendar.scss */
 .bic_calendar .button-year-next {
   padding: 5px;
   float: right;
 }
 
-/* line 50, _calendar.scss */
+/* line 83, _calendar.scss */
 .bic_calendar .monthAndYear {
   text-align: center;
   font-weight: 500;
 }
 
-/* line 55, _calendar.scss */
+/* line 88, _calendar.scss */
 .bic_calendar .days-month {
   font-weight: 500;
 }
 
-/* line 59, _calendar.scss */
+/* line 92, _calendar.scss */
 .bic_calendar .event {
   color: white;
   background: #3B5A97;
@@ -1002,29 +1034,33 @@ div.t4 {
   font-weight: bold;
 }
 
-/* line 69, _calendar.scss */
+/* line 102, _calendar.scss */
 .bic_calendar .event:hover {
   background: #3B5A97;
   text-shadow: 0 0 2px #000;
   box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.8);
 }
 
-/* line 75, _calendar.scss */
+/* line 108, _calendar.scss */
 .bic_calendar .event a {
   color: white;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
 }
 
-/* line 79, _calendar.scss */
+/* line 116, _calendar.scss */
 .bic_calendar .table {
   margin-bottom: 3px;
 }
 
-/* line 83, _calendar.scss */
+/* line 120, _calendar.scss */
 .bic_calendar .days-month td {
   background: #f0f0f0;
 }
 
-/* line 87, _calendar.scss */
+/* line 124, _calendar.scss */
 .bic_calendar .selection {
   background: rgba(141, 200, 230, 0.5);
   box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
@@ -1032,34 +1068,328 @@ div.t4 {
   -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-/* line 94, _calendar.scss */
+/* line 131, _calendar.scss */
 .bic_calendar .first-selection {
   border-radius: 6px 0 0 6px;
   border-right: 0;
 }
 
-/* line 99, _calendar.scss */
+/* line 136, _calendar.scss */
 .bic_calendar .last-selection {
   border-radius: 0 6px 6px 0;
   border-left: 0;
 }
 
-/* line 104, _calendar.scss */
+/* line 141, _calendar.scss */
 .bic_calendar .middle-selection {
   border-left: 0;
   border-right: 0;
   border-radius: 0;
 }
 
-/* line 110, _calendar.scss */
+/* line 147, _calendar.scss */
 .bic_calendar .popover {
   color: #000;
   text-shadow: none;
 }
 
-/* line 115, _calendar.scss */
+/* line 152, _calendar.scss */
 .bic_calendar .popover-content {
   font-weight: 300;
+}
+
+/* line 156, _calendar.scss */
+.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.4;
+  visibility: visible;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+/* line 169, _calendar.scss */
+.tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9;
+}
+
+/* line 174, _calendar.scss */
+.tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px;
+}
+
+/* line 179, _calendar.scss */
+.tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px;
+}
+
+/* line 184, _calendar.scss */
+.tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px;
+}
+
+/* line 189, _calendar.scss */
+.tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px;
+}
+
+/* line 194, _calendar.scss */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 4px;
+}
+
+/* line 204, _calendar.scss */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 212, _calendar.scss */
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 220, _calendar.scss */
+.tooltip.top-left .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 228, _calendar.scss */
+.tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000;
+}
+
+/* line 236, _calendar.scss */
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000;
+}
+
+/* line 244, _calendar.scss */
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000;
+}
+
+/* line 252, _calendar.scss */
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* line 260, _calendar.scss */
+.tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* line 268, _calendar.scss */
+.tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000;
+}
+
+/* line 276, _calendar.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 300, _calendar.scss */
+.popover.top {
+  margin-top: -10px;
+}
+
+/* line 304, _calendar.scss */
+.popover.right {
+  margin-left: 10px;
+}
+
+/* line 308, _calendar.scss */
+.popover.bottom {
+  margin-top: 10px;
+}
+
+/* line 312, _calendar.scss */
+.popover.left {
+  margin-left: -10px;
+}
+
+/* line 316, _calendar.scss */
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0;
+}
+
+/* line 325, _calendar.scss */
+.popover-content {
+  padding: 9px 14px;
+}
+
+/* line 329, _calendar.scss */
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+/* line 339, _calendar.scss */
+.popover > .arrow {
+  border-width: 11px;
+}
+
+/* line 343, _calendar.scss */
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px;
+}
+
+/* line 348, _calendar.scss */
+.popover.top > .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0;
+}
+
+/* line 357, _calendar.scss */
+.popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0;
+}
+
+/* line 365, _calendar.scss */
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0;
+}
+
+/* line 374, _calendar.scss */
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0;
+}
+
+/* line 382, _calendar.scss */
+.popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 391, _calendar.scss */
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff;
+}
+
+/* line 399, _calendar.scss */
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+
+/* line 408, _calendar.scss */
+.popover.left > .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff;
 }
 
 /* line 11, main.scss */

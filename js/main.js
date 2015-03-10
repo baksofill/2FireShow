@@ -114,8 +114,8 @@ $(document).ready(function(){
                 link: 'http://bic.cat',
                 linkTarget: '_blank',
                 color: '',
-                content: '<img src="http://gettingcontacts.com/upload/jornadas/sport-wellness_portada.png" ><br>06-11-2013 - 09:00 <br> Tecnocampus Mataró Auditori',
-                class: '',
+                content: 'Два заказа, <br>один на выезде, <br>другой в городе ',
+                class: 'tripleOutdore',
                 displayMonthController: true,
                 displayYearController: true,
                 nMonths: 6

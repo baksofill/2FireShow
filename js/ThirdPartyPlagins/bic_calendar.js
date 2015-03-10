@@ -124,7 +124,7 @@ $.fn.bic_calendar = function (options) {
             showMonthDays(month, year);
 
             //next-previous month controllers
-            var nextMonthButton = $('<td><a href="#" class="button-month-next"><i class="glyphicon glyphicon-arrow-right" ></i></a></td>');
+            var nextMonthButton = $('.myNext'); //<td><a href="#" class="button-month-next"><i class="glyphicon glyphicon-arrow-right" ></i></a></td>
             //event
             nextMonthButton.click(function (e) {
                 e.preventDefault();
@@ -133,7 +133,7 @@ $.fn.bic_calendar = function (options) {
                     year++;
                 changeDate(month, year);
             })
-            var previousMonthButton = $('<td><a href="#" class="button-month-previous"><i class="glyphicon glyphicon-arrow-left" ></i></a></td>');
+            var previousMonthButton = $('.myPrev'); //<td><a href="#" class="button-month-previous"><i class="glyphicon glyphicon-arrow-left" ></i></a></td>
             //event
             previousMonthButton.click(function (e) {
                 e.preventDefault();
@@ -434,13 +434,13 @@ $.fn.bic_calendar = function (options) {
                     }
                 }
             }
-
+            /* my code */
             $('#' + calendarId + ' ' + '.event_tooltip a').tooltip(tooltipOptions);
             $('#' + calendarId + ' ' + '.event_popover a').popover(popoverOptions);
 
-            $('.manual_popover').click(function () {
+            /*$('.manual_popover').click(function () {
                 $(this).popover('toggle');
-            });
+             });*/
         }
 
         /**

@@ -41,7 +41,7 @@ $(document).ready(function(){
         anchors: ['main', 'programs', 'artistes', 'сalendar', 'feedback'],
         sectionsColor: ['#000', 'green', '#ee005a', '#39C', 'blue'],
         navigation: {
-            'position': 'right',
+            'position': 'left',
             'tooltips': ['Винницкий Театр Огня', 'Программы', 'Артисты', 'Календарь', 'Отзывы']
         },
         afterRender: function () {
@@ -81,29 +81,20 @@ $(document).ready(function(){
 
     /* -------------  Parallax moving  -------------- */
     function paralax() {
-        $('.clouds ul li:nth-child(1)').plaxmove({ratioH: 0.05, ratioV: 0.1, reversed: true, invertH: false});
-        $('.clouds ul li:nth-child(2)').plaxmove({ratioH: 0.07, ratioV: 0.02, reversed: true, invertH: false});
-        $('.clouds ul li:nth-child(3)').plaxmove({ratioH: 0.1, ratioV: 0.05, invertV: true});
-        $('.clouds ul li:nth-child(4)').plaxmove({ratioH: 0.05, ratioV: 0.06, reversed: false, invertH: false});
+        $('.clouds ul li:nth-child(1)').plaxmove({ratioH: 0.01, ratioV: 0.05, reversed: true, invertH: false});
+        $('.clouds ul li:nth-child(2)').plaxmove({ratioH: 0.01, ratioV: 0.05, reversed: false, invertH: false});
+        $('.clouds ul li:nth-child(3)').plaxmove({ratioH: 0.03, ratioV: 0.09, invertV: true});
+        $('.clouds ul li:nth-child(4)').plaxmove({ratioH: 0.06, ratioV: 0.15, reversed: false, invertH: false});
 
     }
     paralax();
     /* -------------  Parallax moving END -------------- */
 
-    /* -------------  Lightbox  -------------- */
-    function LightBox() {
-        $('.imgOM a').lightBox({fixedNavigation: true});
-        $('.imgUA a').lightBox({fixedNavigation: true});
-        $('.imgGAV a').lightBox({fixedNavigation: true});
-    }
-
-    LightBox();
-    /* -------------  Lightbox END -------------- */
 
     /* -------------  Calendar -------------- */
 
-    function cal() {
-        var monthNames = ["Gener", "Февраль", "Март", "Апрель", "Май", "Juny", "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Dicembre"];
+    function calendar() {
+        var monthNames = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
         var dayNames = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
 
@@ -111,10 +102,10 @@ $(document).ready(function(){
             {
                 date: "8/3/2015",
                 title: 'SPORT & WELLNESS',
-                link: 'http://bic.cat',
+                link: '',
                 linkTarget: '_blank',
                 color: '',
-                content: 'Два заказа, <br>один на выезде, <br>другой в городе ',
+                content: 'Два заказа, один на выезде, другой в городе ',
                 class: 'tripleOutdore',
                 displayMonthController: true,
                 displayYearController: true,
@@ -128,7 +119,7 @@ $(document).ready(function(){
             //enable select
             enableSelect: true,
             //enable multi-select
-            multiSelect: true,
+            multiSelect: false,
             //set day names
             dayNames: dayNames,
             //set month names
@@ -138,16 +129,16 @@ $(document).ready(function(){
             //show month controller
             displayMonthController: true,
             //show year controller
-            displayYearController: true,
+            displayYearController: false,
             //set ajax call
             reqAjax: {
                 type: 'get',
-                url: 'http://bic.cat/bic_calendar/index.php'
+                url: './js/someJSON/events.json'  // /js/someJSON/events.json   //http://bic.cat/bic_calendar/index.php
             }
         });
     }
 
-    cal();
+    calendar();
 
     /* -------------  Calendar END -------------- */
 

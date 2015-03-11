@@ -1,0 +1,29 @@
+[
+  {
+    "date": "20/3/2015",
+    "title": "Getting Contacts Barcelona - test1",
+    "content": "один заказ в Виннице",
+    "color": "red",
+    "class": "doubleOutdore"
+  },
+  {
+    "date": "25\/5\/2015",
+    "title": "test2",
+    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
+    "color": "pink"
+  },
+  {
+    "date": "20\/6\/2015",
+    "title": "test2",
+    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
+    "color": "green"
+  },
+  {
+    "date": "7\/10\/2015",
+    "title": "test3",
+    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
+    "color": "blue",
+    "class": "miclasse ",
+    "content": "contingut popover<img src=\"http:\/\/gettingcontacts.com\/upload\/news\/estiu_productiu.png"
+  }
+]

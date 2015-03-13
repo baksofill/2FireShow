@@ -1,7 +1,9 @@
+// outDor  doubleOutDor  tripleOutDor        inVinn    doubleVinn   tripleVinn  vacation
+
 [
   {
     "date": "20/3/2015",
-    "title": "Getting Contacts Barcelona - test1",
+    "title": "Заказ по городу",
     "content": "один заказ в Виннице",
     "color": "red",
     "class": "doubleOutdore"

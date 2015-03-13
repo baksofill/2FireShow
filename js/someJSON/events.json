@@ -1,15 +1,36 @@
-// outDor  doubleOutDor  tripleOutDor        inVinn    doubleVinn   tripleVinn  vacation
+
 
 [
   {
-    "date": "20/3/2015",
+    "date": "19/3/2015",
     "title": "Заказ по городу",
-    "content": "один заказ в Виннице",
+    "content": "Заказ по городу<br> ГОСТЕВИЯ ОМ Прайм, Корпоратив <br> Время сбора в 20:00 ",
     "color": "red",
-    "class": "doubleOutdore"
+    "class": "inVinn  /*outDor  doubleOutDor  tripleOutDor        inVinn    doubleVinn   tripleVinn  vacation*/"
   },
   {
-    "date": "25\/5\/2015",
+    "date": "20/3/2015",
+    "title": "Заказ по городу",
+    "content": "Заказ по городу<br> ГОСТЫННИЙ ПАН ОМ Прайм, День рождения 30 лет <br> Время сбора в 19:30 ",
+    "color": "red",
+    "class": "inVinn "
+  },
+  {
+    "date": "25/4/2015",
+    "title": "Заказ на выезде",
+    "content": "Заказ на выезде<br> г.Гайсын СПУТНИК ОМ Гранд, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО ",
+    "color": "red",
+    "class": "outDor"
+  },
+  {
+    "date": "26/4/2015",
+    "title": "2 заказа по городу",
+    "content": "2 заказа по городу<br>  ВАГНЕС ОМ Прайм, Свадьба <br> ДУБОВЫЙ ГАЙ Украина, Корпоратив <br> Время сбора 19:30",
+    "color": "red",
+    "class": "doubleVinn"
+  },
+  {
+    "date": "25/5/2015",
     "title": "test2",
     "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
     "color": "pink"

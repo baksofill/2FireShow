@@ -1,7 +1,6 @@
 $(document).ready(function(){
     var readMoreFlag = 0;
 
-
     /*$.when($.getJSON('./js/errors_en.json'), $.getJSON('./js/game_en.json'), $.getJSON('./js/messagesCore_ru.json'))
         .done(function (dataErrors, dataGame, dataCommon) {
             var messege = {};
@@ -100,12 +99,12 @@ $(document).ready(function(){
 
         var events = [
             {
-                date: "8/3/2015",
-                title: 'SPORT & WELLNESS',
+                date: "8/3/2013",
+                title: 'Двойной заказ',
                 link: '',
                 linkTarget: '_blank',
                 color: '',
-                content: 'Два заказа, один на выезде, другой в городе ',
+                //content: 'Два заказа, один на выезде, другой в городе ',
                 class: 'tripleOutdore',
                 displayMonthController: true,
                 displayYearController: true,

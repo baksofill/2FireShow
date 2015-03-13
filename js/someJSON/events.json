@@ -1,12 +1,10 @@
-
-
 [
   {
     "date": "19/3/2015",
     "title": "Заказ по городу",
     "content": "Заказ по городу<br> ГОСТЕВИЯ ОМ Прайм, Корпоратив <br> Время сбора в 20:00 ",
     "color": "red",
-    "class": "inVinn  /*outDor  doubleOutDor  tripleOutDor        inVinn    doubleVinn   tripleVinn  vacation*/"
+    "class": "outDor  doubleOutDor  tripleOutDor        inVinn    doubleVinn   tripleVinn  vacation"
   },
   {
     "date": "20/3/2015",
@@ -14,6 +12,27 @@
     "content": "Заказ по городу<br> ГОСТЫННИЙ ПАН ОМ Прайм, День рождения 30 лет <br> Время сбора в 19:30 ",
     "color": "red",
     "class": "inVinn "
+  },
+  {
+    "date": "21/3/2015",
+    "title": "Заказ по городу",
+    "content": "Свадебная выставка<br> МЕГАМОЛЛ ",
+    "color": "blue",
+    "class": "inVinn "
+  },
+  {
+    "date": "22/3/2015",
+    "title": "Заказ по городу",
+    "content": "Свадебная выставка<br> МЕГАМОЛЛ ",
+    "color": "blue",
+    "class": "inVinn "
+  },
+  {
+    "date": "19/4/2015",
+    "title": "Заказ на выезде",
+    "content": "Заказ на выезде<br> г.Капустяны ОМ Прайм, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО ",
+    "color": "red",
+    "class": "outDor"
   },
   {
     "date": "25/4/2015",
@@ -26,27 +45,84 @@
     "date": "26/4/2015",
     "title": "2 заказа по городу",
     "content": "2 заказа по городу<br>  ВАГНЕС ОМ Прайм, Свадьба <br> ДУБОВЫЙ ГАЙ Украина, Корпоратив <br> Время сбора 19:30",
-    "color": "red",
+    "color": "green",
     "class": "doubleVinn"
   },
   {
-    "date": "25/5/2015",
-    "title": "test2",
-    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
-    "color": "pink"
+    "date": "2/5/2015",
+    "title": "Заказ по городу",
+    "content": "Заказ по городу<br> ОМ Прайм, Свадьба <br> Время сбора в 19:45 ",
+    "color": "red",
+    "class": "inVinn"
   },
   {
-    "date": "20\/6\/2015",
-    "title": "test2",
-    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
-    "color": "green"
+    "date": "10/5/2015",
+    "title": "2 заказа на выезде",
+    "content": "2 заказа на выезде<br>  БЕРЕЗКИ ОМ Прайм, Свадьба <br> РОССОХА ОМ Прайм, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО",
+    "color": "green",
+    "class": "doubleOutDor"
   },
   {
-    "date": "7\/10\/2015",
-    "title": "test3",
-    "link": "http:\/\/gettingcontacts.com\/events\/view\/barcelona",
-    "color": "blue",
-    "class": "miclasse ",
-    "content": "contingut popover<img src=\"http:\/\/gettingcontacts.com\/upload\/news\/estiu_productiu.png"
+    "date": "17/5/2015",
+    "title": "Заказ на выезде",
+    "content": "Заказ на выезде<br> г.Тульчин ДОБРЯНА ОМ Гранд, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО ",
+    "color": "red",
+    "class": "outDor"
+  },
+  {
+    "date": "30/5/2015",
+    "title": "Заказ на выезде",
+    "content": "Заказ на выезде<br> ЛАНЫ ОМ Прайм, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО ",
+    "color": "red",
+    "class": "outDor"
+  },
+  {
+    "date": "6/6/2015",
+    "title": "2 заказа на выезде",
+    "content": "2 заказа на выезде<br>  г. Хмельник Украина, Свадьба <br> г. Писаревка ПАН ОТАМАН, Свадьба <br> Время сбора НЕОПРЕДЕЛЕННО",
+    "color": "green",
+    "class": "doubleOutDor"
+  },
+  {
+    "date": "20/6/2015",
+    "title": "2 заказа по городу",
+    "content": "2 заказа по городу<br>  ШЕХЕРИЗАДА ОМ Гранд, Свадьба <br> Украина, Свадьба <br> Время сбора 18:30",
+    "color": "green",
+    "class": "doubleVinn"
+  },
+  {
+    "date": "12/7/2015",
+    "title": "2 заказа по городу",
+    "content": "2 заказа по городу<br>  СКАЗКА ОМ Прайм, Свадьба <br> ДУБОВЫЙ ГАЙ Новая, Свадьба <br> Время сбора 20:30",
+    "color": "green",
+    "class": "doubleVinn"
+  },
+  {
+    "date": "24/7/2015",
+    "title": "Заказ по городу",
+    "content": "Заказ по городу<br> ШЕХЕРИЗАДА ОМ Гранд, Свадьба <br> Время сбора в 19:00 ",
+    "color": "red",
+    "class": "inVinn"
+  },
+  {
+    "date": "25/7/2015",
+    "title": "Заказ по городу",
+    "content": "Заказ по городу<br> СКАЗКА ОМ Гранд, Свадьба <br> Время сбора в 20:00 ",
+    "color": "red",
+    "class": "inVinn"
+  },
+  {
+    "date": "1/8/2015",
+    "title": "2 заказа по городу",
+    "content": "2 заказа по городу<br>  ПРЕСТИЖ ХОЛЛ ОМ Гранд, Свадьба <br> ГОСТЕВИЯ ОМ Прайм, Свадьба <br> Время сбора НЕОПРЕДЕЛЕНО",
+    "color": "green",
+    "class": "doubleVinn"
+  },
+  {
+    "date": "5/9/2015",
+    "title": "Заказ по городу",
+    "content": "Заказ по городу<br> МЕД ПОДИЛЛЯ ОМ Гранд, Свадьба <br> Время сбора в 18:30 ",
+    "color": "red",
+    "class": "inVinn"
   }
 ]

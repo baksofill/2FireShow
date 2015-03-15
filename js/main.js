@@ -37,7 +37,7 @@ $(document).ready(function(){
     /* -------------  Main Vertical Slider for navigation -------------- */
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['main', 'programs', 'artistes', 'сalendar', 'feedback'],
+        anchors: ['main', 'programs', 'artistes', 'calendar', 'feedback'],
         sectionsColor: ['#000', 'green', '#ee005a', '#39C', 'blue'],
         navigation: {
             'position': 'left',
@@ -75,8 +75,21 @@ $(document).ready(function(){
 
     });
 
+    /* -------------  Hiding END -------------- */
 
-    /* -------------  Hiding ReadMore Text END -------------- */
+
+    /* -------------  flipBTN Text -------------- */
+    $('.artistCard > .artistBtn').click(function () {
+        if ($(".card").hasClass('flip')) {
+            $(".card").removeClass('flip');
+        } else {
+            $(".card").addClass('flip');
+
+        }
+
+    });
+
+    /* -------------  flipBTN  END -------------- */
 
     /* -------------  Parallax moving  -------------- */
     function paralax() {
@@ -138,6 +151,22 @@ $(document).ready(function(){
     }
 
     calendar();
+
+    var isShift = false;
+    $(document).keyup(function (e) {
+        if (e.which == 16) isShift = false;
+    }).keydown(function (e) {
+        if (e.which == 16) {
+            if ($('.popover-content').css('display') == 'none') {
+                $('.popover-content').show();
+                //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+            } else {
+                $('.popover-content').hide();
+                //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+            }
+            return false;
+        }
+    });
 
     /* -------------  Calendar END -------------- */
 

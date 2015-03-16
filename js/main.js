@@ -1,5 +1,4 @@
 $(document).ready(function(){
-    var readMoreFlag = 0;
 
     /*$.when($.getJSON('./js/errors_en.json'), $.getJSON('./js/game_en.json'), $.getJSON('./js/messagesCore_ru.json'))
         .done(function (dataErrors, dataGame, dataCommon) {

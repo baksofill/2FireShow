@@ -1172,29 +1172,72 @@ body {
   height: 100%;
   text-align: center;
 
+
+
+
   .artistCard {
-    top: 10%;
+    top: 10px;
     position: relative;
-    width: 250px;
-    height: 460px;
+    width: 100%;
+    height: 100px;
     display: inline-block;
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-    perspective: 600px;
-  }
-  .artistBtn {
-    position: absolute;
-    width: 250px;
-    color: #fff;
-    bottom: -50px;
-    cursor: pointer;
-    margin: 10px auto;
-    /*background-color: red;
-    padding: 5px 0px;
-    border: 1px solid #fff;*/
+    @include mobile-landscape{
+      width: 45%;
+    }
+    @include desktop{
+      top: 10%;
+      position: relative;
+      width: 250px;
+      height: 460px;
+      display: inline-block;
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective: 600px;
 
-  }
+    }
+    .artistBtn {
+      position: relative;
+      width: auto;
+      height: 80px;
+      line-height: 5;
+      text-align: center;
 
+      color: #fff;
+      @include mobile-landscape{
+        padding-left: 110px;
+      }
+      @include desktop{
+        position: absolute;
+        width: 250px;
+        color: #fff;
+        bottom: -50px;
+        cursor: pointer;
+        margin: 10px auto;
+        line-height: 1;
+        height: auto;
+        text-align: center;
+        padding-left: 0;
+
+      }
+      &:before{
+        content: '';
+        width: 80px;
+        height: 80px;
+        display: block;
+        position: absolute;
+        left: 80px;
+        background: url("../img/artistsAva.png") no-repeat;
+        background-size: 100% auto;
+        border-radius: 50%;
+        @include mobile-landscape{
+          left: 20px;
+        }
+        @include desktop{
+          display: none;
+        }
+      }
+    }
+  }
   .card {
     top: 0;
     left: 0;
@@ -1208,17 +1251,9 @@ body {
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
-    .artistBtn {
-      position: absolute;
-      width: 250px;
-      color: #fff;
-      bottom: -50px;
-      cursor: pointer;
-      margin: 10px auto;
-      /*background-color: red;
-      padding: 5px 0px;
-      border: 1px solid #fff;*/
-
+    display: none;
+    @include desktop{
+      display: block;
     }
     figure {
       width: 100%;
@@ -1268,21 +1303,33 @@ body {
     .back {
       background-position-y: -488px;
     }
+    .artistBtn:before{
+      background-position-y: -88px;
+    }
   }
   .pasha {
     .back {
       background-position-y: -1465px
+    }
+    .artistBtn:before{
+      background-position-y: -265px;
     }
   }
   .serg {
     .back {
       background-position-y: -977px;
     }
+    .artistBtn:before{
+      background-position-y: -352px;
+    }
   }
   .alina {
     .back {
       background-position-y: bottom;
 
+    }
+    .artistBtn:before{
+      background-position-y: -176px;
     }
   }
 

@@ -3,21 +3,9 @@ $gap: 90px;
 $count: 6;
 $time: 0.45s;
 $amount: 40px;
-/*
-.firstLoader {
-  content: '';
-  width: 32px;
-  height: 32px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -60px;
-  margin-left: -16px;
-  z-index: 100;
-  background-image: url("../img/loader.gif");
-}*/
 
-#center {
+
+#skypestyle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,68 +19,71 @@ $amount: 40px;
   color: #fff;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  @include desktop{
+    display: none;
+  }
+
+  .skype-loader {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+  .skype-loader .dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+
+    animation: 1.7s dotrotate cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
+    -webkit-animation: 1.7s dotrotate cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
+  }
+
+  .skype-loader .dot:nth-child(1) {
+    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
+  }
+
+  .skype-loader .dot:nth-child(2) {
+    animation-delay: 0.35s;
+    -webkit-animation-delay: 0.35s;
+  }
+
+  .skype-loader .dot:nth-child(3) {
+    animation-delay: 0.45s;
+    -webkit-animation-delay: 0.45s;
+  }
+
+  .skype-loader .dot:nth-child(4) {
+    animation-delay: 0.55s;
+    -webkit-animation-delay: 0.55s;
+  }
+
+  .skype-loader .dot:after, .skype-loader .dot .first {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -4px;
+  }
+
+  .skype-loader .dot .first {
+    background: red;
+    margin-top: -4px;
+    animation: 1.7s dotscale cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
+    animation-delay: 0.2s;
+    -webkit-animation: 1.7s dotscale cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
+    -webkit-animation-delay: 0.2s;
+  }
 }
 
-.skype-loader {
-  width: 80px;
-  height: 80px;
-  position: relative;
-  margin: auto;
-  margin-top: 60px;
-  margin-bottom: 70px;
-}
-
-.skype-loader .dot {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80px;
-  height: 80px;
-
-  animation: 1.7s dotrotate cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
-  -webkit-animation: 1.7s dotrotate cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
-}
-
-.skype-loader .dot:nth-child(1) {
-  animation-delay: 0.2s;
-  -webkit-animation-delay: 0.2s;
-}
-
-.skype-loader .dot:nth-child(2) {
-  animation-delay: 0.35s;
-  -webkit-animation-delay: 0.35s;
-}
-
-.skype-loader .dot:nth-child(3) {
-  animation-delay: 0.45s;
-  -webkit-animation-delay: 0.45s;
-}
-
-.skype-loader .dot:nth-child(4) {
-  animation-delay: 0.55s;
-  -webkit-animation-delay: 0.55s;
-}
-
-.skype-loader .dot:after, .skype-loader .dot .first {
-  content: "";
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  background: red;
-  border-radius: 50%;
-  left: 50%;
-  margin-left: -4px;
-
-}
-
-.skype-loader .dot .first {
-  background: red;
-  margin-top: -4px;
-  animation: 1.7s dotscale cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
-  animation-delay: 0.2s;
-  -webkit-animation: 1.7s dotscale cubic-bezier(0.775, 0.005, 0.310, 1.000) infinite;
-  -webkit-animation-delay: 0.2s;
-}
 
 @-webkit-keyframes dotrotate {
   from {
@@ -126,6 +117,38 @@ $amount: 40px;
   }
 }
 
+
+@keyframes dotrotate {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes dotscale {
+  0%, 10% {
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -4px;
+  }
+  50% {
+    width: 8px;
+    height: 8px;
+    margin-left: -4px;
+    margin-top: 0;
+  }
+  90%, 100% {
+    width: 16px;
+    height: 16px;
+    margin-left: -8px;
+    margin-top: -4px;
+  }
+}
 
 
 

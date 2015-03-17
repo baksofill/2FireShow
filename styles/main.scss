@@ -966,206 +966,6 @@ body {
   }
 }
 
-.mainCalendar {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-image: linear-gradient(-30deg, #FF2200, #FFD500);
-
-  h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-    top: 10%;
-    @include tablet {
-      font-size: 130%;
-    }
-  }
-
-  #calendari_lateral1 {
-    width: 230px;
-    margin: 0 auto;
-    top: 30%;
-    position: relative;
-
-    @include landscape {
-      width: 400px;
-      top: 10%;
-    }
-    @include tablet {
-      width: 600px;
-    }
-    @include tablet-landscape {
-      width: 700px;
-      top: 20%;
-    }
-    @include desktop {
-      width: 800px;
-    }
-
-    .table {
-      width: 100%;
-
-      tr {
-        @include tablet {
-          height: 50px;
-        }
-
-      }
-    }
-
-  }
-}
-
-.feedback {
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
-  & > div {
-    width: 300px;
-    overflow: hidden;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: 10px;
-    @include mobile-landscape {
-      width: 500px;
-    }
-    @include tablet {
-      width: 600px;
-    }
-    @include tablet-landscape {
-      width: 1000px;
-    }
-    @include desktop {
-      top: 10%;
-      width: 1000px;
-    }
-
-    #vk_comments {
-
-    }
-
-  }
-
-  .commentsVK, .commentsFB, .commentsG {
-    display: block;
-    margin: 0 auto;
-    height: 600px;
-    overflow: scroll;
-    text-align: center;
-
-    #vk_comments, #___comments_0 {
-      width: initial !important;
-    }
-  }
-  .wedComments {
-    width: 220px;
-    height: auto;
-    display: inline-table;
-    position: relative;
-    padding-left: 50px;
-    margin-top: 0px;
-    @include tablet {
-      width: 300px;
-      padding-left: 120px;
-      margin-top: 10px;
-      min-height: 100px;
-    }
-
-    &:before {
-      content: '';
-      width: 50px;
-      height: 50px;
-      overflow: hidden;
-      border-radius: 50%;
-      background: url("../img/comments/kula.jpg") no-repeat;
-      background-size: 100%;
-      position: absolute;
-      left: 0px;
-      @include tablet {
-        width: 100px;
-        height: 100px;
-      }
-    }
-    .quote {
-      position: relative;
-      display: inline-block;
-      text-indent: 30px;
-      @include mobile-landscape {
-        width: 400px;
-      }
-      .notForMobyle {
-        display: none;
-        @include tablet {
-          display: inline-block;
-        }
-      }
-
-      &:before {
-        content: '';
-        background: url("../img/quote.png") no-repeat;
-        width: 30px;
-        height: 20px;
-        background-size: 100%;
-        position: absolute;
-        left: 0px;
-
-      }
-      &:after {
-        content: '';
-        background: url("../img/quote.png") no-repeat;
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-        width: 30px;
-        height: 20px;
-        background-size: 100%;
-        position: absolute;
-        margin-right: 20px;
-
-      }
-
-    }
-
-    .commentsTitle {
-      display: block;
-      font-weight: bold;
-      font-style: italic;
-      margin: 5px;
-    }
-  }
-  .teren:before {
-    background: url("../img/comments/teren.jpg") no-repeat;
-    background-size: 100%;
-
-  }
-  .terel:before {
-    background: url("../img/comments/vadim.jpg") no-repeat;
-    background-size: 100%;
-  }
-  .slavko:before {
-    background: url("../img/comments/slavko.jpg") no-repeat;
-    background-size: 100%;
-  }
-  .poroh:before {
-    background: url("../img/comments/poroh.jpg") no-repeat;
-    background-size: 100%;
-  }
-  .homi:before {
-    background: url("../img/comments/homi.jpg") no-repeat;
-    background-size: 100%;
-  }
-  .stars:before {
-    background: url("../img/comments/stars.jpg") no-repeat;
-    background-size: 100%;
-    border: 1px solid grey;
-  }
-
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
 .artistes {
   background-image: linear-gradient(-90deg, #FFA200, #F600FF);
   width: 100%;
@@ -1337,3 +1137,225 @@ body {
 
 
 }
+
+.mainCalendar {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(-30deg, #FF2200, #FFD500);
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: 10%;
+    @include tablet {
+      font-size: 130%;
+    }
+  }
+
+  #calendari_lateral1 {
+    width: 230px;
+    margin: 0 auto;
+    top: 30%;
+    position: relative;
+
+    @include landscape {
+      width: 400px;
+      top: 10%;
+    }
+    @include tablet {
+      width: 600px;
+    }
+    @include tablet-landscape {
+      width: 700px;
+      top: 20%;
+    }
+    @include desktop {
+      width: 800px;
+    }
+
+    .table {
+      width: 100%;
+
+      tr {
+        @include tablet {
+          height: 50px;
+        }
+
+      }
+    }
+
+  }
+}
+
+.feedback {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
+  & > div {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 10px;
+    @include mobile-landscape {
+      width: 500px;
+    }
+    @include tablet {
+      width: 600px;
+    }
+    @include tablet-landscape {
+      width: 1000px;
+    }
+    @include desktop {
+      top: 10%;
+      width: 1000px;
+    }
+
+    #vk_comments {
+
+    }
+
+  }
+
+  .commentsVK, .commentsFB, .commentsG {
+    display: block;
+    margin: 0 auto;
+    height: 600px;
+    overflow: scroll;
+    text-align: center;
+
+    #vk_comments, #___comments_0 {
+      width: initial !important;
+    }
+  }
+  .wedComments {
+    width: 220px;
+    height: auto;
+    display: inline-table;
+    position: relative;
+    padding-left: 50px;
+    margin-top: 0px;
+    @include tablet {
+      width: 300px;
+      padding-left: 120px;
+      margin-top: 10px;
+      min-height: 100px;
+    }
+
+    &:before {
+      content: '';
+      width: 50px;
+      height: 50px;
+      overflow: hidden;
+      border-radius: 50%;
+      background: url("../img/comments/kula.jpg") no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 0px;
+      @include tablet {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    .quote {
+      position: relative;
+      display: inline-block;
+      text-indent: 30px;
+      @include mobile-landscape {
+        width: 400px;
+      }
+      .notForMobyle {
+        display: none;
+        @include tablet {
+          display: inline-block;
+        }
+      }
+
+      &:before {
+        content: '';
+        background: url("../img/quote.png") no-repeat;
+        width: 30px;
+        height: 20px;
+        background-size: 100%;
+        position: absolute;
+        left: 0px;
+
+      }
+      &:after {
+        content: '';
+        background: url("../img/quote.png") no-repeat;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        width: 30px;
+        height: 20px;
+        background-size: 100%;
+        position: absolute;
+        margin-right: 20px;
+
+      }
+
+    }
+
+    .commentsTitle {
+      display: block;
+      font-weight: bold;
+      font-style: italic;
+      margin: 5px;
+    }
+  }
+  .teren{
+    display: none;
+    &:before{
+      background: url("../img/comments/teren.jpg") no-repeat;
+      background-size: 100%;
+    }
+
+  }
+  .terel{
+    display: none;
+    &:before{
+      background: url("../img/comments/vadim.jpg") no-repeat;
+      background-size: 100%;
+    }
+  }
+  .slavko{
+    display: none;
+    &:before{
+      background: url("../img/comments/slavko.jpg") no-repeat;
+      background-size: 100%;
+    }
+
+  }
+  .poroh{
+    &:before{
+      background: url("../img/comments/poroh.jpg") no-repeat;
+      background-size: 100%;
+    }
+
+  }
+  .homi{
+    display: none;
+    &:before{
+      background: url("../img/comments/homi.jpg") no-repeat;
+      background-size: 100%;
+    }
+
+  }
+  .stars{
+    display: none;
+    &:before{
+      background: url("../img/comments/stars.jpg") no-repeat;
+      background-size: 100%;
+      border: 1px solid grey;
+    }
+
+  }
+
+}
+
+

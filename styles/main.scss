@@ -1000,11 +1000,18 @@ body {
       width: auto;
       height: 80px;
       line-height: 5;
-      text-align: center;
+      text-align: right;
+      padding-right: 30px;
+
 
       color: #fff;
       @include mobile-landscape{
-        padding-left: 110px;
+        text-align: right;
+      }
+      @include tablet {
+        text-align: center;
+        padding-right: 0;
+
       }
       @include desktop{
         position: absolute;
@@ -1102,6 +1109,7 @@ body {
   .me {
     .back {
       background-position-y: -488px;
+      background-position-x: 0px;
     }
     .artistBtn:before{
       background-position-y: -88px;
@@ -1109,7 +1117,8 @@ body {
   }
   .pasha {
     .back {
-      background-position-y: -1465px
+      background-position-y: -1465px;
+      background-position-x: 0px;
     }
     .artistBtn:before{
       background-position-y: -265px;
@@ -1117,7 +1126,8 @@ body {
   }
   .serg {
     .back {
-      background-position-y: -977px;
+      //      background-position-y: -977px;
+      background-position: 0px -977px;
     }
     .artistBtn:before{
       background-position-y: -352px;
@@ -1126,6 +1136,7 @@ body {
   .alina {
     .back {
       background-position-y: bottom;
+      background-position-x: 0px;
 
     }
     .artistBtn:before{

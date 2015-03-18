@@ -244,22 +244,22 @@ body {
           position: relative;
           line-height: 2.4;
           &:nth-child(1) > a:before {
-            background-position-x: -75px;
+            background-position: -75px 0;
           }
           &:nth-child(2) > a:before {
-            background-position-x: -142px;
+            background-position: -142px 0;
           }
           &:nth-child(3) > a:before {
-            background-position-x: -238px;
+            background-position: -238px 0;
           }
           &:nth-child(4) > a:before {
-            background-position-x: -176px;
+            background-position: -176px 0;
           }
           &:nth-child(10) > a:before {
-            background-position-x: -113px;
+            background-position: -113px 0;
           }
           &:nth-child(5) > a:before {
-            background-position-x: -203px;
+            background-position: -203px 0;
           }
 
           @include mobile-landscape {
@@ -284,7 +284,7 @@ body {
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;
                 background-size: 350px auto;
-                background-position-x: -8px;
+                background-position: -8px 0;
 
               }
               @include desktop {
@@ -622,18 +622,18 @@ body {
             margin-right: 10px;
             position: relative;
             &:nth-child(2) {
-              background-position-y: -65px;
+              background-position: 0 -65px;
               -webkit-transform: rotate(-10deg);
               transform: rotate(-10deg);
               top: 20px;
             }
             &:nth-child(3) {
-              background-position-y: -130px;
+              background-position: 0 -130px;
               -webkit-transform: rotate(-3deg);
               transform: rotate(-3deg);
             }
             &:nth-child(4) {
-              background-position-y: -195px;
+              background-position: 0px -195px;
               top: 15px;
               -webkit-transform: rotate(5deg);
               transform: rotate(5deg);
@@ -1108,8 +1108,7 @@ body {
 
   .me {
     .back {
-      background-position-y: -488px;
-      background-position-x: 0px;
+      background-position: 0px -488px;
     }
     .artistBtn:before{
       background-position-y: -88px;
@@ -1117,8 +1116,7 @@ body {
   }
   .pasha {
     .back {
-      background-position-y: -1465px;
-      background-position-x: 0px;
+      background-position: 0px -1465px;
     }
     .artistBtn:before{
       background-position-y: -265px;
@@ -1135,9 +1133,7 @@ body {
   }
   .alina {
     .back {
-      background-position-y: bottom;
-      background-position-x: 0px;
-
+      background-position: 0px bottom;
     }
     .artistBtn:before{
       background-position-y: -176px;

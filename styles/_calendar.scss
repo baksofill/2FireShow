@@ -412,22 +412,23 @@
 }
 
 .doubleVinn:before {
-  background-position-y: -35px;
+  background-position: 0 -35px;
 }
 
 .tripleVinn:before {
-  background-position-y: -70px;
+  background-position: 0 -70px;
 }
 
 .outDor:before {
-  background-position-y: -105px;
+  background-position: 0 -105px;
 }
 
 .doubleOutDor:before {
-  background-position-y: -140px;
+  background-position: 0 -140px;
 }
 
 .vacation:before {
-  background-position-y: -175px;
+  background-position: 0 -175px;
+
   height: 35px;
 }

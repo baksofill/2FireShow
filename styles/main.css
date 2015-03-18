@@ -1554,27 +1554,27 @@ div.t4 {
 
 /* line 414, _calendar.scss */
 .doubleVinn:before {
-  background-position-y: -35px;
+  background-position: 0 -35px;
 }
 
 /* line 418, _calendar.scss */
 .tripleVinn:before {
-  background-position-y: -70px;
+  background-position: 0 -70px;
 }
 
 /* line 422, _calendar.scss */
 .outDor:before {
-  background-position-y: -105px;
+  background-position: 0 -105px;
 }
 
 /* line 426, _calendar.scss */
 .doubleOutDor:before {
-  background-position-y: -140px;
+  background-position: 0 -140px;
 }
 
 /* line 430, _calendar.scss */
 .vacation:before {
-  background-position-y: -175px;
+  background-position: 0 -175px;
   height: 35px;
 }
 
@@ -1870,27 +1870,27 @@ body {
 }
 /* line 246, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(1) > a:before {
-  background-position-x: -75px;
+  background-position: -75px 0;
 }
 /* line 249, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(2) > a:before {
-  background-position-x: -142px;
+  background-position: -142px 0;
 }
 /* line 252, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(3) > a:before {
-  background-position-x: -238px;
+  background-position: -238px 0;
 }
 /* line 255, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(4) > a:before {
-  background-position-x: -176px;
+  background-position: -176px 0;
 }
 /* line 258, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(10) > a:before {
-  background-position-x: -113px;
+  background-position: -113px 0;
 }
 /* line 261, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(5) > a:before {
-  background-position-x: -203px;
+  background-position: -203px 0;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
   /* line 241, main.scss */
@@ -1917,7 +1917,7 @@ body {
     display: block;
     background: url("../img/menuIcons.png") no-repeat;
     background-size: 350px auto;
-    background-position-x: -8px;
+    background-position: -8px 0;
   }
 }
 @media only screen and (min-width: 1280px) and (min-width: 1280px) {
@@ -2315,20 +2315,20 @@ body {
   }
   /* line 624, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(2) {
-    background-position-y: -65px;
+    background-position: 0 -65px;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
     top: 20px;
   }
   /* line 630, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(3) {
-    background-position-y: -130px;
+    background-position: 0 -130px;
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
   /* line 635, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(4) {
-    background-position-y: -195px;
+    background-position: 0px -195px;
     top: 15px;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
@@ -2781,7 +2781,6 @@ body {
     text-align: right;
   }
 }
-
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
   /* line 998, main.scss */
   .artistes .artistCard .artistBtn {
@@ -2804,7 +2803,6 @@ body {
     padding-left: 0;
   }
 }
-
 /* line 1029, main.scss */
 .artistes .artistCard .artistBtn:before {
   content: '';
@@ -2829,7 +2827,6 @@ body {
     display: none;
   }
 }
-
 /* line 1048, main.scss */
 .artistes .card {
   top: 0;
@@ -2852,7 +2849,6 @@ body {
     display: block;
   }
 }
-
 /* line 1065, main.scss */
 .artistes .card figure {
   width: 100%;
@@ -2865,13 +2861,11 @@ body {
   margin: 0;
   border-radius: 5px;
 }
-
 /* line 1076, main.scss */
 .artistes .card .back {
   background: url("../img/artists.png") no-repeat;
   background-size: 100% auto;
 }
-
 /* line 1080, main.scss */
 .artistes .card .front {
   background-color: #fff;
@@ -2881,7 +2875,6 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 /* line 1087, main.scss */
 .artistes .card .front .artistsText {
   position: absolute;
@@ -2889,13 +2882,11 @@ body {
   line-height: 1.5;
   text-align: justify;
 }
-
 /* line 1093, main.scss */
 .artistes .card .front .artistsText .bold {
   font-weight: bold;
   color: red;
 }
-
 /* line 1101, main.scss */
 .artistes .card.flip, .artistes .card:hover {
   -webkit-transform: rotateY(180deg);
@@ -2904,51 +2895,47 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
 /* line 1110, main.scss */
 .artistes .me .back {
-  background-position-y: -488px;
-  background-position-x: 0px;
+  background-position: 0px -488px;
 }
 
-/* line 1114, main.scss */
+/* line 1113, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
 
-/* line 1119, main.scss */
+/* line 1118, main.scss */
 .artistes .pasha .back {
-  background-position-y: -1465px;
-  background-position-x: 0px;
+  background-position: 0px -1465px;
 }
 
-/* line 1123, main.scss */
+/* line 1121, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
 
-/* line 1128, main.scss */
+/* line 1126, main.scss */
 .artistes .serg .back {
   background-position: 0px -977px;
 }
 
-/* line 1132, main.scss */
+/* line 1130, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
 
-/* line 1137, main.scss */
+/* line 1135, main.scss */
 .artistes .alina .back {
-  background-position-y: bottom;
-  background-position-x: 0px;
+  background-position: 0px bottom;
 }
 
-/* line 1142, main.scss */
+/* line 1138, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
 }
 
-/* line 1152, main.scss */
+/* line 1148, main.scss */
 .mainCalendar {
   width: 100%;
   height: 100%;
@@ -2956,7 +2943,7 @@ body {
   background-image: linear-gradient(-30deg, #FF2200, #FFD500);
 }
 
-/* line 1158, main.scss */
+/* line 1154, main.scss */
 .mainCalendar h1 {
   text-align: center;
   text-transform: uppercase;
@@ -2965,13 +2952,13 @@ body {
   top: 10%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1158, main.scss */
+  /* line 1154, main.scss */
   .mainCalendar h1 {
     font-size: 130%;
   }
 }
 
-/* line 1169, main.scss */
+/* line 1165, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
   margin: 0 auto;
@@ -2979,44 +2966,44 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 1169, main.scss */
+  /* line 1165, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 400px;
     top: 10%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1169, main.scss */
+  /* line 1165, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1169, main.scss */
+  /* line 1165, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 700px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1169, main.scss */
+  /* line 1165, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 800px;
   }
 }
 
-/* line 1190, main.scss */
+/* line 1186, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1193, main.scss */
+  /* line 1189, main.scss */
   .mainCalendar #calendari_lateral1 .table tr {
     height: 50px;
   }
 }
 
-/* line 1204, main.scss */
+/* line 1200, main.scss */
 .feedback {
   width: 100%;
   height: 100%;
@@ -3024,7 +3011,7 @@ body {
   background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
 }
 
-/* line 1209, main.scss */
+/* line 1205, main.scss */
 .feedback > div {
   width: 300px;
   overflow: hidden;
@@ -3034,32 +3021,32 @@ body {
   top: 10px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1209, main.scss */
+  /* line 1205, main.scss */
   .feedback > div {
     width: 500px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1209, main.scss */
+  /* line 1205, main.scss */
   .feedback > div {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1209, main.scss */
+  /* line 1205, main.scss */
   .feedback > div {
     width: 1000px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1209, main.scss */
+  /* line 1205, main.scss */
   .feedback > div {
     top: 10%;
     width: 1000px;
   }
 }
 
-/* line 1236, main.scss */
+/* line 1232, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
   margin: 0 auto;
@@ -3068,12 +3055,12 @@ body {
   text-align: center;
 }
 
-/* line 1243, main.scss */
+/* line 1239, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
 
-/* line 1247, main.scss */
+/* line 1243, main.scss */
 .feedback .wedComments {
   width: 220px;
   height: auto;
@@ -3083,7 +3070,7 @@ body {
   margin-top: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1247, main.scss */
+  /* line 1243, main.scss */
   .feedback .wedComments {
     width: 300px;
     padding-left: 120px;
@@ -3092,7 +3079,7 @@ body {
   }
 }
 
-/* line 1261, main.scss */
+/* line 1257, main.scss */
 .feedback .wedComments:before {
   content: '';
   width: 50px;
@@ -3105,38 +3092,38 @@ body {
   left: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1261, main.scss */
+  /* line 1257, main.scss */
   .feedback .wedComments:before {
     width: 100px;
     height: 100px;
   }
 }
 
-/* line 1276, main.scss */
+/* line 1272, main.scss */
 .feedback .wedComments .quote {
   position: relative;
   display: inline-block;
   text-indent: 30px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1276, main.scss */
+  /* line 1272, main.scss */
   .feedback .wedComments .quote {
     width: 400px;
   }
 }
 
-/* line 1283, main.scss */
+/* line 1279, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1283, main.scss */
+  /* line 1279, main.scss */
   .feedback .wedComments .quote .notForMobyle {
     display: inline-block;
   }
 }
 
-/* line 1290, main.scss */
+/* line 1286, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3147,7 +3134,7 @@ body {
   left: 0px;
 }
 
-/* line 1300, main.scss */
+/* line 1296, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3160,7 +3147,7 @@ body {
   margin-right: 20px;
 }
 
-/* line 1315, main.scss */
+/* line 1311, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
   font-weight: bold;
@@ -3168,62 +3155,62 @@ body {
   margin: 5px;
 }
 
-/* line 1322, main.scss */
+/* line 1318, main.scss */
 .feedback .teren {
   display: none;
 }
 
-/* line 1324, main.scss */
+/* line 1320, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 1330, main.scss */
+/* line 1326, main.scss */
 .feedback .terel {
   display: none;
 }
 
-/* line 1332, main.scss */
+/* line 1328, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 1337, main.scss */
+/* line 1333, main.scss */
 .feedback .slavko {
   display: none;
 }
 
-/* line 1339, main.scss */
+/* line 1335, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 1346, main.scss */
+/* line 1342, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 1352, main.scss */
+/* line 1348, main.scss */
 .feedback .homi {
   display: none;
 }
 
-/* line 1354, main.scss */
+/* line 1350, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
 
-/* line 1360, main.scss */
+/* line 1356, main.scss */
 .feedback .stars {
   display: none;
 }
 
-/* line 1362, main.scss */
+/* line 1358, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;

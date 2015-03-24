@@ -68,14 +68,14 @@
   top: 17px;
 }
 
-/* line 62, _pagePiling.scss */
+/* line 63, _pagePiling.scss */
 #pp-nav ul,
 .pp-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 68, _pagePiling.scss */
+/* line 69, _pagePiling.scss */
 #pp-nav li,
 .pp-slidesNav li {
   display: block;
@@ -90,7 +90,7 @@
   display: inline-block;
 }
 
-/* line 81, _pagePiling.scss */
+/* line 82, _pagePiling.scss */
 #pp-nav li a,
 .pp-slidesNav li a {
   display: block;
@@ -102,13 +102,13 @@
   text-decoration: none;
 }
 
-/* line 92, _pagePiling.scss */
+/* line 93, _pagePiling.scss */
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   background: #333;
 }
 
-/* line 97, _pagePiling.scss */
+/* line 98, _pagePiling.scss */
 #pp-nav span,
 .pp-slidesNav span {
   top: 2px;
@@ -117,7 +117,7 @@
   height: 8px;
   border: 1px solid #000;
   box-shadow: 1px 1px #999;
-  background: transparent;
+  background: rgba(0, 0, 0, 0);
   border-radius: 50%;
   position: absolute;
   z-index: 1;
@@ -147,7 +147,7 @@
 @CHARSET "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
-/* line 132, _pagePiling.scss */
+/* line 133, _pagePiling.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 form, fieldset, input, textarea, p, blockquote, th, td {
   padding: 0;
@@ -301,28 +301,37 @@ abbr, acronym {
 }
 
 @-webkit-keyframes dotrotate {
+  /* line 89, _preloader.scss */
   from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 93, _preloader.scss */
   to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
 }
+
 @-webkit-keyframes dotscale {
+  /* line 100, _preloader.scss */
   0%, 10% {
     width: 16px;
     height: 16px;
     margin-left: -8px;
     margin-top: -4px;
   }
+
+  /* line 106, _preloader.scss */
   50% {
     width: 8px;
     height: 8px;
     margin-left: -4px;
     margin-top: 0;
   }
+
+  /* line 112, _preloader.scss */
   90%, 100% {
     width: 16px;
     height: 16px;
@@ -330,29 +339,39 @@ abbr, acronym {
     margin-top: -4px;
   }
 }
+
 @keyframes dotrotate {
+  /* line 122, _preloader.scss */
   from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
+
+  /* line 126, _preloader.scss */
   to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
 }
+
 @keyframes dotscale {
+  /* line 133, _preloader.scss */
   0%, 10% {
     width: 16px;
     height: 16px;
     margin-left: -8px;
     margin-top: -4px;
   }
+
+  /* line 139, _preloader.scss */
   50% {
     width: 8px;
     height: 8px;
     margin-left: -4px;
     margin-top: 0;
   }
+
+  /* line 145, _preloader.scss */
   90%, 100% {
     width: 16px;
     height: 16px;
@@ -360,6 +379,7 @@ abbr, acronym {
     margin-top: -4px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   /* line 161, _preloader.scss */
   .firstLoader {
@@ -375,7 +395,7 @@ abbr, acronym {
   .zone-wrap {
     padding: 80px;
     overflow: hidden;
-    background: #000;
+    background: black;
     filter: brightness(1.6) contrast(10);
     -webkit-filter: brightness(1.6) contrast(10);
   }
@@ -392,7 +412,7 @@ abbr, acronym {
 
   /* line 196, _preloader.scss */
   .magnets {
-    background: #000;
+    background: black;
     white-space: nowrap;
   }
   /* line 199, _preloader.scss */
@@ -407,7 +427,7 @@ abbr, acronym {
   /* line 206, _preloader.scss */
   .magnets div:nth-child(1) {
     top: 0;
-    box-shadow: 0 0 90px #f97;
+    box-shadow: 0 0 90px #ff9977;
     animation: clockwise 3.14s linear infinite;
     -webkit-animation: clockwise 3.14s linear infinite;
   }
@@ -415,7 +435,7 @@ abbr, acronym {
   .magnets div:nth-child(2) {
     top: 0;
     left: -20px;
-    box-shadow: 0 0 70px #f97;
+    box-shadow: 0 0 70px #ff9977;
     animation: counter-clockwise 4s linear infinite;
     -webkit-animation: counter-clockwise 4s linear infinite;
   }
@@ -423,14 +443,14 @@ abbr, acronym {
   .magnets div:nth-child(3) {
     top: 0;
     left: 20px;
-    box-shadow: 0 0 70px #f97;
+    box-shadow: 0 0 70px #ff9977;
     animation: clockwise 1.9s linear infinite;
     -webkit-animation: clockwise 1.9s linear infinite;
   }
   /* line 226, _preloader.scss */
   .magnets div:nth-child(4) {
     top: -15px;
-    box-shadow: 0 0 800px #f97;
+    box-shadow: 0 0 800px #ff9977;
     animation: counter-clockwise 2.71s linear infinite;
     -webkit-animation: counter-clockwise 2.71s linear infinite;
   }
@@ -440,7 +460,7 @@ abbr, acronym {
     height: 10px;
     top: 20px;
     left: -65px;
-    box-shadow: 0 0 50px #f97;
+    box-shadow: 0 0 50px #ff9977;
     animation: counter-clockwise 3.71s linear infinite;
     -webkit-animation: counter-clockwise 3.71s linear infinite;
   }
@@ -450,14 +470,14 @@ abbr, acronym {
     height: 10px;
     top: 20px;
     left: 65px;
-    box-shadow: 0 0 50px #f97;
+    box-shadow: 0 0 50px #ff9977;
     animation: clockwise 4.71s linear infinite;
     -webkit-animation: clockwise 4.71s linear infinite;
   }
 
   /* line 255, _preloader.scss */
   .sphere {
-    background: #000;
+    background: black;
     white-space: nowrap;
   }
   /* line 258, _preloader.scss */
@@ -466,83 +486,114 @@ abbr, acronym {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: fade(#f97, 60%);
+    background: fade(#ff9977, 60%);
     background: rgba(255, 153, 119, 0.6);
-    border-bottom: 15px solid #ddd;
+    border-bottom: 15px solid #dddddd;
   }
 
   @-webkit-keyframes clockwise {
+    /* line 270, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
+
+    /* line 274, _preloader.scss */
     25% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
+
+    /* line 278, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
+
+    /* line 282, _preloader.scss */
     75% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-  }
+}
+
   @keyframes clockwise {
+    /* line 289, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
+
+    /* line 293, _preloader.scss */
     25% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
+
+    /* line 297, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
+
+    /* line 301, _preloader.scss */
     75% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-  }
+}
+
   @-webkit-keyframes counter-clockwise {
+    /* line 308, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
+
+    /* line 312, _preloader.scss */
     25% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
+
+    /* line 316, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
+
+    /* line 320, _preloader.scss */
     75% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-  }
+}
+
   @keyframes counter-clockwise {
+    /* line 327, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
+
+    /* line 331, _preloader.scss */
     25% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
+
+    /* line 335, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
+
+    /* line 339, _preloader.scss */
     75% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-  }
+}
 }
 /** RESET AND LAYOUT
 ===================================*/
@@ -602,7 +653,7 @@ abbr, acronym {
   transform: translatez(0);
 }
 
-/* line 54, _bxslider.scss */
+/* line 55, _bxslider.scss */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -614,7 +665,7 @@ abbr, acronym {
 /* line 63, _bxslider.scss */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../img/loader.gif) center center no-repeat #fff;
+  background: url(../img/loader.gif) center center no-repeat white;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -634,7 +685,7 @@ abbr, acronym {
   padding-top: 20px;
 }
 
-/* line 85, _bxslider.scss */
+/* line 86, _bxslider.scss */
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -656,7 +707,7 @@ abbr, acronym {
   border-radius: 5px;
 }
 
-/* line 105, _bxslider.scss */
+/* line 106, _bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #000;
@@ -719,7 +770,7 @@ abbr, acronym {
   margin: 0 3px;
 }
 
-/* line 161, _bxslider.scss */
+/* line 162, _bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
   background-position: -86px 0;
@@ -736,7 +787,7 @@ abbr, acronym {
   margin: 0 3px;
 }
 
-/* line 176, _bxslider.scss */
+/* line 177, _bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
   background-position: -86px -33px;
@@ -1009,7 +1060,7 @@ ul.tabs li {
   background: -webkit-linear-gradient(90deg, #e5e5e5 7%, white 39%);
   background: -o-linear-gradient(90deg, #e5e5e5 7%, white 39%);
   background: -ms-linear-gradient(90deg, #e5e5e5 7%, white 39%);
-  background: linear-gradient(180deg, #e5e5e5 7%, white 39%);
+  background: linear-gradient(180deg, #e5e5e5 7%, #ffffff 39%);
   /*linear-gradient(to bottom, #ccc, #fff);*/
 }
 
@@ -1065,14 +1116,14 @@ ul.tabs li.tab-current a {
   margin-bottom: -1px;
 }
 
-/* line 122, _tabs.scss */
+/* line 124, _tabs.scss */
 div.t2,
 div.t3,
 div.t4 {
   display: none;
 }
 
-/* line 128, _tabs.scss */
+/* line 131, _tabs.scss */
 div.t1,
 div.t2,
 div.t3,
@@ -1427,7 +1478,7 @@ div.t4 {
   padding: 9px 14px;
 }
 
-/* line 298, _calendar.scss */
+/* line 299, _calendar.scss */
 .popover > .arrow,
 .popover > .arrow:after {
   position: absolute;
@@ -1582,7 +1633,7 @@ div.t4 {
 body {
   overflow: hidden;
   /*Avoid flicker on slides transitions for mobile phones #336 */
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   background-color: white;
   font-family: Arial;
   margin: 0;
@@ -1595,6 +1646,7 @@ body {
   font-family: 'HeliosCondThin';
   src: url("../fonts/HeliosCondThin.otf ");
 }
+
 /* line 28, main.scss */
 .loader {
   content: '';
@@ -1935,7 +1987,6 @@ body {
     background-position-x: 0px;
   }
 }
-
 /* line 306, main.scss */
 .mainSlider .wrapper .topMenu ul li > a {
   text-decoration: inherit;
@@ -2733,7 +2784,7 @@ body {
 
 /* line 969, main.scss */
 .artistes {
-  background-image: linear-gradient(-90deg, #FFA200, #F600FF);
+  background-image: linear-gradient(-90deg, #ffa200, #f600ff);
   width: 100%;
   height: 100%;
   text-align: center;
@@ -2899,37 +2950,30 @@ body {
 .artistes .me .back {
   background-position: 0px -488px;
 }
-
 /* line 1113, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
-
 /* line 1118, main.scss */
 .artistes .pasha .back {
   background-position: 0px -1465px;
 }
-
 /* line 1121, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
-
 /* line 1126, main.scss */
 .artistes .serg .back {
   background-position: 0px -977px;
 }
-
 /* line 1130, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
-
 /* line 1135, main.scss */
 .artistes .alina .back {
   background-position: 0px bottom;
 }
-
 /* line 1138, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
@@ -2940,9 +2984,8 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  background-image: linear-gradient(-30deg, #FF2200, #FFD500);
+  background-image: linear-gradient(-30deg, #ff2200, #ffd500);
 }
-
 /* line 1154, main.scss */
 .mainCalendar h1 {
   text-align: center;
@@ -2957,7 +3000,6 @@ body {
     font-size: 130%;
   }
 }
-
 /* line 1165, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
@@ -2991,7 +3033,6 @@ body {
     width: 800px;
   }
 }
-
 /* line 1186, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
@@ -3008,9 +3049,8 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
+  background-image: linear-gradient(-90deg, #0051ff, #00b7ff);
 }
-
 /* line 1205, main.scss */
 .feedback > div {
   width: 300px;
@@ -3045,7 +3085,6 @@ body {
     width: 1000px;
   }
 }
-
 /* line 1232, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
@@ -3054,12 +3093,10 @@ body {
   overflow: scroll;
   text-align: center;
 }
-
 /* line 1239, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
-
 /* line 1243, main.scss */
 .feedback .wedComments {
   width: 220px;
@@ -3078,7 +3115,6 @@ body {
     min-height: 100px;
   }
 }
-
 /* line 1257, main.scss */
 .feedback .wedComments:before {
   content: '';
@@ -3098,7 +3134,6 @@ body {
     height: 100px;
   }
 }
-
 /* line 1272, main.scss */
 .feedback .wedComments .quote {
   position: relative;
@@ -3111,7 +3146,6 @@ body {
     width: 400px;
   }
 }
-
 /* line 1279, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
@@ -3122,7 +3156,6 @@ body {
     display: inline-block;
   }
 }
-
 /* line 1286, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
@@ -3133,7 +3166,6 @@ body {
   position: absolute;
   left: 0px;
 }
-
 /* line 1296, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
@@ -3146,7 +3178,6 @@ body {
   position: absolute;
   margin-right: 20px;
 }
-
 /* line 1311, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
@@ -3154,63 +3185,40 @@ body {
   font-style: italic;
   margin: 5px;
 }
-
-/* line 1318, main.scss */
-.feedback .teren {
-  display: none;
-}
-
-/* line 1320, main.scss */
+/* line 1319, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1326, main.scss */
+/* line 1325, main.scss */
 .feedback .terel {
   display: none;
 }
-
-/* line 1328, main.scss */
+/* line 1327, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1333, main.scss */
-.feedback .slavko {
-  display: none;
-}
-
-/* line 1335, main.scss */
+/* line 1334, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1342, main.scss */
+/* line 1341, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1348, main.scss */
+/* line 1347, main.scss */
 .feedback .homi {
   display: none;
 }
-
-/* line 1350, main.scss */
+/* line 1349, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
-
 /* line 1356, main.scss */
-.feedback .stars {
-  display: none;
-}
-
-/* line 1358, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;

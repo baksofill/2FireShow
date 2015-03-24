@@ -1316,7 +1316,6 @@ body {
     }
   }
   .teren{
-    display: none;
     &:before{
       background: url("../img/comments/teren.jpg") no-repeat;
       background-size: 100%;
@@ -1331,7 +1330,7 @@ body {
     }
   }
   .slavko{
-    display: none;
+
     &:before{
       background: url("../img/comments/slavko.jpg") no-repeat;
       background-size: 100%;
@@ -1354,7 +1353,6 @@ body {
 
   }
   .stars{
-    display: none;
     &:before{
       background: url("../img/comments/stars.jpg") no-repeat;
       background-size: 100%;

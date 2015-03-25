@@ -68,14 +68,14 @@
   top: 17px;
 }
 
-/* line 63, _pagePiling.scss */
+/* line 62, _pagePiling.scss */
 #pp-nav ul,
 .pp-slidesNav ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 69, _pagePiling.scss */
+/* line 68, _pagePiling.scss */
 #pp-nav li,
 .pp-slidesNav li {
   display: block;
@@ -90,7 +90,7 @@
   display: inline-block;
 }
 
-/* line 82, _pagePiling.scss */
+/* line 81, _pagePiling.scss */
 #pp-nav li a,
 .pp-slidesNav li a {
   display: block;
@@ -102,13 +102,13 @@
   text-decoration: none;
 }
 
-/* line 93, _pagePiling.scss */
+/* line 92, _pagePiling.scss */
 #pp-nav li .active span,
 .pp-slidesNav .active span {
   background: #333;
 }
 
-/* line 98, _pagePiling.scss */
+/* line 97, _pagePiling.scss */
 #pp-nav span,
 .pp-slidesNav span {
   top: 2px;
@@ -117,7 +117,7 @@
   height: 8px;
   border: 1px solid #000;
   box-shadow: 1px 1px #999;
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
   border-radius: 50%;
   position: absolute;
   z-index: 1;
@@ -147,7 +147,7 @@
 @CHARSET "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
-/* line 133, _pagePiling.scss */
+/* line 132, _pagePiling.scss */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre,
 form, fieldset, input, textarea, p, blockquote, th, td {
   padding: 0;
@@ -301,37 +301,28 @@ abbr, acronym {
 }
 
 @-webkit-keyframes dotrotate {
-  /* line 89, _preloader.scss */
   from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 93, _preloader.scss */
   to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes dotscale {
-  /* line 100, _preloader.scss */
   0%, 10% {
     width: 16px;
     height: 16px;
     margin-left: -8px;
     margin-top: -4px;
   }
-
-  /* line 106, _preloader.scss */
   50% {
     width: 8px;
     height: 8px;
     margin-left: -4px;
     margin-top: 0;
   }
-
-  /* line 112, _preloader.scss */
   90%, 100% {
     width: 16px;
     height: 16px;
@@ -339,39 +330,29 @@ abbr, acronym {
     margin-top: -4px;
   }
 }
-
 @keyframes dotrotate {
-  /* line 122, _preloader.scss */
   from {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
-
-  /* line 126, _preloader.scss */
   to {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
   }
 }
-
 @keyframes dotscale {
-  /* line 133, _preloader.scss */
   0%, 10% {
     width: 16px;
     height: 16px;
     margin-left: -8px;
     margin-top: -4px;
   }
-
-  /* line 139, _preloader.scss */
   50% {
     width: 8px;
     height: 8px;
     margin-left: -4px;
     margin-top: 0;
   }
-
-  /* line 145, _preloader.scss */
   90%, 100% {
     width: 16px;
     height: 16px;
@@ -379,7 +360,6 @@ abbr, acronym {
     margin-top: -4px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
   /* line 161, _preloader.scss */
   .firstLoader {
@@ -395,7 +375,7 @@ abbr, acronym {
   .zone-wrap {
     padding: 80px;
     overflow: hidden;
-    background: black;
+    background: #000;
     filter: brightness(1.6) contrast(10);
     -webkit-filter: brightness(1.6) contrast(10);
   }
@@ -412,7 +392,7 @@ abbr, acronym {
 
   /* line 196, _preloader.scss */
   .magnets {
-    background: black;
+    background: #000;
     white-space: nowrap;
   }
   /* line 199, _preloader.scss */
@@ -427,7 +407,7 @@ abbr, acronym {
   /* line 206, _preloader.scss */
   .magnets div:nth-child(1) {
     top: 0;
-    box-shadow: 0 0 90px #ff9977;
+    box-shadow: 0 0 90px #f97;
     animation: clockwise 3.14s linear infinite;
     -webkit-animation: clockwise 3.14s linear infinite;
   }
@@ -435,7 +415,7 @@ abbr, acronym {
   .magnets div:nth-child(2) {
     top: 0;
     left: -20px;
-    box-shadow: 0 0 70px #ff9977;
+    box-shadow: 0 0 70px #f97;
     animation: counter-clockwise 4s linear infinite;
     -webkit-animation: counter-clockwise 4s linear infinite;
   }
@@ -443,14 +423,14 @@ abbr, acronym {
   .magnets div:nth-child(3) {
     top: 0;
     left: 20px;
-    box-shadow: 0 0 70px #ff9977;
+    box-shadow: 0 0 70px #f97;
     animation: clockwise 1.9s linear infinite;
     -webkit-animation: clockwise 1.9s linear infinite;
   }
   /* line 226, _preloader.scss */
   .magnets div:nth-child(4) {
     top: -15px;
-    box-shadow: 0 0 800px #ff9977;
+    box-shadow: 0 0 800px #f97;
     animation: counter-clockwise 2.71s linear infinite;
     -webkit-animation: counter-clockwise 2.71s linear infinite;
   }
@@ -460,7 +440,7 @@ abbr, acronym {
     height: 10px;
     top: 20px;
     left: -65px;
-    box-shadow: 0 0 50px #ff9977;
+    box-shadow: 0 0 50px #f97;
     animation: counter-clockwise 3.71s linear infinite;
     -webkit-animation: counter-clockwise 3.71s linear infinite;
   }
@@ -470,14 +450,14 @@ abbr, acronym {
     height: 10px;
     top: 20px;
     left: 65px;
-    box-shadow: 0 0 50px #ff9977;
+    box-shadow: 0 0 50px #f97;
     animation: clockwise 4.71s linear infinite;
     -webkit-animation: clockwise 4.71s linear infinite;
   }
 
   /* line 255, _preloader.scss */
   .sphere {
-    background: black;
+    background: #000;
     white-space: nowrap;
   }
   /* line 258, _preloader.scss */
@@ -486,114 +466,83 @@ abbr, acronym {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: fade(#ff9977, 60%);
+    background: fade(#f97, 60%);
     background: rgba(255, 153, 119, 0.6);
-    border-bottom: 15px solid #dddddd;
+    border-bottom: 15px solid #ddd;
   }
 
   @-webkit-keyframes clockwise {
-    /* line 270, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
-
-    /* line 274, _preloader.scss */
     25% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-
-    /* line 278, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
-
-    /* line 282, _preloader.scss */
     75% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-}
-
+  }
   @keyframes clockwise {
-    /* line 289, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
-
-    /* line 293, _preloader.scss */
     25% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-
-    /* line 297, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
-
-    /* line 301, _preloader.scss */
     75% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-}
-
+  }
   @-webkit-keyframes counter-clockwise {
-    /* line 308, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
-
-    /* line 312, _preloader.scss */
     25% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-
-    /* line 316, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
-
-    /* line 320, _preloader.scss */
     75% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-}
-
+  }
   @keyframes counter-clockwise {
-    /* line 327, _preloader.scss */
     0% {
       -webkit-transform: translate(0px, 0px);
       transform: translate(0px, 0px);
     }
-
-    /* line 331, _preloader.scss */
     25% {
       -webkit-transform: translate(40px, -40px);
       transform: translate(40px, -40px);
     }
-
-    /* line 335, _preloader.scss */
     50% {
       -webkit-transform: translate(0px, -80px);
       transform: translate(0px, -80px);
     }
-
-    /* line 339, _preloader.scss */
     75% {
       -webkit-transform: translate(-40px, -40px);
       transform: translate(-40px, -40px);
     }
-}
+  }
 }
 /** RESET AND LAYOUT
 ===================================*/
@@ -653,7 +602,7 @@ abbr, acronym {
   transform: translatez(0);
 }
 
-/* line 55, _bxslider.scss */
+/* line 54, _bxslider.scss */
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
   position: absolute;
@@ -665,7 +614,7 @@ abbr, acronym {
 /* line 63, _bxslider.scss */
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../img/loader.gif) center center no-repeat white;
+  background: url(../img/loader.gif) center center no-repeat #fff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -685,7 +634,7 @@ abbr, acronym {
   padding-top: 20px;
 }
 
-/* line 86, _bxslider.scss */
+/* line 85, _bxslider.scss */
 .bx-wrapper .bx-pager .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {
   display: inline-block;
@@ -707,7 +656,7 @@ abbr, acronym {
   border-radius: 5px;
 }
 
-/* line 106, _bxslider.scss */
+/* line 105, _bxslider.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active {
   background: #000;
@@ -770,7 +719,7 @@ abbr, acronym {
   margin: 0 3px;
 }
 
-/* line 162, _bxslider.scss */
+/* line 161, _bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-start:hover,
 .bx-wrapper .bx-controls-auto .bx-start.active {
   background-position: -86px 0;
@@ -787,7 +736,7 @@ abbr, acronym {
   margin: 0 3px;
 }
 
-/* line 177, _bxslider.scss */
+/* line 176, _bxslider.scss */
 .bx-wrapper .bx-controls-auto .bx-stop:hover,
 .bx-wrapper .bx-controls-auto .bx-stop.active {
   background-position: -86px -33px;
@@ -1060,7 +1009,7 @@ ul.tabs li {
   background: -webkit-linear-gradient(90deg, #e5e5e5 7%, white 39%);
   background: -o-linear-gradient(90deg, #e5e5e5 7%, white 39%);
   background: -ms-linear-gradient(90deg, #e5e5e5 7%, white 39%);
-  background: linear-gradient(180deg, #e5e5e5 7%, #ffffff 39%);
+  background: linear-gradient(180deg, #e5e5e5 7%, white 39%);
   /*linear-gradient(to bottom, #ccc, #fff);*/
 }
 
@@ -1116,14 +1065,14 @@ ul.tabs li.tab-current a {
   margin-bottom: -1px;
 }
 
-/* line 124, _tabs.scss */
+/* line 122, _tabs.scss */
 div.t2,
 div.t3,
 div.t4 {
   display: none;
 }
 
-/* line 131, _tabs.scss */
+/* line 128, _tabs.scss */
 div.t1,
 div.t2,
 div.t3,
@@ -1478,7 +1427,7 @@ div.t4 {
   padding: 9px 14px;
 }
 
-/* line 299, _calendar.scss */
+/* line 298, _calendar.scss */
 .popover > .arrow,
 .popover > .arrow:after {
   position: absolute;
@@ -1633,7 +1582,7 @@ div.t4 {
 body {
   overflow: hidden;
   /*Avoid flicker on slides transitions for mobile phones #336 */
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
   background-color: white;
   font-family: Arial;
   margin: 0;
@@ -1646,7 +1595,6 @@ body {
   font-family: 'HeliosCondThin';
   src: url("../fonts/HeliosCondThin.otf ");
 }
-
 /* line 28, main.scss */
 .loader {
   content: '';
@@ -1987,6 +1935,7 @@ body {
     background-position-x: 0px;
   }
 }
+
 /* line 306, main.scss */
 .mainSlider .wrapper .topMenu ul li > a {
   text-decoration: inherit;
@@ -2249,7 +2198,7 @@ body {
   text-transform: uppercase;
 }
 /* line 530, main.scss */
-.mainSlider .wrapper .speach .phone {
+.mainSlider .wrapper .speach #phone {
   width: 125px;
   text-align: right;
   margin: -2px auto;
@@ -2260,11 +2209,11 @@ body {
   overflow: hidden;
 }
 /* line 539, main.scss */
-.mainSlider .wrapper .speach .phone a {
+.mainSlider .wrapper .speach #phone a {
   color: #000;
 }
 /* line 542, main.scss */
-.mainSlider .wrapper .speach .phone:before {
+.mainSlider .wrapper .speach #phone:before {
   content: '';
   width: 35px;
   height: 100%;
@@ -2275,7 +2224,7 @@ body {
   background: red;
 }
 /* line 553, main.scss */
-.mainSlider .wrapper .speach .phone:after {
+.mainSlider .wrapper .speach #phone:after {
   content: '';
   width: 30px;
   height: 100%;
@@ -2784,12 +2733,13 @@ body {
 
 /* line 969, main.scss */
 .artistes {
-  background-image: linear-gradient(-90deg, #ffa200, #f600ff);
+  background-image: linear-gradient(-90deg, #FFA200, #F600FF);
   width: 100%;
   height: 100%;
   text-align: center;
 }
-/* line 978, main.scss */
+
+/* line 975, main.scss */
 .artistes .artistCard {
   top: 10px;
   position: relative;
@@ -2798,13 +2748,34 @@ body {
   display: inline-block;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 978, main.scss */
+  /* line 975, main.scss */
   .artistes .artistCard {
     width: 45%;
   }
 }
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 975, main.scss */
+  .artistes .artistCard {
+    top: 0%;
+    position: relative;
+    width: 200px;
+    height: 370px;
+    display: inline-block;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 975, main.scss */
+  .artistes .artistCard {
+    top: 10%;
+  }
+}
 @media only screen and (min-width: 1280px) {
-  /* line 978, main.scss */
+  /* line 975, main.scss */
   .artistes .artistCard {
     top: 10%;
     position: relative;
@@ -2814,9 +2785,12 @@ body {
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
     perspective: 600px;
+    transform: scale(1);
+    margin-right: 0px;
   }
 }
-/* line 998, main.scss */
+
+/* line 1010, main.scss */
 .artistes .artistCard .artistBtn {
   position: relative;
   width: auto;
@@ -2827,20 +2801,29 @@ body {
   color: #fff;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 998, main.scss */
+  /* line 1010, main.scss */
   .artistes .artistCard .artistBtn {
     text-align: right;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 998, main.scss */
+  /* line 1010, main.scss */
   .artistes .artistCard .artistBtn {
+    position: absolute;
+    width: 200px;
+    color: #fff;
+    bottom: -50px;
+    cursor: pointer;
+    margin: 10px auto;
+    line-height: 1;
+    height: auto;
     text-align: center;
-    padding-right: 0;
+    padding-left: 0;
   }
 }
-@media only screen and (min-width: 1280px) {
-  /* line 998, main.scss */
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3) and (min-width: 1280px), only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) and (min-width: 1280px) {
+  /* line 1010, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -2854,7 +2837,24 @@ body {
     padding-left: 0;
   }
 }
-/* line 1029, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1010, main.scss */
+  .artistes .artistCard .artistBtn {
+    position: absolute;
+    width: 250px;
+    color: #fff;
+    bottom: -50px;
+    cursor: pointer;
+    margin: 10px auto;
+    line-height: 1;
+    height: auto;
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* line 1058, main.scss */
 .artistes .artistCard .artistBtn:before {
   content: '';
   width: 80px;
@@ -2867,18 +2867,26 @@ body {
   border-radius: 50%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1029, main.scss */
+  /* line 1058, main.scss */
   .artistes .artistCard .artistBtn:before {
     left: 20px;
   }
 }
-@media only screen and (min-width: 1280px) {
-  /* line 1029, main.scss */
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1058, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
-/* line 1048, main.scss */
+@media only screen and (min-width: 1280px) {
+  /* line 1058, main.scss */
+  .artistes .artistCard .artistBtn:before {
+    display: none;
+  }
+}
+
+/* line 1080, main.scss */
 .artistes .card {
   top: 0;
   left: 0;
@@ -2894,13 +2902,21 @@ body {
   transform-style: preserve-3d;
   display: none;
 }
-@media only screen and (min-width: 1280px) {
-  /* line 1048, main.scss */
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1080, main.scss */
   .artistes .card {
     display: block;
   }
 }
-/* line 1065, main.scss */
+@media only screen and (min-width: 1280px) {
+  /* line 1080, main.scss */
+  .artistes .card {
+    display: block;
+  }
+}
+
+/* line 1100, main.scss */
 .artistes .card figure {
   width: 100%;
   height: 100%;
@@ -2912,12 +2928,14 @@ body {
   margin: 0;
   border-radius: 5px;
 }
-/* line 1076, main.scss */
+
+/* line 1111, main.scss */
 .artistes .card .back {
   background: url("../img/artists.png") no-repeat;
   background-size: 100% auto;
 }
-/* line 1080, main.scss */
+
+/* line 1115, main.scss */
 .artistes .card .front {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
@@ -2926,19 +2944,37 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 1087, main.scss */
+
+/* line 1122, main.scss */
 .artistes .card .front .artistsText {
   position: absolute;
   margin: 10px;
   line-height: 1.5;
   text-align: justify;
 }
-/* line 1093, main.scss */
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1122, main.scss */
+  .artistes .card .front .artistsText {
+    height: 350px;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  /* line 1122, main.scss */
+  .artistes .card .front .artistsText {
+    overflow: visible;
+  }
+}
+
+/* line 1135, main.scss */
 .artistes .card .front .artistsText .bold {
   font-weight: bold;
   color: red;
 }
-/* line 1101, main.scss */
+
+/* line 1143, main.scss */
 .artistes .card.flip, .artistes .card:hover {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -2946,47 +2982,83 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 1110, main.scss */
-.artistes .me .back {
-  background-position: 0px -488px;
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1152, main.scss */
+  .artistes .me .back {
+    background-position: 0px -390px;
+  }
 }
-/* line 1113, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1152, main.scss */
+  .artistes .me .back {
+    background-position: 0px -488px;
+  }
+}
+
+/* line 1160, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
-/* line 1118, main.scss */
-.artistes .pasha .back {
-  background-position: 0px -1465px;
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1165, main.scss */
+  .artistes .pasha .back {
+    background-position: 0px -1170px;
+  }
 }
-/* line 1121, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1165, main.scss */
+  .artistes .pasha .back {
+    background-position: 0px -1465px;
+  }
+}
+
+/* line 1174, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
-/* line 1126, main.scss */
-.artistes .serg .back {
-  background-position: 0px -977px;
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1179, main.scss */
+  .artistes .serg .back {
+    background-position: 0px -780px;
+  }
 }
-/* line 1130, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1179, main.scss */
+  .artistes .serg .back {
+    background-position: 0px -977px;
+  }
+}
+
+/* line 1187, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
-/* line 1135, main.scss */
+
+/* line 1192, main.scss */
 .artistes .alina .back {
   background-position: 0px bottom;
 }
-/* line 1138, main.scss */
+
+/* line 1195, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
 }
 
-/* line 1148, main.scss */
+/* line 1205, main.scss */
 .mainCalendar {
   width: 100%;
   height: 100%;
   display: block;
-  background-image: linear-gradient(-30deg, #ff2200, #ffd500);
+  background-image: linear-gradient(-30deg, #FF2200, #FFD500);
 }
-/* line 1154, main.scss */
+
+/* line 1211, main.scss */
 .mainCalendar h1 {
   text-align: center;
   text-transform: uppercase;
@@ -2995,12 +3067,13 @@ body {
   top: 10%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1154, main.scss */
+  /* line 1211, main.scss */
   .mainCalendar h1 {
     font-size: 130%;
   }
 }
-/* line 1165, main.scss */
+
+/* line 1222, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
   margin: 0 auto;
@@ -3008,50 +3081,52 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 1165, main.scss */
+  /* line 1222, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 400px;
     top: 10%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1165, main.scss */
+  /* line 1222, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1165, main.scss */
+  /* line 1222, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 700px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1165, main.scss */
+  /* line 1222, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 800px;
   }
 }
-/* line 1186, main.scss */
+
+/* line 1243, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1189, main.scss */
+  /* line 1246, main.scss */
   .mainCalendar #calendari_lateral1 .table tr {
     height: 50px;
   }
 }
 
-/* line 1200, main.scss */
+/* line 1257, main.scss */
 .feedback {
   width: 100%;
   height: 100%;
   display: block;
-  background-image: linear-gradient(-90deg, #0051ff, #00b7ff);
+  background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
 }
-/* line 1205, main.scss */
+
+/* line 1262, main.scss */
 .feedback > div {
   width: 300px;
   overflow: hidden;
@@ -3061,31 +3136,32 @@ body {
   top: 10px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1205, main.scss */
+  /* line 1262, main.scss */
   .feedback > div {
     width: 500px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1205, main.scss */
+  /* line 1262, main.scss */
   .feedback > div {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1205, main.scss */
+  /* line 1262, main.scss */
   .feedback > div {
     width: 1000px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1205, main.scss */
+  /* line 1262, main.scss */
   .feedback > div {
     top: 10%;
     width: 1000px;
   }
 }
-/* line 1232, main.scss */
+
+/* line 1289, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
   margin: 0 auto;
@@ -3093,11 +3169,13 @@ body {
   overflow: scroll;
   text-align: center;
 }
-/* line 1239, main.scss */
+
+/* line 1296, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
-/* line 1243, main.scss */
+
+/* line 1300, main.scss */
 .feedback .wedComments {
   width: 220px;
   height: auto;
@@ -3107,15 +3185,16 @@ body {
   margin-top: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1243, main.scss */
+  /* line 1300, main.scss */
   .feedback .wedComments {
-    width: 300px;
+    width: 340px;
     padding-left: 120px;
     margin-top: 10px;
     min-height: 100px;
   }
 }
-/* line 1257, main.scss */
+
+/* line 1314, main.scss */
 .feedback .wedComments:before {
   content: '';
   width: 50px;
@@ -3128,35 +3207,38 @@ body {
   left: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1257, main.scss */
+  /* line 1314, main.scss */
   .feedback .wedComments:before {
     width: 100px;
     height: 100px;
   }
 }
-/* line 1272, main.scss */
+
+/* line 1329, main.scss */
 .feedback .wedComments .quote {
   position: relative;
   display: inline-block;
   text-indent: 30px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1272, main.scss */
+  /* line 1329, main.scss */
   .feedback .wedComments .quote {
     width: 400px;
   }
 }
-/* line 1279, main.scss */
+
+/* line 1336, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1279, main.scss */
+  /* line 1336, main.scss */
   .feedback .wedComments .quote .notForMobyle {
     display: inline-block;
   }
 }
-/* line 1286, main.scss */
+
+/* line 1343, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3166,7 +3248,8 @@ body {
   position: absolute;
   left: 0px;
 }
-/* line 1296, main.scss */
+
+/* line 1353, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3178,55 +3261,112 @@ body {
   position: absolute;
   margin-right: 20px;
 }
-/* line 1311, main.scss */
+
+/* line 1368, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
   font-weight: bold;
   font-style: italic;
   margin: 5px;
 }
-/* line 1319, main.scss */
+
+/* line 1375, main.scss */
+.feedback .teren {
+  display: none;
+}
+
+/* line 1377, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1325, main.scss */
+
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1375, main.scss */
+  .feedback .teren {
+    display: inline-table;
+  }
+}
+
+/* line 1386, main.scss */
 .feedback .terel {
   display: none;
 }
-/* line 1327, main.scss */
+
+/* line 1388, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1334, main.scss */
+
+/* line 1393, main.scss */
+.feedback .slavko {
+  display: none;
+}
+
+/* line 1395, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1341, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1393, main.scss */
+  .feedback .slavko {
+    display: inline-table;
+  }
+}
+
+/* line 1404, main.scss */
+.feedback .poroh {
+  display: none;
+}
+
+/* line 1406, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1347, main.scss */
+
+@media only screen and (min-width: 1280px) {
+  /* line 1404, main.scss */
+  .feedback .poroh {
+    display: inline-table;
+  }
+}
+
+/* line 1415, main.scss */
 .feedback .homi {
   display: none;
 }
-/* line 1349, main.scss */
+
+/* line 1417, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1356, main.scss */
+
+/* line 1423, main.scss */
+.feedback .stars {
+  display: none;
+}
+
+/* line 1425, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;
   border: 1px solid grey;
 }
 
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 1423, main.scss */
+  .feedback .stars {
+    display: inline-table;
+  }
+}
+
 /*base code*/
-/* line 1371, main.scss */
+/* line 1443, main.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -3234,13 +3374,13 @@ body {
   animation-fill-mode: both;
 }
 
-/* line 1377, main.scss */
+/* line 1449, main.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 1381, main.scss */
+/* line 1453, main.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -3248,67 +3388,48 @@ body {
 
 /*the animation definition*/
 @-webkit-keyframes swing {
-  /* line 1387, main.scss */
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
-
-  /* line 1391, main.scss */
   40% {
     -webkit-transform: rotate3d(0, 0, 1, -10deg);
     transform: rotate3d(0, 0, 1, -10deg);
   }
-
-  /* line 1395, main.scss */
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
-
-  /* line 1399, main.scss */
   80% {
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
-
-  /* line 1403, main.scss */
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-
 @keyframes swing {
-  /* line 1409, main.scss */
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     -ms-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
-
-  /* line 1414, main.scss */
   40% {
     -webkit-transform: rotate3d(0, 0, 1, -10deg);
     -ms-transform: rotate3d(0, 0, 1, -10deg);
     transform: rotate3d(0, 0, 1, -10deg);
   }
-
-  /* line 1419, main.scss */
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 5deg);
     -ms-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
-
-  /* line 1424, main.scss */
   80% {
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
     -ms-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
-
-  /* line 1429, main.scss */
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     -ms-transform: rotate3d(0, 0, 1, 0deg);
@@ -3316,7 +3437,7 @@ body {
   }
 }
 
-/* line 1435, main.scss */
+/* line 1507, main.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -3326,20 +3447,15 @@ body {
 }
 
 @-webkit-keyframes tada {
-  /* line 1443, main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-
-  /* line 1448, main.scss */
   10%,
   20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-
-  /* line 1455, main.scss */
   30%,
   50%,
   70%,
@@ -3347,39 +3463,29 @@ body {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
-  /* line 1461, main.scss */
   40%,
   60%,
   80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
-  /* line 1465, main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 }
-
 @keyframes tada {
-  /* line 1471, main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-
-  /* line 1477, main.scss */
   10%,
   20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     -ms-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-
-  /* line 1485, main.scss */
   30%,
   50%,
   70%,
@@ -3388,8 +3494,6 @@ body {
     -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
-  /* line 1492, main.scss */
   40%,
   60%,
   80% {
@@ -3397,8 +3501,6 @@ body {
     -ms-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
-  /* line 1497, main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
@@ -3406,7 +3508,7 @@ body {
   }
 }
 
-/* line 1503, main.scss */
+/* line 1575, main.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;

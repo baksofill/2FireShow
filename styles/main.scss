@@ -527,7 +527,7 @@ body {
         line-height: 3;
         text-transform: uppercase;
       }
-      .phone {
+      #phone {
         width: 125px;
         text-align: right;
         margin: -2px auto;
@@ -972,9 +972,6 @@ body {
   height: 100%;
   text-align: center;
 
-
-
-
   .artistCard {
     top: 10px;
     position: relative;
@@ -983,6 +980,19 @@ body {
     display: inline-block;
     @include mobile-landscape{
       width: 45%;
+    }
+    @include tablet {
+      top: 0%;
+      position: relative;
+      width: 200px;
+      height: 370px;
+      display: inline-block;
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective: 600px;
+    }
+    @include tablet-landscape {
+      top: 10%;
     }
     @include desktop{
       top: 10%;
@@ -993,6 +1003,8 @@ body {
       -webkit-perspective: 600px;
       -moz-perspective: 600px;
       perspective: 600px;
+      transform: scale(1);
+      margin-right: 0px;
 
     }
     .artistBtn {
@@ -1002,16 +1014,33 @@ body {
       line-height: 5;
       text-align: right;
       padding-right: 30px;
-
-
       color: #fff;
       @include mobile-landscape{
         text-align: right;
       }
       @include tablet {
+        position: absolute;
+        width: 200px;
+        color: #fff;
+        bottom: -50px;
+        cursor: pointer;
+        margin: 10px auto;
+        line-height: 1;
+        height: auto;
         text-align: center;
-        padding-right: 0;
-
+        padding-left: 0;
+        @include desktop {
+          position: absolute;
+          width: 250px;
+          color: #fff;
+          bottom: -50px;
+          cursor: pointer;
+          margin: 10px auto;
+          line-height: 1;
+          height: auto;
+          text-align: center;
+          padding-left: 0;
+        }
       }
       @include desktop{
         position: absolute;
@@ -1039,6 +1068,9 @@ body {
         @include mobile-landscape{
           left: 20px;
         }
+        @include tablet {
+          display: none;
+        }
         @include desktop{
           display: none;
         }
@@ -1059,6 +1091,9 @@ body {
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     display: none;
+    @include tablet {
+      display: block;
+    }
     @include desktop{
       display: block;
     }
@@ -1089,6 +1124,13 @@ body {
         margin: 10px;
         line-height: 1.5;
         text-align: justify;
+        @include tablet {
+          height: 350px;
+          overflow: hidden;
+        }
+        @include desktop {
+          overflow: visible;
+        }
 
         .bold {
           font-weight: bold;
@@ -1108,7 +1150,12 @@ body {
 
   .me {
     .back {
-      background-position: 0px -488px;
+      @include tablet {
+        background-position: 0px -390px;
+      }
+      @include desktop {
+        background-position: 0px -488px;
+      }
     }
     .artistBtn:before{
       background-position-y: -88px;
@@ -1116,7 +1163,13 @@ body {
   }
   .pasha {
     .back {
-      background-position: 0px -1465px;
+      @include tablet {
+        background-position: 0px -1170px;
+      }
+      @include desktop {
+        background-position: 0px -1465px;
+      }
+
     }
     .artistBtn:before{
       background-position-y: -265px;
@@ -1124,8 +1177,12 @@ body {
   }
   .serg {
     .back {
-      //      background-position-y: -977px;
-      background-position: 0px -977px;
+      @include tablet {
+        background-position: 0px -780px;
+      }
+      @include desktop {
+        background-position: 0px -977px;
+      }
     }
     .artistBtn:before{
       background-position-y: -352px;
@@ -1248,7 +1305,7 @@ body {
     padding-left: 50px;
     margin-top: 0px;
     @include tablet {
-      width: 300px;
+      width: 340px;
       padding-left: 120px;
       margin-top: 10px;
       min-height: 100px;
@@ -1316,9 +1373,13 @@ body {
     }
   }
   .teren{
+    display: none;
     &:before{
       background: url("../img/comments/teren.jpg") no-repeat;
       background-size: 100%;
+    }
+    @include tablet {
+      display: inline-table;
     }
 
   }
@@ -1330,17 +1391,24 @@ body {
     }
   }
   .slavko{
-
+    display: none;
     &:before{
       background: url("../img/comments/slavko.jpg") no-repeat;
       background-size: 100%;
     }
+    @include desktop {
+      display: inline-table;
+    }
 
   }
   .poroh{
+    display: none;
     &:before{
       background: url("../img/comments/poroh.jpg") no-repeat;
       background-size: 100%;
+    }
+    @include desktop {
+      display: inline-table;
     }
 
   }
@@ -1353,10 +1421,14 @@ body {
 
   }
   .stars{
+    display: none;
     &:before{
       background: url("../img/comments/stars.jpg") no-repeat;
       background-size: 100%;
       border: 1px solid grey;
+    }
+    @include tablet {
+      display: inline-table;
     }
 
   }

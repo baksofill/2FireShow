@@ -232,16 +232,16 @@ $(document).ready(function(){
         });
 
     });
-    $('.speach').mouseover(function(){
+    $('.speach, .tarzan, .kontakts').mouseover(function () {
 
         // the animation starts
-        $('.phone').toggleClass('tada animated');
+        $("#phone").toggleClass('tada animated');
 
         // do something when animation ends
-        $('.phone').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+        $("#phone").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
 
             // trick to execute the animation again
-            $(e.target).removeClass('swing animated');
+            $(e.target).removeClass('tada animated');
 
         });
 

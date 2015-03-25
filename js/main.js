@@ -10,9 +10,10 @@ $(document).ready(function(){
 
         });*/
 
-    /*
-     * Plugin intialization
-     */
+
+
+
+
 
 
     /* -------------  Loader  -------------- */
@@ -169,7 +170,7 @@ $(document).ready(function(){
 
     /* -------------  Calendar END -------------- */
 
-
+    /* -------------  Tabs -------------- */
     function tabs() {
         var tabsNum = $(".tabs a").length;
         var tabHash = document.location.hash;
@@ -210,6 +211,42 @@ $(document).ready(function(){
     }
 
     tabs();
+    /* -------------  Tabs END -------------- */
+
+
+
+
+
+    /* -------------  Animations  -------------- */
+    $('.social>li').mouseover(function(){
+
+        // the animation starts
+        $(this).toggleClass('swing animated');
+
+        // do something when animation ends
+        $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+
+            // trick to execute the animation again
+            $(e.target).removeClass('swing animated');
+
+        });
+
+    });
+    $('.speach').mouseover(function(){
+
+        // the animation starts
+        $('.phone').toggleClass('tada animated');
+
+        // do something when animation ends
+        $('.phone').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
+
+            // trick to execute the animation again
+            $(e.target).removeClass('swing animated');
+
+        });
+
+    });
+    /* -------------  Animations END -------------- */
 
 });
 

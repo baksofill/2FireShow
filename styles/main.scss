@@ -64,6 +64,7 @@ body {
   right: -200px;
   display: none;
   transition: 1s;
+  border-left: 1px solid #fff;
 
   @include tablet {
     display: block;
@@ -73,7 +74,7 @@ body {
   }
   & > div {
     position: relative;
-    top: 30%;
+    top: 20%;
     color: #fff;
     padding: 5px;
   }
@@ -83,7 +84,7 @@ body {
     height: 50px;
     background-color: red;
     color: #fff;
-    left: -125px;
+    left: -136px;
     top: 55%;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
@@ -92,9 +93,11 @@ body {
     font-size: 130%;
     cursor: pointer;
     margin-top: -50px;
+    border: 1px solid #fff;
+    border-bottom: none;
   }
   .orderCall, .orderFire {
-    top: 40%;
+    top: 35%;
     text-align: center;
     border: 1px solid #fff;
     padding: 5px;

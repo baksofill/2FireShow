@@ -72,6 +72,13 @@
   height: 13px;
   margin: 7px;
   position: relative;
+  padding-top: 10px;
+  margin-left: 0;
+
+  @include desktop{
+    padding-top: 0;
+    margin: 7px;
+  }
 }
 
 .pp-slidesNav li {

@@ -59,9 +59,52 @@ body {
   height: 100%;
   width: 200px;
   right: 0;
-  background-color: lightgrey;
+  background-color: red;
   z-index: 10;
+  right: -200px;
   display: none;
+  transition: 1s;
+
+  @include tablet {
+    display: block;
+  }
+  &.touched {
+    right: 0;
+  }
+  & > div {
+    position: relative;
+    top: 30%;
+    color: #fff;
+    padding: 5px;
+  }
+  .mainCallButton {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: #fff;
+    left: -125px;
+    top: 55%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    text-align: center;
+    line-height: 2;
+    font-size: 130%;
+    cursor: pointer;
+    margin-top: -50px;
+  }
+  .orderCall, .orderFire {
+    top: 40%;
+    text-align: center;
+    border: 1px solid #fff;
+    padding: 5px;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+
 }
 
 .button {
@@ -260,7 +303,7 @@ body {
                 width: 35px;
                 height: 30px;
                 position: absolute;
-                top: 10px;
+                top: 7px;
                 left: 0px;
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;

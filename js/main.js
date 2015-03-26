@@ -214,35 +214,27 @@ $(document).ready(function(){
     /* -------------  Tabs END -------------- */
 
 
+    $('.mainCallButton').click(function () {
+        $(this).parent('.callMe ').toggleClass('touched');
+
+
+    });
+
 
 
 
     /* -------------  Animations  -------------- */
     $('.social>li').mouseover(function(){
-
-        // the animation starts
         $(this).toggleClass('swing animated');
-
-        // do something when animation ends
         $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e){
-
-            // trick to execute the animation again
             $(e.target).removeClass('swing animated');
-
         });
 
     });
     $('.speach, .tarzan, .kontakts').mouseover(function () {
-
-        // the animation starts
         $("#phone").toggleClass('tada animated');
-
-        // do something when animation ends
         $("#phone").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
-
-            // trick to execute the animation again
             $(e.target).removeClass('tada animated');
-
         });
 
     });

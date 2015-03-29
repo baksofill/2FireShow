@@ -72,6 +72,14 @@ body {
   }
   &.touched {
     right: 0;
+    .mainCallButton{
+      .arrow.down {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        top: 22px;
+      }
+
+    }
   }
   & > div {
     position: relative;
@@ -107,7 +115,8 @@ body {
       padding: 0;
       float: left;
       right: 20px;
-      top: 10px;
+      top: 15px;
+      transition: 1s;
     }
     .arrow:before {
       content: '';
@@ -119,11 +128,11 @@ body {
       -webkit-transform: translate(-13px, -24px);
     }
     .arrow.down {
-      transform: rotate(0deg) translate(0px, 13px);
-      -webkit-transform: rotate(0deg) translate(0px, 13px);
-      -moz-transform: rotate(0deg) translate(0px, 13px);
-      -o-transform: rotate(0deg) translate(0px, 13px);
-      -ms-transform: rotate(0deg) translate(0px, 13px);
+      transform: rotate(90deg) translate(0px, 13px);
+      -webkit-transform: rotate(90deg) translate(0px, 13px);
+      -moz-transform: rotate(90deg) translate(0px, 13px);
+      -o-transform: rotate(90deg) translate(0px, 13px);
+      -ms-transform: rotate(90deg) translate(0px, 13px);
     }
   }
   .orderCall, .orderFire {

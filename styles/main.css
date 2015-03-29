@@ -1517,21 +1517,24 @@ body {
     display: block;
   }
 }
-
 /* line 73, main.scss */
 .callMe.touched {
   right: 0;
 }
-
 /* line 76, main.scss */
+.callMe.touched .mainCallButton .arrow.down {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  top: 22px;
+}
+/* line 84, main.scss */
 .callMe > div {
   position: relative;
   top: 20%;
   color: #fff;
   padding: 5px;
 }
-
-/* line 82, main.scss */
+/* line 90, main.scss */
 .callMe .mainCallButton {
   position: absolute;
   width: 200px;
@@ -1551,8 +1554,7 @@ body {
   border-bottom: none;
   text-transform: uppercase;
 }
-
-/* line 100, main.scss */
+/* line 108, main.scss */
 .callMe .mainCallButton .arrow {
   position: absolute;
   width: 0px;
@@ -1563,10 +1565,10 @@ body {
   padding: 0;
   float: left;
   right: 20px;
-  top: 10px;
+  top: 15px;
+  transition: 1s;
 }
-
-/* line 112, main.scss */
+/* line 121, main.scss */
 .callMe .mainCallButton .arrow:before {
   content: '';
   width: 0px;
@@ -1576,17 +1578,15 @@ body {
   display: inline-block;
   -webkit-transform: translate(-13px, -24px);
 }
-
-/* line 121, main.scss */
+/* line 130, main.scss */
 .callMe .mainCallButton .arrow.down {
-  transform: rotate(0deg) translate(0px, 13px);
-  -webkit-transform: rotate(0deg) translate(0px, 13px);
-  -moz-transform: rotate(0deg) translate(0px, 13px);
-  -o-transform: rotate(0deg) translate(0px, 13px);
-  -ms-transform: rotate(0deg) translate(0px, 13px);
+  transform: rotate(90deg) translate(0px, 13px);
+  -webkit-transform: rotate(90deg) translate(0px, 13px);
+  -moz-transform: rotate(90deg) translate(0px, 13px);
+  -o-transform: rotate(90deg) translate(0px, 13px);
+  -ms-transform: rotate(90deg) translate(0px, 13px);
 }
-
-/* line 129, main.scss */
+/* line 138, main.scss */
 .callMe .orderCall, .callMe .orderFire {
   top: 35%;
   text-align: center;
@@ -1597,18 +1597,15 @@ body {
   margin-bottom: 10px;
   cursor: pointer;
 }
-
-/* line 139, main.scss */
+/* line 148, main.scss */
 .callMe .firstTitle {
   text-transform: uppercase;
 }
-
-/* line 142, main.scss */
+/* line 151, main.scss */
 .callMe .callEmail, .callMe .callTel, .callMe .mainCallButton {
   padding-left: 35px;
 }
-
-/* line 144, main.scss */
+/* line 153, main.scss */
 .callMe .callEmail:after, .callMe .callTel:after, .callMe .mainCallButton:after {
   content: '';
   width: 30px;
@@ -1621,24 +1618,20 @@ body {
   background-size: 388px auto;
   background-position: -287px 0px;
 }
-
-/* line 157, main.scss */
+/* line 166, main.scss */
 .callMe .callTel {
   letter-spacing: 3px;
   font-weight: bold;
 }
-
-/* line 160, main.scss */
+/* line 169, main.scss */
 .callMe .callTel:after {
   background-position: -325px 0px;
 }
-
-/* line 164, main.scss */
+/* line 173, main.scss */
 .callMe .mainCallButton {
   padding-left: 5px;
 }
-
-/* line 166, main.scss */
+/* line 175, main.scss */
 .callMe .mainCallButton:after {
   height: 30px;
   top: 15px;
@@ -1648,7 +1641,7 @@ body {
   -webkit-transform: rotate(90deg);
 }
 
-/* line 179, main.scss */
+/* line 188, main.scss */
 .button {
   color: #fff;
   border: 1px solid red;
@@ -1661,7 +1654,7 @@ body {
   text-transform: uppercase;
 }
 
-/* line 191, main.scss */
+/* line 200, main.scss */
 .mainSlider {
   overflow: hidden;
   position: relative;
@@ -1677,13 +1670,12 @@ body {
   font-size: 90%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 191, main.scss */
+  /* line 200, main.scss */
   .mainSlider {
     font-size: 100%;
   }
 }
-
-/* line 212, main.scss */
+/* line 221, main.scss */
 .mainSlider:before {
   content: '';
   width: 100%;
@@ -1696,21 +1688,20 @@ body {
   background-size: auto 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 212, main.scss */
+  /* line 221, main.scss */
   .mainSlider:before {
     height: 400px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 212, main.scss */
+  /* line 221, main.scss */
   .mainSlider:before {
     background-size: 100% auto;
     background-position: bottom;
     height: 600px;
   }
 }
-
-/* line 233, main.scss */
+/* line 242, main.scss */
 .mainSlider .wrapper > a.logo {
   content: '';
   margin: 0 auto;
@@ -1724,7 +1715,7 @@ body {
   background-size: auto 100%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 233, main.scss */
+  /* line 242, main.scss */
   .mainSlider .wrapper > a.logo {
     left: 25px;
     margin: 0;
@@ -1732,7 +1723,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 233, main.scss */
+  /* line 242, main.scss */
   .mainSlider .wrapper > a.logo {
     width: 300px;
     height: 120px;
@@ -1740,7 +1731,7 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 233, main.scss */
+  /* line 242, main.scss */
   .mainSlider .wrapper > a.logo {
     width: 300px;
     height: 120px;
@@ -1749,13 +1740,12 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 233, main.scss */
+  /* line 242, main.scss */
   .mainSlider .wrapper > a.logo {
     position: relative;
   }
 }
-
-/* line 265, main.scss */
+/* line 274, main.scss */
 .mainSlider .wrapper .topMenu {
   color: #000;
   padding: 5px;
@@ -1766,7 +1756,7 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 265, main.scss */
+  /* line 274, main.scss */
   .mainSlider .wrapper .topMenu {
     width: 450px;
     margin: 0 auto;
@@ -1774,7 +1764,7 @@ body {
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 265, main.scss */
+  /* line 274, main.scss */
   .mainSlider .wrapper .topMenu {
     background: url("../img/menuBGVert.png") no-repeat;
     margin-left: 80px;
@@ -1786,7 +1776,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 265, main.scss */
+  /* line 274, main.scss */
   .mainSlider .wrapper .topMenu {
     width: 600px;
     height: 40px;
@@ -1796,7 +1786,7 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 265, main.scss */
+  /* line 274, main.scss */
   .mainSlider .wrapper .topMenu {
     top: 80px;
     margin: 0 auto;
@@ -1807,7 +1797,7 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 265, main.scss */
+  /* line 274, main.scss */
   .mainSlider .wrapper .topMenu {
     top: 80px;
     margin: 0 auto;
@@ -1816,82 +1806,73 @@ body {
     height: 50px;
   }
 }
-
-/* line 311, main.scss */
+/* line 320, main.scss */
 .mainSlider .wrapper .topMenu .noMobyle {
   display: none;
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 311, main.scss */
+  /* line 320, main.scss */
   .mainSlider .wrapper .topMenu .noMobyle {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 311, main.scss */
+  /* line 320, main.scss */
   .mainSlider .wrapper .topMenu .noMobyle {
     display: inline-block;
   }
 }
-
-/* line 320, main.scss */
+/* line 329, main.scss */
 .mainSlider .wrapper .topMenu ul {
   margin: 0;
   padding: 0;
 }
-
-/* line 323, main.scss */
+/* line 332, main.scss */
 .mainSlider .wrapper .topMenu ul li {
   display: inline-block;
   margin-right: 4px;
   position: relative;
   line-height: 1.5;
 }
-
-/* line 328, main.scss */
+/* line 337, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(1) > a:before {
   background-position: -75px 0;
 }
-
-/* line 331, main.scss */
+/* line 340, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(2) > a:before {
   background-position: -142px 0;
 }
-
-/* line 334, main.scss */
+/* line 343, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(3) > a:before {
   background-position: -238px 0;
 }
-
-/* line 337, main.scss */
+/* line 346, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(4) > a:before {
   background-position: -176px 0;
 }
-
-/* line 340, main.scss */
+/* line 349, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(10) > a:before {
   background-position: -113px 0;
 }
-
-/* line 343, main.scss */
+/* line 352, main.scss */
 .mainSlider .wrapper .topMenu ul li:nth-child(5) > a:before {
   background-position: -203px 0;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 323, main.scss */
+  /* line 332, main.scss */
   .mainSlider .wrapper .topMenu ul li {
     display: block;
     margin: 15px 5px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 323, main.scss */
+  /* line 332, main.scss */
   .mainSlider .wrapper .topMenu ul li {
     margin-right: 15px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 357, main.scss */
+  /* line 366, main.scss */
   .mainSlider .wrapper .topMenu ul li > a:before {
     content: '';
     width: 30px;
@@ -1906,7 +1887,7 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) and (min-width: 1280px) {
-  /* line 357, main.scss */
+  /* line 366, main.scss */
   .mainSlider .wrapper .topMenu ul li > a:before {
     content: '';
     width: 35px;
@@ -1921,7 +1902,7 @@ body {
   }
 }
 
-/* line 385, main.scss */
+/* line 394, main.scss */
 .mainSlider .wrapper .topMenu ul li > a {
   text-decoration: inherit;
   color: #000;
@@ -1929,56 +1910,51 @@ body {
   display: inline-block;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 385, main.scss */
+  /* line 394, main.scss */
   .mainSlider .wrapper .topMenu ul li > a {
     padding-left: 40px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 385, main.scss */
+  /* line 394, main.scss */
   .mainSlider .wrapper .topMenu ul li > a {
     padding-left: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 385, main.scss */
+  /* line 394, main.scss */
   .mainSlider .wrapper .topMenu ul li > a {
     padding-left: 40px;
   }
 }
-
-/* line 399, main.scss */
+/* line 408, main.scss */
 .mainSlider .wrapper .topMenu ul li > a > span {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 399, main.scss */
+  /* line 408, main.scss */
   .mainSlider .wrapper .topMenu ul li > a > span {
     display: inline;
   }
 }
-
-/* line 405, main.scss */
+/* line 414, main.scss */
 .mainSlider .wrapper .topMenu ul li > a:hover {
   color: orange;
 }
-
-/* line 407, main.scss */
+/* line 416, main.scss */
 .mainSlider .wrapper .topMenu ul li > a:hover:before {
   background-position-y: -29px;
 }
-
-/* line 416, main.scss */
+/* line 425, main.scss */
 .mainSlider .wrapper .clouds {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 416, main.scss */
+  /* line 425, main.scss */
   .mainSlider .wrapper .clouds {
     display: block;
   }
-
-  /* line 420, main.scss */
+  /* line 429, main.scss */
   .mainSlider .wrapper .clouds > ul > li {
     content: '';
     list-style: none;
@@ -1992,23 +1968,20 @@ body {
     top: 50px;
     left: 20px;
   }
-
-  /* line 432, main.scss */
+  /* line 441, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(2) {
     top: 240px;
     left: 80px;
     transform: scale(0.7);
     background-position: bottom;
   }
-
-  /* line 438, main.scss */
+  /* line 447, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(3) {
     transform: scale(0.4);
     top: 140px;
     left: 40px;
   }
-
-  /* line 443, main.scss */
+  /* line 452, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(4) {
     top: 50px;
     left: inherit;
@@ -2018,49 +1991,43 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 416, main.scss */
+  /* line 425, main.scss */
   .mainSlider .wrapper .clouds {
     display: block;
   }
-
-  /* line 454, main.scss */
+  /* line 463, main.scss */
   .mainSlider .wrapper .clouds > ul > li {
     content: '';
     top: 200px;
     left: inherit;
   }
-
-  /* line 459, main.scss */
+  /* line 468, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(2) {
     left: 50%;
     top: 0;
   }
-
-  /* line 465, main.scss */
+  /* line 474, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(4) {
     top: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 472, main.scss */
+  /* line 481, main.scss */
   .mainSlider .wrapper .clouds > ul > li {
     content: '';
     top: 90px;
     left: 10px;
   }
-
-  /* line 477, main.scss */
+  /* line 486, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(2) {
     top: 160px;
   }
-
-  /* line 480, main.scss */
+  /* line 489, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(3) {
     top: 130px;
     left: 300px;
   }
-
-  /* line 484, main.scss */
+  /* line 493, main.scss */
   .mainSlider .wrapper .clouds > ul > li:nth-child(4) {
     top: 20px;
     left: inherit;
@@ -2069,8 +2036,7 @@ body {
     background-position: bottom;
   }
 }
-
-/* line 497, main.scss */
+/* line 506, main.scss */
 .mainSlider .wrapper .moon {
   content: '';
   width: 166px;
@@ -2081,8 +2047,7 @@ body {
   background: url("../img/moon.png") no-repeat;
   background-size: auto 100%;
 }
-
-/* line 508, main.scss */
+/* line 517, main.scss */
 .mainSlider .wrapper .speach {
   display: block;
   position: absolute;
@@ -2096,20 +2061,20 @@ body {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 508, main.scss */
+  /* line 517, main.scss */
   .mainSlider .wrapper .speach {
     left: 65%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 508, main.scss */
+  /* line 517, main.scss */
   .mainSlider .wrapper .speach {
     left: 90px;
     bottom: 270px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 508, main.scss */
+  /* line 517, main.scss */
   .mainSlider .wrapper .speach {
     left: 50%;
     margin-left: -85px;
@@ -2117,13 +2082,12 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 508, main.scss */
+  /* line 517, main.scss */
   .mainSlider .wrapper .speach {
     bottom: 250px;
   }
 }
-
-/* line 537, main.scss */
+/* line 546, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_1 {
   position: absolute;
   width: 214px;
@@ -2134,8 +2098,7 @@ body {
   -webkit-transform: rotate(-206deg);
   overflow: hidden;
 }
-
-/* line 546, main.scss */
+/* line 555, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_1 .top_part {
   width: 170px;
   height: 93px;
@@ -2149,8 +2112,7 @@ body {
   box-shadow: 0 0 15px black;
   -webkit-box-shadow: 0 0 15px black;
 }
-
-/* line 561, main.scss */
+/* line 570, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_2 {
   width: 214px;
   height: 120px;
@@ -2161,8 +2123,7 @@ body {
   -webkit-transform: rotate(-26deg);
   overflow: hidden;
 }
-
-/* line 570, main.scss */
+/* line 579, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_2 .bottom_part {
   width: 145px;
   height: 88px;
@@ -2176,8 +2137,7 @@ body {
   box-shadow: 0 0 15px black;
   -webkit-box-shadow: 0 0 15px black;
 }
-
-/* line 584, main.scss */
+/* line 593, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_3 {
   position: absolute;
   width: 84px;
@@ -2186,8 +2146,7 @@ body {
   left: 39px;
   overflow: hidden;
 }
-
-/* line 591, main.scss */
+/* line 600, main.scss */
 .mainSlider .wrapper .speach .speach_bg .wrapper_3 .arrow {
   width: 41px;
   height: 29px;
@@ -2200,15 +2159,13 @@ body {
   box-shadow: 0 0 15px black;
   -webkit-box-shadow: 0 0 15px black;
 }
-
-/* line 605, main.scss */
+/* line 614, main.scss */
 .mainSlider .wrapper .speach p {
   position: relative;
   line-height: 3;
   text-transform: uppercase;
 }
-
-/* line 610, main.scss */
+/* line 619, main.scss */
 .mainSlider .wrapper .speach #phone {
   width: 125px;
   text-align: right;
@@ -2219,13 +2176,11 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-/* line 619, main.scss */
+/* line 628, main.scss */
 .mainSlider .wrapper .speach #phone a {
   color: #000;
 }
-
-/* line 622, main.scss */
+/* line 631, main.scss */
 .mainSlider .wrapper .speach #phone:before {
   content: '';
   width: 35px;
@@ -2236,8 +2191,7 @@ body {
   display: block;
   background: red;
 }
-
-/* line 633, main.scss */
+/* line 642, main.scss */
 .mainSlider .wrapper .speach #phone:after {
   content: '';
   width: 30px;
@@ -2250,8 +2204,7 @@ body {
   background-size: 388px auto;
   background-position: -325px 0px;
 }
-
-/* line 647, main.scss */
+/* line 656, main.scss */
 .mainSlider .wrapper .tarzan {
   content: '';
   display: block;
@@ -2265,38 +2218,37 @@ body {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 647, main.scss */
+  /* line 656, main.scss */
   .mainSlider .wrapper .tarzan {
     left: 65%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 647, main.scss */
+  /* line 656, main.scss */
   .mainSlider .wrapper .tarzan {
     left: 90px;
     bottom: 130px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 647, main.scss */
+  /* line 656, main.scss */
   .mainSlider .wrapper .tarzan {
     left: 50%;
     bottom: 10px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 647, main.scss */
+  /* line 656, main.scss */
   .mainSlider .wrapper .tarzan {
     bottom: 100px;
   }
 }
-
-/* line 674, main.scss */
+/* line 683, main.scss */
 .mainSlider .wrapper .wood {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 674, main.scss */
+  /* line 683, main.scss */
   .mainSlider .wrapper .wood {
     display: block;
     content: '';
@@ -2309,16 +2261,14 @@ body {
     bottom: 130px;
     right: 50px;
   }
-
-  /* line 688, main.scss */
+  /* line 697, main.scss */
   .mainSlider .wrapper .wood > ul {
     position: relative;
     top: 50px;
     margin: 0;
     padding: 0;
   }
-
-  /* line 693, main.scss */
+  /* line 702, main.scss */
   .mainSlider .wrapper .wood > ul > li {
     content: '';
     width: 60px;
@@ -2331,31 +2281,27 @@ body {
     margin-right: 10px;
     position: relative;
   }
-
-  /* line 704, main.scss */
+  /* line 713, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(2) {
     background-position: 0 -65px;
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
     top: 20px;
   }
-
-  /* line 710, main.scss */
+  /* line 719, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(3) {
     background-position: 0 -130px;
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
-
-  /* line 715, main.scss */
+  /* line 724, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(4) {
     background-position: 0px -195px;
     top: 15px;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
-
-  /* line 721, main.scss */
+  /* line 730, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(5) {
     background: red;
     padding: 5px;
@@ -2368,8 +2314,7 @@ body {
     -webkit-transform: rotate(-3deg);
     transform: rotate(-3deg);
   }
-
-  /* line 732, main.scss */
+  /* line 741, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(5) > a {
     position: relative;
     top: -40px;
@@ -2379,13 +2324,11 @@ body {
     width: auto;
     height: auto;
   }
-
-  /* line 741, main.scss */
+  /* line 750, main.scss */
   .mainSlider .wrapper .wood > ul > li:nth-child(5):before {
     top: -35px;
   }
-
-  /* line 745, main.scss */
+  /* line 754, main.scss */
   .mainSlider .wrapper .wood > ul > li > a {
     content: '';
     position: absolute;
@@ -2394,8 +2337,7 @@ body {
     top: 0px;
     display: block;
   }
-
-  /* line 754, main.scss */
+  /* line 763, main.scss */
   .mainSlider .wrapper .wood > ul > li:before {
     content: '';
     display: block;
@@ -2409,25 +2351,24 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 674, main.scss */
+  /* line 683, main.scss */
   .mainSlider .wrapper .wood {
     bottom: 5px;
     right: 40px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 674, main.scss */
+  /* line 683, main.scss */
   .mainSlider .wrapper .wood {
     bottom: 80px;
   }
 }
-
-/* line 776, main.scss */
+/* line 785, main.scss */
 .mainSlider .wrapper .mailBox {
   display: none;
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 776, main.scss */
+  /* line 785, main.scss */
   .mainSlider .wrapper .mailBox {
     display: block;
     width: 266px;
@@ -2437,8 +2378,7 @@ body {
     bottom: 10px;
     left: 100px;
   }
-
-  /* line 786, main.scss */
+  /* line 795, main.scss */
   .mainSlider .wrapper .mailBox a {
     display: block;
     color: #fff;
@@ -2448,13 +2388,11 @@ body {
     transform: skew(0deg, -15deg);
     -webkit-transform: skew(0deg, -15deg);
   }
-
-  /* line 795, main.scss */
+  /* line 804, main.scss */
   .mainSlider .wrapper .mailBox .telInBox {
     font-size: 180%;
   }
-
-  /* line 799, main.scss */
+  /* line 808, main.scss */
   .mainSlider .wrapper .mailBox .mailInBox:before {
     content: '';
     width: 30px;
@@ -2467,21 +2405,20 @@ body {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
   }
-
-  /* line 811, main.scss */
+  /* line 820, main.scss */
   .mainSlider .wrapper .mailBox .mailInBox:hover:before {
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 776, main.scss */
+  /* line 785, main.scss */
   .mainSlider .wrapper .mailBox {
     bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 232, main.scss */
+  /* line 241, main.scss */
   .mainSlider .wrapper {
     width: 1200px;
     height: 100%;
@@ -2490,7 +2427,7 @@ body {
   }
 }
 
-/* line 832, main.scss */
+/* line 841, main.scss */
 .programs {
   background: url("../img/body-bg.jpg");
   overflow: hidden;
@@ -2499,89 +2436,79 @@ body {
   height: 100%;
   display: block;
 }
-
-/* line 841, main.scss */
+/* line 850, main.scss */
 .programs img {
   width: 120px;
   height: auto;
   display: inline-block;
 }
-
-/* line 846, main.scss */
+/* line 855, main.scss */
 .programs .ourPr {
   display: none;
 }
-
-/* line 850, main.scss */
+/* line 859, main.scss */
 .programs .description, .programs .media {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 850, main.scss */
+  /* line 859, main.scss */
   .programs .description, .programs .media {
     display: block;
     text-align: center;
   }
 }
-
-/* line 857, main.scss */
+/* line 866, main.scss */
 .programs .description {
   padding: 20px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 857, main.scss */
+  /* line 866, main.scss */
   .programs .description {
     margin-top: 10px;
   }
 }
-
-/* line 862, main.scss */
+/* line 871, main.scss */
 .programs .description p {
   text-align: justify;
   margin-top: 10px;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 862, main.scss */
+  /* line 871, main.scss */
   .programs .description p {
     margin-top: 20px;
   }
 }
-
-/* line 869, main.scss */
+/* line 878, main.scss */
 .programs .description p .programTitle {
   color: red;
   font-weight: bold;
 }
-
-/* line 872, main.scss */
+/* line 881, main.scss */
 .programs .description p .programTitle > span {
   font-weight: normal;
   color: #000;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 869, main.scss */
+  /* line 878, main.scss */
   .programs .description p .programTitle {
     display: block;
   }
 }
-
-/* line 880, main.scss */
+/* line 889, main.scss */
 .programs .description p .preTitle {
   font-weight: bold;
 }
-
-/* line 882, main.scss */
+/* line 891, main.scss */
 .programs .description p .preTitle > span {
   font-weight: normal;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 880, main.scss */
+  /* line 889, main.scss */
   .programs .description p .preTitle {
     display: block;
   }
 }
-
-/* line 890, main.scss */
+/* line 899, main.scss */
 .programs .description p .price {
   display: block;
   padding: 10px;
@@ -2591,15 +2518,13 @@ body {
   margin-left: 80%;
   text-align: center;
 }
-
-/* line 900, main.scss */
+/* line 909, main.scss */
 .programs .description p.textOM, .programs .description p.textUK, .programs .description p.textGAV {
   margin-right: 20%;
   position: relative;
   height: 20px;
 }
-
-/* line 904, main.scss */
+/* line 913, main.scss */
 .programs .description p.textOM .price, .programs .description p.textUK .price, .programs .description p.textGAV .price {
   padding: 5px;
   position: absolute;
@@ -2609,49 +2534,45 @@ body {
   width: 35%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 904, main.scss */
+  /* line 913, main.scss */
   .programs .description p.textOM .price, .programs .description p.textUK .price, .programs .description p.textGAV .price {
     padding: 10px;
     width: 20%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 900, main.scss */
+  /* line 909, main.scss */
   .programs .description p.textOM, .programs .description p.textUK, .programs .description p.textGAV {
     height: auto;
     display: block;
   }
 }
-
-/* line 924, main.scss */
+/* line 933, main.scss */
 .programs .description p .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 924, main.scss */
+  /* line 933, main.scss */
   .programs .description p .notForMobyle {
     display: inline;
   }
 }
-
-/* line 932, main.scss */
+/* line 941, main.scss */
 .programs .description.active, .programs .media.active {
   display: block;
 }
-
-/* line 935, main.scss */
+/* line 944, main.scss */
 .programs .buttonReadMore {
   width: 200px;
   margin: 5px auto;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 935, main.scss */
+  /* line 944, main.scss */
   .programs .buttonReadMore {
     display: none;
   }
 }
-
-/* line 942, main.scss */
+/* line 951, main.scss */
 .programs .videoOM, .programs .videoUA, .programs .videoGAV {
   content: '';
   display: block;
@@ -2663,7 +2584,7 @@ body {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 942, main.scss */
+  /* line 951, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
     display: inline-block;
     width: 240px;
@@ -2672,7 +2593,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 942, main.scss */
+  /* line 951, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
     display: inline-block;
     width: 240px;
@@ -2681,8 +2602,7 @@ body {
     margin-top: 0;
   }
 }
-
-/* line 967, main.scss */
+/* line 976, main.scss */
 .programs .videoOM a, .programs .videoUA a, .programs .videoGAV a {
   content: '';
   width: 100%;
@@ -2690,36 +2610,32 @@ body {
   position: relative;
   display: block;
 }
-
-/* line 975, main.scss */
+/* line 984, main.scss */
 .programs .videoUA {
   background-position: bottom;
 }
-
-/* line 978, main.scss */
+/* line 987, main.scss */
 .programs .videoGAV {
   background-position: center;
 }
-
-/* line 981, main.scss */
+/* line 990, main.scss */
 .programs .imgOM, .programs .imgGAV, .programs .imgUA {
   display: block;
   width: 250px;
   margin: 0 auto;
 }
-
-/* line 985, main.scss */
+/* line 994, main.scss */
 .programs .imgOM .notForMobyle, .programs .imgGAV .notForMobyle, .programs .imgUA .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 985, main.scss */
+  /* line 994, main.scss */
   .programs .imgOM .notForMobyle, .programs .imgGAV .notForMobyle, .programs .imgUA .notForMobyle {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 981, main.scss */
+  /* line 990, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     display: inline-block;
     transform: scale(0.9);
@@ -2728,76 +2644,69 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 981, main.scss */
+  /* line 990, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     display: inline-block;
     width: 370px;
   }
 }
-
-/* line 1003, main.scss */
+/* line 1012, main.scss */
 .programs .titlePr {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-
-/* line 1007, main.scss */
+/* line 1016, main.scss */
 .programs .titlePr ul {
   text-align: center;
   display: flex;
   display: -webkit-flex;
 }
-
-/* line 1011, main.scss */
+/* line 1020, main.scss */
 .programs .titlePr ul li {
   margin: 10px;
   flex: 1;
   -webkit-flex: 1;
 }
-
-/* line 1015, main.scss */
+/* line 1024, main.scss */
 .programs .titlePr ul li a {
   color: #000;
 }
-
-/* line 1018, main.scss */
+/* line 1027, main.scss */
 .programs .titlePr ul li span {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1018, main.scss */
+  /* line 1027, main.scss */
   .programs .titlePr ul li span {
     display: inline;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1003, main.scss */
+  /* line 1012, main.scss */
   .programs .titlePr {
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1035, main.scss */
+  /* line 1044, main.scss */
   .programs .bxslider > li {
     padding: 10px;
   }
 }
-
-/* line 1043, main.scss */
+/* line 1052, main.scss */
 .programs .bxslider > li:nth-child(1) {
   padding: 20px;
 }
 
-/* line 1049, main.scss */
+/* line 1058, main.scss */
 .artistes {
   background-image: linear-gradient(-90deg, #FFA200, #F600FF);
   width: 100%;
   height: 100%;
   text-align: center;
 }
-
-/* line 1055, main.scss */
+/* line 1064, main.scss */
 .artistes .artistCard {
   top: 10px;
   position: relative;
@@ -2806,13 +2715,13 @@ body {
   display: inline-block;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1055, main.scss */
+  /* line 1064, main.scss */
   .artistes .artistCard {
     width: 45%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1055, main.scss */
+  /* line 1064, main.scss */
   .artistes .artistCard {
     top: 0%;
     position: relative;
@@ -2825,13 +2734,13 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1055, main.scss */
+  /* line 1064, main.scss */
   .artistes .artistCard {
     top: 10%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1055, main.scss */
+  /* line 1064, main.scss */
   .artistes .artistCard {
     top: 10%;
     position: relative;
@@ -2845,8 +2754,7 @@ body {
     margin-right: 0px;
   }
 }
-
-/* line 1090, main.scss */
+/* line 1099, main.scss */
 .artistes .artistCard .artistBtn {
   position: relative;
   width: auto;
@@ -2857,13 +2765,13 @@ body {
   color: #fff;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1090, main.scss */
+  /* line 1099, main.scss */
   .artistes .artistCard .artistBtn {
     text-align: right;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1090, main.scss */
+  /* line 1099, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 200px;
@@ -2878,7 +2786,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3) and (min-width: 1280px), only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) and (min-width: 1280px) {
-  /* line 1090, main.scss */
+  /* line 1099, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -2894,7 +2802,7 @@ body {
 }
 
 @media only screen and (min-width: 1280px) {
-  /* line 1090, main.scss */
+  /* line 1099, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -2908,8 +2816,7 @@ body {
     padding-left: 0;
   }
 }
-
-/* line 1138, main.scss */
+/* line 1147, main.scss */
 .artistes .artistCard .artistBtn:before {
   content: '';
   width: 80px;
@@ -2922,25 +2829,24 @@ body {
   border-radius: 50%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1138, main.scss */
+  /* line 1147, main.scss */
   .artistes .artistCard .artistBtn:before {
     left: 20px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1138, main.scss */
+  /* line 1147, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1138, main.scss */
+  /* line 1147, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
-
-/* line 1160, main.scss */
+/* line 1169, main.scss */
 .artistes .card {
   top: 0;
   left: 0;
@@ -2957,19 +2863,18 @@ body {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1160, main.scss */
+  /* line 1169, main.scss */
   .artistes .card {
     display: block;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1160, main.scss */
+  /* line 1169, main.scss */
   .artistes .card {
     display: block;
   }
 }
-
-/* line 1180, main.scss */
+/* line 1189, main.scss */
 .artistes .card figure {
   width: 100%;
   height: 100%;
@@ -2981,14 +2886,12 @@ body {
   margin: 0;
   border-radius: 5px;
 }
-
-/* line 1191, main.scss */
+/* line 1200, main.scss */
 .artistes .card .back {
   background: url("../img/artists.png") no-repeat;
   background-size: 100% auto;
 }
-
-/* line 1195, main.scss */
+/* line 1204, main.scss */
 .artistes .card .front {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
@@ -2997,8 +2900,7 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-
-/* line 1202, main.scss */
+/* line 1211, main.scss */
 .artistes .card .front .artistsText {
   position: absolute;
   margin: 10px;
@@ -3006,26 +2908,24 @@ body {
   text-align: justify;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1202, main.scss */
+  /* line 1211, main.scss */
   .artistes .card .front .artistsText {
     height: 350px;
     overflow: hidden;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1202, main.scss */
+  /* line 1211, main.scss */
   .artistes .card .front .artistsText {
     overflow: visible;
   }
 }
-
-/* line 1215, main.scss */
+/* line 1224, main.scss */
 .artistes .card .front .artistsText .bold {
   font-weight: bold;
   color: red;
 }
-
-/* line 1223, main.scss */
+/* line 1232, main.scss */
 .artistes .card.flip, .artistes .card:hover {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -3034,74 +2934,69 @@ body {
   transform: rotateY(180deg);
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1232, main.scss */
+  /* line 1241, main.scss */
   .artistes .me .back {
     background-position: 0px -390px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1232, main.scss */
+  /* line 1241, main.scss */
   .artistes .me .back {
     background-position: 0px -488px;
   }
 }
-
-/* line 1240, main.scss */
+/* line 1249, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1245, main.scss */
+  /* line 1254, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1170px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1245, main.scss */
+  /* line 1254, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1465px;
   }
 }
-
-/* line 1254, main.scss */
+/* line 1263, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1259, main.scss */
+  /* line 1268, main.scss */
   .artistes .serg .back {
     background-position: 0px -780px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1259, main.scss */
+  /* line 1268, main.scss */
   .artistes .serg .back {
     background-position: 0px -977px;
   }
 }
-
-/* line 1267, main.scss */
+/* line 1276, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1271, main.scss */
+  /* line 1280, main.scss */
   .artistes .alina {
     margin-top: -20px;
   }
 }
-
-/* line 1275, main.scss */
+/* line 1284, main.scss */
 .artistes .alina .back {
   background-position: 0px bottom;
 }
-
-/* line 1278, main.scss */
+/* line 1287, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
 }
 
-/* line 1288, main.scss */
+/* line 1297, main.scss */
 .mainCalendar {
   width: 100%;
   height: 100%;
@@ -3109,8 +3004,7 @@ body {
   background-image: linear-gradient(-30deg, #FF2200, #FFD500);
   overflow: hidden;
 }
-
-/* line 1295, main.scss */
+/* line 1304, main.scss */
 .mainCalendar h1 {
   text-align: center;
   text-transform: uppercase;
@@ -3119,19 +3013,18 @@ body {
   top: 10%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1295, main.scss */
+  /* line 1304, main.scss */
   .mainCalendar h1 {
     top: 2%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1295, main.scss */
+  /* line 1304, main.scss */
   .mainCalendar h1 {
     font-size: 130%;
   }
 }
-
-/* line 1309, main.scss */
+/* line 1318, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
   margin: 0 auto;
@@ -3139,58 +3032,56 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 1309, main.scss */
+  /* line 1318, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 400px;
     top: 10%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1309, main.scss */
+  /* line 1318, main.scss */
   .mainCalendar #calendari_lateral1 {
     top: 5%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1309, main.scss */
+  /* line 1318, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1309, main.scss */
+  /* line 1318, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 700px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1309, main.scss */
+  /* line 1318, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 800px;
   }
 }
-
-/* line 1333, main.scss */
+/* line 1342, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1336, main.scss */
+  /* line 1345, main.scss */
   .mainCalendar #calendari_lateral1 .table tr {
     height: 50px;
   }
 }
 
-/* line 1347, main.scss */
+/* line 1356, main.scss */
 .feedback {
   width: 100%;
   height: 100%;
   display: block;
   background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
 }
-
-/* line 1352, main.scss */
+/* line 1361, main.scss */
 .feedback > div {
   width: 300px;
   overflow: hidden;
@@ -3200,32 +3091,31 @@ body {
   top: 10px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1352, main.scss */
+  /* line 1361, main.scss */
   .feedback > div {
     width: 500px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1352, main.scss */
+  /* line 1361, main.scss */
   .feedback > div {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1352, main.scss */
+  /* line 1361, main.scss */
   .feedback > div {
     width: 1000px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1352, main.scss */
+  /* line 1361, main.scss */
   .feedback > div {
     top: 10%;
     width: 1000px;
   }
 }
-
-/* line 1379, main.scss */
+/* line 1388, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
   margin: 0 auto;
@@ -3233,13 +3123,11 @@ body {
   overflow: scroll;
   text-align: center;
 }
-
-/* line 1386, main.scss */
+/* line 1395, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
-
-/* line 1390, main.scss */
+/* line 1399, main.scss */
 .feedback .wedComments {
   width: 220px;
   height: auto;
@@ -3249,7 +3137,7 @@ body {
   margin-top: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1390, main.scss */
+  /* line 1399, main.scss */
   .feedback .wedComments {
     width: 340px;
     padding-left: 120px;
@@ -3257,8 +3145,7 @@ body {
     min-height: 100px;
   }
 }
-
-/* line 1404, main.scss */
+/* line 1413, main.scss */
 .feedback .wedComments:before {
   content: '';
   width: 50px;
@@ -3271,38 +3158,35 @@ body {
   left: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1404, main.scss */
+  /* line 1413, main.scss */
   .feedback .wedComments:before {
     width: 100px;
     height: 100px;
   }
 }
-
-/* line 1419, main.scss */
+/* line 1428, main.scss */
 .feedback .wedComments .quote {
   position: relative;
   display: inline-block;
   text-indent: 30px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1419, main.scss */
+  /* line 1428, main.scss */
   .feedback .wedComments .quote {
     width: 400px;
   }
 }
-
-/* line 1426, main.scss */
+/* line 1435, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1426, main.scss */
+  /* line 1435, main.scss */
   .feedback .wedComments .quote .notForMobyle {
     display: inline-block;
   }
 }
-
-/* line 1433, main.scss */
+/* line 1442, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3312,8 +3196,7 @@ body {
   position: absolute;
   left: 0px;
 }
-
-/* line 1443, main.scss */
+/* line 1452, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -3325,107 +3208,94 @@ body {
   position: absolute;
   margin-right: 20px;
 }
-
-/* line 1458, main.scss */
+/* line 1467, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
   font-weight: bold;
   font-style: italic;
   margin: 5px;
 }
-
-/* line 1465, main.scss */
+/* line 1474, main.scss */
 .feedback .teren {
   display: none;
 }
-
-/* line 1467, main.scss */
+/* line 1476, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1465, main.scss */
+  /* line 1474, main.scss */
   .feedback .teren {
     display: inline-table;
   }
 }
-
-/* line 1476, main.scss */
+/* line 1485, main.scss */
 .feedback .terel {
   display: none;
 }
-
-/* line 1478, main.scss */
+/* line 1487, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1483, main.scss */
+/* line 1492, main.scss */
 .feedback .slavko {
   display: none;
 }
-
-/* line 1485, main.scss */
+/* line 1494, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1483, main.scss */
+  /* line 1492, main.scss */
   .feedback .slavko {
     display: inline-table;
   }
 }
-
-/* line 1494, main.scss */
+/* line 1503, main.scss */
 .feedback .poroh {
   display: none;
 }
-
-/* line 1496, main.scss */
+/* line 1505, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1494, main.scss */
+  /* line 1503, main.scss */
   .feedback .poroh {
     display: inline-table;
   }
 }
-
-/* line 1505, main.scss */
+/* line 1514, main.scss */
 .feedback .homi {
   display: none;
 }
-
-/* line 1507, main.scss */
+/* line 1516, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
-
-/* line 1513, main.scss */
+/* line 1522, main.scss */
 .feedback .stars {
   display: none;
 }
-
-/* line 1515, main.scss */
+/* line 1524, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;
   border: 1px solid grey;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1513, main.scss */
+  /* line 1522, main.scss */
   .feedback .stars {
     display: inline-table;
   }
 }
 
-/* line 1531, main.scss */
+/* line 1540, main.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -3433,13 +3303,13 @@ body {
   animation-fill-mode: both;
 }
 
-/* line 1537, main.scss */
+/* line 1546, main.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 1541, main.scss */
+/* line 1550, main.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -3495,8 +3365,7 @@ body {
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-
-/* line 1595, main.scss */
+/* line 1604, main.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -3566,8 +3435,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-
-/* line 1663, main.scss */
+/* line 1672, main.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;

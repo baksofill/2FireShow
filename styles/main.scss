@@ -847,11 +847,91 @@ body {
   display: block;
   //  display: none;
 
-  img {
+  .omGallary,.ukrGallary, .gavGallary {
     width: 120px;
-    height: auto;
+    height: 80px;
     display: inline-block;
+    content: '';
+    background: url("../img/gallery/1-om.png");
+    background-size: 100% auto;
   }
+  .ukrGallary{
+    background: url("../img/gallery/2-ukr.png");
+  }
+  .gavGallary{
+    background: url("../img/gallery/3-gav.png");
+  }
+  .imgOM, .imgUA {
+    a:nth-child(2)>span{
+       background-position: -0px -86px;
+     }
+    a:nth-child(3)>span{
+      background-position: -0px -86px*2;
+    }
+    a:nth-child(4)>span{
+      background-position: -0px -86px*3;
+    }
+    a:nth-child(5)>span{
+      background-position: -0px -86px*4;
+    }
+    a:nth-child(6)>span{
+      background-position: -0px -86px*5;
+    }
+    a:nth-child(7)>span{
+      background-position: -0px -86px*6;
+    }
+    a:nth-child(8)>span{
+      background-position: -0px -86px*7;
+    }
+
+  }
+  .imgUA {
+    a:nth-child(2)>span{
+      background-position: -0px -86px;
+    }
+    a:nth-child(3)>span{
+      background-position: -0px -170px;
+    }
+    a:nth-child(4)>span{
+      background-position: -0px -255px;
+    }
+    a:nth-child(5) > span {
+      background-position: -0px -339px;
+    }
+    a:nth-child(6) > span {
+      background-position: -0px -423px;
+    }
+    a:nth-child(7) > span {
+      background-position: -0px -508px;
+    }
+    a:nth-child(8) > span {
+      background-position: -0px -595px;
+    }
+  }
+  .imgGAV{
+    a:nth-child(2)>span{
+      background-position: -0px -85px;
+    }
+    a:nth-child(3)>span{
+      background-position: -0px -170px;
+    }
+    a:nth-child(4)>span{
+      background-position: -0px -270px;
+    }
+    a:nth-child(5) > span {
+      background-position: -0px -354px;
+    }
+    a:nth-child(6) > span {
+      background-position: -0px -438px;
+    }
+    a:nth-child(7) > span {
+      background-position: -0px -522px;
+    }
+    a:nth-child(8) > span {
+      background-position: -0px -606px;
+    }
+  }
+
   .ourPr {
     display: none;
   }
@@ -972,6 +1052,11 @@ body {
       //      vertical-align: top;
       margin-top: 0;
     }
+    @include desktop{
+      width: 300px;
+      height: 164px;
+      margin: 0;
+    }
 
     a {
       content: '';
@@ -997,6 +1082,12 @@ body {
         display: inline-block;
       }
     }
+    .forDesktop{
+      display: none;
+      @include desktop{
+        display: inline-block;
+      }
+    }
     @include mobile-landscape {
       display: inline-block;
       transform: scale(0.9);
@@ -1007,7 +1098,9 @@ body {
       display: inline-block;
       width: 370px;
     }
-
+    @include desktop{
+      width: 500px;
+    }
   }
   .titlePr {
     width: 100%;

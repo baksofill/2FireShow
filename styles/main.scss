@@ -54,17 +54,18 @@ body {
 }
 
 .callMe {
-
   position: absolute;
   height: 100%;
   width: 200px;
   right: 0;
   background-color: red;
   z-index: 10;
-  right: -200px;
+  right: -212px;
   display: none;
   transition: 1s;
   border-left: 1px solid #fff;
+  padding-left: 10px;
+
 
   @include tablet {
     display: block;
@@ -89,12 +90,41 @@ body {
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
     text-align: center;
-    line-height: 2;
+    line-height: 2.2;
     font-size: 130%;
     cursor: pointer;
     margin-top: -50px;
     border: 1px solid #fff;
     border-bottom: none;
+    text-transform: uppercase;
+    .arrow {
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      border: 15px solid transparent;
+      border-top-color: #fff;
+      margin: 0;
+      padding: 0;
+      float: left;
+      right: 20px;
+      top: 10px;
+    }
+    .arrow:before {
+      content: '';
+      width: 0px;
+      height: 0px;
+      border: 13px solid transparent;
+      border-top-color: red;
+      display: inline-block;
+      -webkit-transform: translate(-13px, -24px);
+    }
+    .arrow.down {
+      transform: rotate(0deg) translate(0px, 13px);
+      -webkit-transform: rotate(0deg) translate(0px, 13px);
+      -moz-transform: rotate(0deg) translate(0px, 13px);
+      -o-transform: rotate(0deg) translate(0px, 13px);
+      -ms-transform: rotate(0deg) translate(0px, 13px);
+    }
   }
   .orderCall, .orderFire {
     top: 35%;
@@ -105,6 +135,42 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
     cursor: pointer;
+  }
+  .firstTitle {
+    text-transform: uppercase;
+  }
+  .callEmail, .callTel, .mainCallButton {
+    padding-left: 35px;
+    &:after {
+      content: '';
+      width: 30px;
+      height: 100%;
+      position: absolute;
+      top: 1px;
+      left: 0px;
+      display: block;
+      background: url("../img/menuIcons.png") no-repeat;
+      background-size: 388px auto;
+      background-position: -287px 0px;
+    }
+  }
+  .callTel {
+    letter-spacing: 3px;
+    font-weight: bold;
+    &:after {
+      background-position: -325px 0px;
+    }
+  }
+  .mainCallButton {
+    padding-left: 5px;
+    &:after {
+      height: 30px;
+      top: 15px;
+      left: 10px;
+      background-position: -353px 0px;
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
   }
 
 
@@ -298,7 +364,7 @@ body {
                 left: 0px;
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;
-                background-size: 350px auto;
+                background-size: 388px auto;
                 background-position: -8px 0;
               }
               @include desktop {
@@ -310,9 +376,8 @@ body {
                 left: 0px;
                 display: block;
                 background: url("../img/menuIcons.png") no-repeat;
-                background-size: 350px auto;
+                background-size: 388px auto;
                 background-position-x: 0px;
-
               }
             }
 
@@ -574,7 +639,7 @@ body {
           left: 0px;
           display: block;
           background: url("../img/menuIcons.png") no-repeat;
-          background-size: 350px auto;
+          background-size: 388px auto;
           background-position: -325px 0px;
         }
       }

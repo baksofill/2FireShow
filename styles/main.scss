@@ -62,7 +62,7 @@ body {
   z-index: 10;
   right: -212px;
   display: none;
-  transition: 1s;
+  transition: 0.3s;
   border-left: 1px solid #fff;
   padding-left: 10px;
 
@@ -116,7 +116,7 @@ body {
       float: left;
       right: 20px;
       top: 15px;
-      transition: 1s;
+      transition: 0.5s;
     }
     .arrow:before {
       content: '';
@@ -144,6 +144,12 @@ body {
     margin: 0 auto;
     margin-bottom: 10px;
     cursor: pointer;
+    display: block;
+    position: relative;
+    color: #fff;
+    &:active, &:hover  {
+      border-color: #fff;
+    }
   }
   .firstTitle {
     text-transform: uppercase;
@@ -1382,9 +1388,6 @@ body {
     }
   }
 
-
-
-
 }
 
 .mainCalendar {
@@ -1627,6 +1630,93 @@ body {
 
 }
 
+#orderCallModal{
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+  .closeBtn{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid red;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    background-color: #fff;
+    color: red;
+  }
+  .modal-backdrop{
+    width: 100%;
+    height: 100%!important;
+    position: absolute;
+    display: block;
+    background-color: #000;
+    opacity: 0.6;
+    content: '';
+    z-index: 100;
+  }
+  .modal-header{
+    text-align: right;
+  }
+  h3{
+    color: #000;
+    font-size: 130%;
+    margin: 15px;
+  }
+  &>.modal-body{
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 300px;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -150px;
+    background: #fff;
+    top: 50%;
+    text-align: center;
+    input{
+      font-family: HeliosCondThin;
+      border: 1px solid #c2c2cc;
+      border-radius: 3px;
+      box-shadow: inset 3px 3px 1px 0 #eeeeef;
+      font-size: 1.15385em;
+      margin: 10px;
+
+      padding: 0.33333em;
+      resize: none;
+      outline: none;
+      width: 65%;
+      &:focus{
+        border: 1px solid red;
+      }
+    }
+    button{
+      font-family: HeliosCondThin;
+      border-radius: 3px;
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 120%;
+      resize: none;
+      outline: none;
+      background: red;
+      width: 70%;
+      text-transform: uppercase;
+      color: #fff;
+      border: none;
+      letter-spacing: 1px;
+    }
+  }
+
+
+}
 
 // common animation
 
@@ -1766,4 +1856,118 @@ body {
   -webkit-animation-name: tada;
   animation-name: tada
 }
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+  }
+}
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -ms-transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, .055, .675, .19);
+    animation-timing-function: cubic-bezier(0.55, .055, .675, .19)
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -ms-transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, .885, .32, 1);
+    animation-timing-function: cubic-bezier(0.175, .885, .32, 1)
+  }
+}
+.zoomInDown {
+  -webkit-animation-name: zoomInDown;
+  animation-name: zoomInDown
+}
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0
+  }
+}
+@keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+  }
+  20%,
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    -ms-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out
+  }
+  40%,
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    -ms-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: translate3d(0, 700px, 0);
+    -ms-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0
+  }
+}
+.hinge {
+  -webkit-animation-name: hinge;
+  animation-name: hinge
+}
+
+
 

@@ -216,12 +216,7 @@ $(document).ready(function(){
 
     $('.mainCallButton').click(function () {
         $(this).parent('.callMe ').toggleClass('touched');
-
-
     });
-
-
-
 
     /* -------------  Animations  -------------- */
     $('.social>li').mouseover(function(){
@@ -239,6 +234,12 @@ $(document).ready(function(){
 
     });
     /* -------------  Animations END -------------- */
+
+   /* $('#myModal').on('show', function (e) {
+        if (!data) return e.preventDefault() // Закрытие модального окна (точнее предотвращение его открытия)
+    })*/
+
+
 
 });
 

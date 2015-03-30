@@ -999,6 +999,7 @@ if (typeof jQuery === 'undefined') {
 
             that.$element
                 .addClass('in')
+                .children('.modal-body').removeClass('hinge animated').addClass('zoomInDown animated')
                 .attr('aria-hidden', false)
 
             that.enforceFocus()
@@ -1033,14 +1034,18 @@ if (typeof jQuery === 'undefined') {
 
         this.$element
             .removeClass('in')
+            .children('.modal-body').removeClass('zoomInDown animated').addClass('hinge animated')
             .attr('aria-hidden', true)
             .off('click.dismiss.bs.modal')
 
-        $.support.transition && this.$element.hasClass('fade') ?
-            this.$element
-                .one('bsTransitionEnd', $.proxy(this.hideModal, this))
-                .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
-            this.hideModal()
+            $.support.transition && this.$element.hasClass('fade') ?
+                this.$element
+                    .one('bsTransitionEnd', $.proxy(this.hideModal, this))
+                    .emulateTransitionEnd(Modal.TRANSITION_DURATION) :
+                this.hideModal()
+
+
+
     }
 
     Modal.prototype.enforceFocus = function () {
@@ -1073,7 +1078,11 @@ if (typeof jQuery === 'undefined') {
 
     Modal.prototype.hideModal = function () {
         var that = this
-        this.$element.hide()
+
+        setTimeout(function() {
+            that.$element.hide()
+        }, 2000);
+
         this.backdrop(function () {
             that.$body.removeClass('modal-open')
             that.resetAdjustments()

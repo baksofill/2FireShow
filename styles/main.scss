@@ -1630,7 +1630,7 @@ body {
 
 }
 
-#orderCallModal{
+#orderCallModal, #orderFireModal {
   z-index: 100;
   top: 0;
   left: 0;
@@ -1681,14 +1681,13 @@ body {
     background: #fff;
     top: 50%;
     text-align: center;
-    input{
+    input, select, textarea {
       font-family: HeliosCondThin;
       border: 1px solid #c2c2cc;
       border-radius: 3px;
       box-shadow: inset 3px 3px 1px 0 #eeeeef;
       font-size: 1.15385em;
       margin: 10px;
-
       padding: 0.33333em;
       resize: none;
       outline: none;
@@ -1697,6 +1696,7 @@ body {
         border: 1px solid red;
       }
     }
+
     button{
       font-family: HeliosCondThin;
       border-radius: 3px;
@@ -1714,7 +1714,21 @@ body {
       letter-spacing: 1px;
     }
   }
+}
 
+#orderFireModal {
+  & > .modal-body {
+    height: 600px;
+    margin-top: -300px;
+
+    #customerProgramFire {
+      margin: 10px 0px;
+      width: 68%;
+    }
+    #customerNotesFire {
+      height: 100px;
+    }
+  }
 
 }
 

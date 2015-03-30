@@ -260,7 +260,8 @@
     <div class="callEmail">FireShow@FieryDream.com</div>
 
     <a href="#orderCallModal" role="button" class="btn orderCall" data-toggle="modal">Перезвонить мне</a>
-    <div class="orderFire">Заказать Огненное Шоу</div>
+    <a href="#orderFireModal" role="button" class="btn orderFire" data-toggle="modal">Заказать Огненное Шоу</a>
+
 </div>
 
 <div id="pagepiling">
@@ -692,9 +693,6 @@
                 </div>
                 <div class="t3">
                     <div class="commentsFB">
-
-
-
                         <script src="http://connect.facebook.net/ru-RU/all.js#xfbml=1"></script><fb:comments href="http://fierydream.com/" num_posts="5" width="" colorscheme="light}" notify="true"></fb:comments>
                     </div>
                 </div>
@@ -733,6 +731,40 @@
 
             <button name="cansel"  data-dismiss="modal" aria-hidden="true">Ой, все! Наберу САМ / САМА :)</button>
             <button name="ok" type="submit">Заказать обратный звонок</button>
+        </div>
+    </div>
+</div>
+<div class="modal" id="orderFireModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-body">
+        <div class="modal-header">
+            <div class="closeBtn" data-dismiss="modal" aria-hidden="true">×</div>
+        </div>
+        <div class="modal-text">
+            <h3> Попробуем заказать Огненное Шоу? :)</h3>
+            <input id="customerNameFire" class="form-control" name="fio" required="" type="text" value=""
+                   placeholder="Имя">
+            <input id="customerPhoneFire" class="form-control" name="tel" required="" type="tel" value=""
+                   placeholder="Телефон">
+            <input id="customerDateFire" class="form-control" name="date" required="" type="date" value=""
+                   placeholder="Выберите дату заказа">
+            <input id="customerPlaceFire" class="form-control" name="place" required="" type="text" value=""
+                   placeholder="Место проведения мероприятия">
+            <select id="customerProgramFire" size="1" name="program" required="" class="form-control" type=""
+                    placeholder="ВЫБРАТЬ ПРОГРАМММУ">
+                <option selected disabled>Выбрать программу</option>
+                <option value="Огненный Мир СТАНДАРТ">Огненный Мир "СТАНДАРТ" - 2000грн</option>
+                <option value="Огненный Мир ГРАНД">Огненный Мир "ГРАНД" - 3500грн</option>
+                <option value="Огненный Мир ПРАЙМ">Огненный Мир "ПРАЙМ" - 5000грн</option>
+                <option value="Украина">Украина "ПАЛАЮЧЕ СЕРЦЕ" - 5000грн</option>
+                <option value="Гаваи">"ГАВАИ" - 5000грн</option>
+            </select>
+            <textarea id="customerNotesFire" class="form-control" name="notes" required="" type="te" value=""
+                      placeholder="Возможные нюансы"></textarea>
+        </div>
+        <div class="modal-footer">
+
+
+            <button name="ok" type="submit">Заказать шоу</button>
         </div>
     </div>
 </div>

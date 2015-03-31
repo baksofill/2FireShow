@@ -222,13 +222,19 @@ $(document).ready(function(){
         });
 
     });
-    $('.speach, .tarzan, .kontakts').mouseover(function () {
+    $('.kontakts').mouseover(function () {
         $("#phone").toggleClass('tada animated');
         $("#phone").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function (e) {
             $(e.target).removeClass('tada animated');
         });
 
     });
+    $('button').click(function () {
+        $(this).html('Кнопа не работает :( ').css('background-color', 'grey');
+    });
+    //setTimeout(function(){ $('.navHelp').show() }, 3000);
+
+
     /* -------------  Animations END -------------- */
 
 

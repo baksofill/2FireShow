@@ -74,7 +74,7 @@ body {
   &.touched {
     right: 0;
     .mainCallButton{
-      .arrow.down {
+      .arrowNav.down {
         transform: rotate(0deg);
         -webkit-transform: rotate(0deg);
         top: 22px;
@@ -106,35 +106,6 @@ body {
     border: 1px solid #fff;
     border-bottom: none;
     text-transform: uppercase;
-    .arrow {
-      position: absolute;
-      width: 0px;
-      height: 0px;
-      border: 15px solid transparent;
-      border-top-color: #fff;
-      margin: 0;
-      padding: 0;
-      float: left;
-      right: 20px;
-      top: 15px;
-      transition: 0.5s;
-    }
-    .arrow:before {
-      content: '';
-      width: 0px;
-      height: 0px;
-      border: 13px solid transparent;
-      border-top-color: red;
-      display: inline-block;
-      -webkit-transform: translate(-13px, -24px);
-    }
-    .arrow.down {
-      transform: rotate(90deg) translate(0px, 13px);
-      -webkit-transform: rotate(90deg) translate(0px, 13px);
-      -moz-transform: rotate(90deg) translate(0px, 13px);
-      -o-transform: rotate(90deg) translate(0px, 13px);
-      -ms-transform: rotate(90deg) translate(0px, 13px);
-    }
   }
   .orderCall, .orderFire {
     top: 35%;
@@ -834,6 +805,71 @@ body {
         bottom: 80px;
       }
     }
+    .navHelp {
+      display: none;
+      width: 50px;
+      height: 150px;
+      position: absolute;
+      top: 250px;
+      left: 50%;
+      margin-left: -25px;
+      @include desktop {
+        display: block;
+      }
+      .arrowNav {
+        position: relative;
+        margin: 0 auto;
+        right: 0;
+        float: none;
+        animation: blinking 2s linear infinite;
+        -webkit-animation: blinking 1s linear infinite;
+        opacity: 1;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+
+        &:nth-child(2) {
+          animation-delay: 0.3s;
+          -webkit-animation-delay: 0.3s;
+        }
+        &:nth-child(3) {
+          animation-delay: 0.6s;
+          -webkit-animation-delay: 0.6s;
+        }
+        &:nth-child(4) {
+          animation-delay: 0.9s;
+          -webkit-animation-delay: 0.9s;
+        }
+
+        @-webkit-keyframes blinking {
+          0% {
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 0.5;
+          }
+        }
+
+        @keyframes blinking {
+          0% {
+            opacity: 0;
+          }
+          50% {
+            opacity: 1;
+          }
+        }
+
+      }
+      .arrowNav:before {
+        -webkit-transform: translate(-13px, -14px);
+      }
+      .down {
+        transform: rotate(0deg) translate(0px, 13px);
+        -webkit-transform: rotate(0deg) translate(0px, 13px);
+      }
+    }
+
+
     @include desktop {
       width: 1200px;
       height: 100%;
@@ -1488,7 +1524,13 @@ body {
     height: 600px;
     overflow: scroll;
     text-align: center;
+    .fb_iframe_widget iframe {
+      width: 500px !important;
+      @include desktop {
+        width: 800px !important;
 
+      }
+    }
     #vk_comments, #___comments_0 {
       width: initial !important;
     }
@@ -1585,6 +1627,9 @@ body {
       background: url("../img/comments/vadim.jpg") no-repeat;
       background-size: 100%;
     }
+    @include desktop {
+      display: inline-table;
+    }
   }
   .slavko{
     display: none;
@@ -1625,6 +1670,7 @@ body {
     }
     @include tablet {
       display: inline-table;
+      margin-left: 20px;
     }
 
   }
@@ -1983,6 +2029,39 @@ body {
   -webkit-animation-name: hinge;
   animation-name: hinge
 }
+
+.arrowNav {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 15px solid transparent;
+  border-top-color: #fff;
+  margin: 0;
+  padding: 0;
+  float: left;
+  right: 20px;
+  top: 15px;
+  transition: 0.5s;
+}
+
+.arrowNav:before {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 13px solid transparent;
+  border-top-color: red;
+  display: inline-block;
+  -webkit-transform: translate(-13px, -24px);
+}
+
+.arrowNav.down {
+  transform: rotate(90deg) translate(0px, 13px);
+  -webkit-transform: rotate(90deg) translate(0px, 13px);
+  -moz-transform: rotate(90deg) translate(0px, 13px);
+  -o-transform: rotate(90deg) translate(0px, 13px);
+  -ms-transform: rotate(90deg) translate(0px, 13px);
+}
+
 
 
 

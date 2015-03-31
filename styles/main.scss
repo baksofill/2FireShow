@@ -1631,7 +1631,7 @@ body {
 }
 
 #orderCallModal, #orderFireModal {
-  z-index: 100;
+  z-index: 50;
   top: 0;
   left: 0;
   bottom: 0;
@@ -1659,7 +1659,7 @@ body {
     background-color: #000;
     opacity: 0.6;
     content: '';
-    z-index: 100;
+    z-index: 50;
   }
   .modal-header{
     text-align: right;
@@ -1670,7 +1670,7 @@ body {
     margin: 15px;
   }
   &>.modal-body{
-    z-index: 1000;
+    z-index: 50;
     position: absolute;
     display: block;
     width: 500px;

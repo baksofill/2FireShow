@@ -10,12 +10,6 @@ $(document).ready(function(){
 
         });*/
 
-
-
-
-
-
-
     /* -------------  Loader  -------------- */
     $(window).load(function () {
         $('.loader').delay(1000).fadeOut(600);
@@ -213,10 +207,12 @@ $(document).ready(function(){
     tabs();
     /* -------------  Tabs END -------------- */
 
-
-    $('.mainCallButton').click(function () {
-        $(this).parent('.callMe ').toggleClass('touched');
+    /* -------------  opening sidebar  -------------- */
+    $('.mainCallButton, .kontakts ').click(function () {
+        $('.callMe').toggleClass('touched');
     });
+    /* -------------  opening sidebar END -------------- */
+
 
     /* -------------  Animations  -------------- */
     $('.social>li').mouseover(function(){
@@ -235,9 +231,10 @@ $(document).ready(function(){
     });
     /* -------------  Animations END -------------- */
 
-   /* $('#myModal').on('show', function (e) {
-        if (!data) return e.preventDefault() // Закрытие модального окна (точнее предотвращение его открытия)
-    })*/
+
+    /* -------------  Date for modals     -------------- */
+    $( "#customerDateFire" ).dateDropper({ animation: 'dropdown', format: 'd-m-y', lang:'ru' });
+    /* -------------  Date for modals END -------------- */
 
 
 

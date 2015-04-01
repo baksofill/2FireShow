@@ -106,6 +106,7 @@ body {
     border: 1px solid #fff;
     border-bottom: none;
     text-transform: uppercase;
+    font-weight: bold;
   }
   .orderCall, .orderFire {
     top: 35%;
@@ -144,6 +145,9 @@ body {
   .callTel {
     letter-spacing: 3px;
     font-weight: bold;
+    a{
+      color: #fff;
+    }
     &:after {
       background-position: -325px 0px;
     }
@@ -244,7 +248,9 @@ body {
         height: 120px;
         top: 30px;
         position: absolute;
+
       }
+
       @include desktop {
         position: relative;
       }
@@ -287,7 +293,7 @@ body {
         line-height: 50px;
         height: 50px;
       }
-      @include desktop {
+      @include desktop-short {
         top: 80px;
         margin: 0 auto;
         width: 860px;
@@ -300,7 +306,7 @@ body {
         @include tablet-landscape {
           display: inline-block;
         }
-        @include desktop {
+        @include desktop-short {
           display: inline-block;
         }
       }
@@ -337,10 +343,10 @@ body {
           }
           @include tablet {
             margin-right: 15px;
-//            padding-left: 40px;
+            //            padding-left: 40px;
           }
-          @include desktop {
-//            padding-left: 40px;
+          @include desktop-short {
+            //            padding-left: 40px;
             & > a:before {
               @include tablet-landscape {
                 content: '';
@@ -354,7 +360,7 @@ body {
                 background-size: 388px auto;
                 background-position: -8px 0;
               }
-              @include desktop {
+              @include desktop-short {
                 content: '';
                 width: 35px;
                 height: 30px;
@@ -380,7 +386,7 @@ body {
             @include tablet-landscape {
               padding-left: 20px;
             }
-            @include desktop {
+            @include desktop-short {
               padding-left: 40px;
             }
             & > span {
@@ -502,7 +508,7 @@ body {
       left: 40%;
       margin-left: -85px;
       z-index: 2;
-//MAN      background: url("../img/speachWithShadow.png") no-repeat;
+      //MAN      background: url("../img/speachWithShadow.png") no-repeat;
       background-size: 100% auto;
       @include mobile-landscape {
         left: 65%;
@@ -756,8 +762,12 @@ body {
         bottom: 5px;
         right: 40px;
       }
+      @include desktop-short{
+        right: 100px;
+      }
       @include desktop{
         bottom: 80px;
+        right: 40px;
       }
     }
     .mailBox {
@@ -795,10 +805,10 @@ body {
             transform: rotate(90deg);
             -webkit-transform: rotate(90deg);
           }
-          &:hover:before {
-            transform: rotate(0deg);
-            -webkit-transform: rotate(0deg);
-          }
+        }
+        &:hover>.mailInBox:before{
+          transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
         }
       }
       @include desktop{
@@ -813,15 +823,19 @@ body {
       top: 250px;
       left: 50%;
       margin-left: -25px;
-      @include desktop {
-        display: block;
+      &.animationHelp{
+        animation: helpToScroling 15s linear infinite;
+        -webkit-animation: helpToScroling 15s linear infinite;
+        @include desktop {
+          display: block;
+        }
       }
       .arrowNav {
         position: relative;
         margin: 0 auto;
         right: 0;
         float: none;
-        animation: blinking 2s linear infinite;
+        animation: blinking 1s linear infinite;
         -webkit-animation: blinking 1s linear infinite;
         opacity: 1;
         animation-delay: 0s;
@@ -838,25 +852,6 @@ body {
         &:nth-child(4) {
           animation-delay: 0.9s;
           -webkit-animation-delay: 0.9s;
-        }
-
-        @-webkit-keyframes blinking {
-          0% {
-            opacity: 1;
-          }
-
-          100% {
-            opacity: 0.5;
-          }
-        }
-
-        @keyframes blinking {
-          0% {
-            opacity: 0;
-          }
-          50% {
-            opacity: 1;
-          }
         }
 
       }
@@ -906,8 +901,8 @@ body {
   }
   .imgOM, .imgUA {
     a:nth-child(2)>span{
-       background-position: -0px -86px;
-     }
+      background-position: -0px -86px;
+    }
     a:nth-child(3)>span{
       background-position: -0px -86px*2;
     }
@@ -1172,6 +1167,12 @@ body {
 
     }
     @include tablet {
+      margin-top: 50px;
+    }
+    @include desktop-short{
+      margin-top: 5px;
+    }
+    @include desktop {
       margin-top: 50px;
     }
   }
@@ -2061,7 +2062,58 @@ body {
   -o-transform: rotate(90deg) translate(0px, 13px);
   -ms-transform: rotate(90deg) translate(0px, 13px);
 }
+@-webkit-keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
 
 
 
+@-webkit-keyframes helpToScroling {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+@keyframes helpToScroling {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 0;
+  }
 
+}

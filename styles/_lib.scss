@@ -56,9 +56,13 @@ $kindleHDX7-max-width: 600px !default;
     @content;
   }
 }
-
+@mixin desktop-short {
+  @media only screen and (min-width: $tablet-max-size){
+    @content;
+  }
+}
 @mixin desktop {
-  @media only screen and (min-width: $tablet-max-size) {
+  @media only screen and (min-width: $tablet-max-size)and (min-height: 750px) {
     @content;
   }
 }

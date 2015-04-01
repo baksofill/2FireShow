@@ -232,7 +232,7 @@ $(document).ready(function(){
     $('button').click(function () {
         $(this).html('Кнопа не работает :( ').css('background-color', 'grey');
     });
-    //setTimeout(function(){ $('.navHelp').show() }, 3000);
+    setTimeout(function(){ $('.navHelp').addClass('animationHelp') }, 20000);
 
 
     /* -------------  Animations END -------------- */

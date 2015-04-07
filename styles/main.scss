@@ -820,13 +820,16 @@ body {
       width: 50px;
       height: 150px;
       position: absolute;
-      top: 250px;
+      top: 170px;
       left: 50%;
       margin-left: -25px;
+      @include desktop{
+        top: 250px;
+      }
       &.animationHelp{
         animation: helpToScroling 15s linear infinite;
         -webkit-animation: helpToScroling 15s linear infinite;
-        @include desktop {
+        @include desktop-short {
           display: block;
         }
       }
@@ -1090,7 +1093,7 @@ body {
       //      vertical-align: top;
       margin-top: 0;
     }
-    @include desktop{
+    @include desktop-short{
       width: 300px;
       height: 164px;
       margin: 0;
@@ -1122,7 +1125,7 @@ body {
     }
     .forDesktop{
       display: none;
-      @include desktop{
+      @include desktop-short{
         display: inline-block;
       }
     }
@@ -1136,7 +1139,7 @@ body {
       display: inline-block;
       width: 370px;
     }
-    @include desktop{
+    @include desktop-short{
       width: 500px;
     }
   }

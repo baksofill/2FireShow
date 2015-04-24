@@ -243,6 +243,11 @@ $(document).ready(function(){
     /* -------------  Date for modals END -------------- */
 
 
+// temp for sunSet time calculations
+    var vinnGeo = {'latitude':49.233705, 'longitude': 28.466359};
+  //  new Date(2015, 3/*Апрель*/, 25/*24е число*/ );
+    var currentSunSet = SunCalc.getTimes(new Date(), vinnGeo['latitude'], vinnGeo['longitude']);
+    console.log('Солнце заходит сегодня в '+currentSunSet.sunset.getHours() + ':' + currentSunSet.sunset.getMinutes());
 
 });
 

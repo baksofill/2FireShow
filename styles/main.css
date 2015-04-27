@@ -2235,7 +2235,7 @@ body {
   font-weight: bold;
 }
 /* line 111, main.scss */
-.callMe .orderCall, .callMe .orderFire {
+.callMe .orderCall, .callMe .orderFire, .callMe .sunSet {
   top: 35%;
   text-align: center;
   border: 1px solid #fff;
@@ -2249,7 +2249,7 @@ body {
   color: #fff;
 }
 /* line 123, main.scss */
-.callMe .orderCall:active, .callMe .orderCall:hover, .callMe .orderFire:active, .callMe .orderFire:hover {
+.callMe .orderCall:active, .callMe .orderCall:hover, .callMe .orderFire:active, .callMe .orderFire:hover, .callMe .sunSet:active, .callMe .sunSet:hover {
   border-color: #fff;
 }
 /* line 127, main.scss */
@@ -4171,7 +4171,7 @@ body {
 }
 
 /* line 1684, main.scss */
-#orderCallModal, #orderFireModal {
+#orderCallModal, #orderFireModal, #sunSatCalc {
   z-index: 50;
   top: 0;
   left: 0;
@@ -4181,7 +4181,7 @@ body {
   display: none;
 }
 /* line 1692, main.scss */
-#orderCallModal .closeBtn, #orderFireModal .closeBtn {
+#orderCallModal .closeBtn, #orderFireModal .closeBtn, #sunSatCalc .closeBtn {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -4195,7 +4195,7 @@ body {
   color: red;
 }
 /* line 1705, main.scss */
-#orderCallModal .modal-backdrop, #orderFireModal .modal-backdrop {
+#orderCallModal .modal-backdrop, #orderFireModal .modal-backdrop, #sunSatCalc .modal-backdrop {
   width: 100%;
   height: 100% !important;
   position: absolute;
@@ -4206,17 +4206,17 @@ body {
   z-index: 50;
 }
 /* line 1715, main.scss */
-#orderCallModal .modal-header, #orderFireModal .modal-header {
+#orderCallModal .modal-header, #orderFireModal .modal-header, #sunSatCalc .modal-header {
   text-align: right;
 }
 /* line 1718, main.scss */
-#orderCallModal h3, #orderFireModal h3 {
+#orderCallModal h3, #orderFireModal h3, #sunSatCalc h3 {
   color: #000;
   font-size: 130%;
   margin: 15px;
 }
 /* line 1723, main.scss */
-#orderCallModal > .modal-body, #orderFireModal > .modal-body {
+#orderCallModal > .modal-body, #orderFireModal > .modal-body, #sunSatCalc > .modal-body {
   z-index: 50;
   position: absolute;
   display: block;
@@ -4230,7 +4230,7 @@ body {
   text-align: center;
 }
 /* line 1735, main.scss */
-#orderCallModal > .modal-body input, #orderCallModal > .modal-body select, #orderCallModal > .modal-body textarea, #orderFireModal > .modal-body input, #orderFireModal > .modal-body select, #orderFireModal > .modal-body textarea {
+#orderCallModal > .modal-body input, #orderCallModal > .modal-body select, #orderCallModal > .modal-body textarea, #orderFireModal > .modal-body input, #orderFireModal > .modal-body select, #orderFireModal > .modal-body textarea, #sunSatCalc > .modal-body input, #sunSatCalc > .modal-body select, #sunSatCalc > .modal-body textarea {
   font-family: HeliosCondThin;
   border: 1px solid #c2c2cc;
   border-radius: 3px;
@@ -4243,11 +4243,16 @@ body {
   width: 65%;
 }
 /* line 1746, main.scss */
-#orderCallModal > .modal-body input:focus, #orderCallModal > .modal-body select:focus, #orderCallModal > .modal-body textarea:focus, #orderFireModal > .modal-body input:focus, #orderFireModal > .modal-body select:focus, #orderFireModal > .modal-body textarea:focus {
+#orderCallModal > .modal-body input:focus, #orderCallModal > .modal-body select:focus, #orderCallModal > .modal-body textarea:focus, #orderFireModal > .modal-body input:focus, #orderFireModal > .modal-body select:focus, #orderFireModal > .modal-body textarea:focus, #sunSatCalc > .modal-body input:focus, #sunSatCalc > .modal-body select:focus, #sunSatCalc > .modal-body textarea:focus {
   border: 1px solid red;
 }
-/* line 1751, main.scss */
-#orderCallModal > .modal-body button, #orderFireModal > .modal-body button {
+/* line 1750, main.scss */
+#orderCallModal > .modal-body #anotherDaySun, #orderFireModal > .modal-body #anotherDaySun, #sunSatCalc > .modal-body #anotherDaySun {
+  text-align: center;
+  width: 50%;
+}
+/* line 1755, main.scss */
+#orderCallModal > .modal-body button, #orderFireModal > .modal-body button, #sunSatCalc > .modal-body button {
   font-family: HeliosCondThin;
   border-radius: 3px;
   display: block;
@@ -4264,22 +4269,22 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 1771, main.scss */
+/* line 1775, main.scss */
 #orderFireModal > .modal-body {
   height: 600px;
   margin-top: -300px;
 }
-/* line 1775, main.scss */
+/* line 1779, main.scss */
 #orderFireModal > .modal-body #customerProgramFire {
   margin: 10px 0px;
   width: 68%;
 }
-/* line 1779, main.scss */
+/* line 1783, main.scss */
 #orderFireModal > .modal-body #customerNotesFire {
   height: 100px;
 }
 
-/* line 1788, main.scss */
+/* line 1792, main.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -4287,13 +4292,13 @@ body {
   animation-fill-mode: both;
 }
 
-/* line 1794, main.scss */
+/* line 1798, main.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 1798, main.scss */
+/* line 1802, main.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -4301,31 +4306,31 @@ body {
 
 /*the animation definition*/
 @-webkit-keyframes swing {
-  /* line 1804, main.scss */
+  /* line 1808, main.scss */
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
 
-  /* line 1808, main.scss */
+  /* line 1812, main.scss */
   40% {
     -webkit-transform: rotate3d(0, 0, 1, -10deg);
     transform: rotate3d(0, 0, 1, -10deg);
   }
 
-  /* line 1812, main.scss */
+  /* line 1816, main.scss */
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
 
-  /* line 1816, main.scss */
+  /* line 1820, main.scss */
   80% {
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
 
-  /* line 1820, main.scss */
+  /* line 1824, main.scss */
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
@@ -4333,35 +4338,35 @@ body {
 }
 
 @keyframes swing {
-  /* line 1826, main.scss */
+  /* line 1830, main.scss */
   20% {
     -webkit-transform: rotate3d(0, 0, 1, 15deg);
     -ms-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
 
-  /* line 1831, main.scss */
+  /* line 1835, main.scss */
   40% {
     -webkit-transform: rotate3d(0, 0, 1, -10deg);
     -ms-transform: rotate3d(0, 0, 1, -10deg);
     transform: rotate3d(0, 0, 1, -10deg);
   }
 
-  /* line 1836, main.scss */
+  /* line 1840, main.scss */
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 5deg);
     -ms-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
 
-  /* line 1841, main.scss */
+  /* line 1845, main.scss */
   80% {
     -webkit-transform: rotate3d(0, 0, 1, -5deg);
     -ms-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
 
-  /* line 1846, main.scss */
+  /* line 1850, main.scss */
   100% {
     -webkit-transform: rotate3d(0, 0, 1, 0deg);
     -ms-transform: rotate3d(0, 0, 1, 0deg);
@@ -4369,7 +4374,7 @@ body {
   }
 }
 
-/* line 1852, main.scss */
+/* line 1856, main.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -4379,20 +4384,20 @@ body {
 }
 
 @-webkit-keyframes tada {
-  /* line 1860, main.scss */
+  /* line 1864, main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 1865, main.scss */
+  /* line 1869, main.scss */
   10%,
   20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
 
-  /* line 1872, main.scss */
+  /* line 1876, main.scss */
   30%,
   50%,
   70%,
@@ -4401,7 +4406,7 @@ body {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
 
-  /* line 1878, main.scss */
+  /* line 1882, main.scss */
   40%,
   60%,
   80% {
@@ -4409,7 +4414,7 @@ body {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
 
-  /* line 1882, main.scss */
+  /* line 1886, main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -4417,14 +4422,14 @@ body {
 }
 
 @keyframes tada {
-  /* line 1888, main.scss */
+  /* line 1892, main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 1894, main.scss */
+  /* line 1898, main.scss */
   10%,
   20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
@@ -4432,7 +4437,7 @@ body {
     transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
 
-  /* line 1902, main.scss */
+  /* line 1906, main.scss */
   30%,
   50%,
   70%,
@@ -4442,7 +4447,7 @@ body {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
 
-  /* line 1909, main.scss */
+  /* line 1913, main.scss */
   40%,
   60%,
   80% {
@@ -4451,7 +4456,7 @@ body {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
 
-  /* line 1914, main.scss */
+  /* line 1918, main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     -ms-transform: scale3d(1, 1, 1);
@@ -4459,14 +4464,14 @@ body {
   }
 }
 
-/* line 1920, main.scss */
+/* line 1924, main.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
 }
 
 @-webkit-keyframes zoomInDown {
-  /* line 1925, main.scss */
+  /* line 1929, main.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
@@ -4475,7 +4480,7 @@ body {
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-  /* line 1932, main.scss */
+  /* line 1936, main.scss */
   60% {
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
@@ -4486,7 +4491,7 @@ body {
 }
 
 @keyframes zoomInDown {
-  /* line 1941, main.scss */
+  /* line 1945, main.scss */
   0% {
     opacity: 0;
     -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
@@ -4496,7 +4501,7 @@ body {
     animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
 
-  /* line 1949, main.scss */
+  /* line 1953, main.scss */
   60% {
     opacity: 1;
     -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
@@ -4507,14 +4512,14 @@ body {
   }
 }
 
-/* line 1958, main.scss */
+/* line 1962, main.scss */
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
 }
 
 @-webkit-keyframes hinge {
-  /* line 1963, main.scss */
+  /* line 1967, main.scss */
   0% {
     -webkit-transform-origin: top left;
     transform-origin: top left;
@@ -4522,7 +4527,7 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  /* line 1970, main.scss */
+  /* line 1974, main.scss */
   20%,
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
@@ -4533,7 +4538,7 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  /* line 1979, main.scss */
+  /* line 1983, main.scss */
   40%,
   80% {
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
@@ -4545,7 +4550,7 @@ body {
     opacity: 1;
   }
 
-  /* line 1988, main.scss */
+  /* line 1992, main.scss */
   100% {
     -webkit-transform: translate3d(0, 700px, 0);
     transform: translate3d(0, 700px, 0);
@@ -4554,7 +4559,7 @@ body {
 }
 
 @keyframes hinge {
-  /* line 1995, main.scss */
+  /* line 1999, main.scss */
   0% {
     -webkit-transform-origin: top left;
     -ms-transform-origin: top left;
@@ -4563,7 +4568,7 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2003, main.scss */
+  /* line 2007, main.scss */
   20%,
   60% {
     -webkit-transform: rotate3d(0, 0, 1, 80deg);
@@ -4576,7 +4581,7 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  /* line 2014, main.scss */
+  /* line 2018, main.scss */
   40%,
   80% {
     -webkit-transform: rotate3d(0, 0, 1, 60deg);
@@ -4590,7 +4595,7 @@ body {
     opacity: 1;
   }
 
-  /* line 2025, main.scss */
+  /* line 2029, main.scss */
   100% {
     -webkit-transform: translate3d(0, 700px, 0);
     -ms-transform: translate3d(0, 700px, 0);
@@ -4599,13 +4604,13 @@ body {
   }
 }
 
-/* line 2032, main.scss */
+/* line 2036, main.scss */
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
 }
 
-/* line 2037, main.scss */
+/* line 2041, main.scss */
 .arrowNav {
   position: absolute;
   width: 0px;
@@ -4620,7 +4625,7 @@ body {
   transition: 0.5s;
 }
 
-/* line 2051, main.scss */
+/* line 2055, main.scss */
 .arrowNav:before {
   content: '';
   width: 0px;
@@ -4631,7 +4636,7 @@ body {
   -webkit-transform: translate(-13px, -24px);
 }
 
-/* line 2061, main.scss */
+/* line 2065, main.scss */
 .arrowNav.down {
   transform: rotate(90deg) translate(0px, 13px);
   -webkit-transform: rotate(90deg) translate(0px, 13px);
@@ -4641,78 +4646,78 @@ body {
 }
 
 @-webkit-keyframes blinking {
-  /* line 2069, main.scss */
+  /* line 2073, main.scss */
   0% {
     opacity: 1;
   }
 
-  /* line 2073, main.scss */
+  /* line 2077, main.scss */
   100% {
     opacity: 0.5;
   }
 }
 
 @keyframes blinking {
-  /* line 2078, main.scss */
+  /* line 2082, main.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 2081, main.scss */
+  /* line 2085, main.scss */
   50% {
     opacity: 1;
   }
 }
 
 @-webkit-keyframes helpToScroling {
-  /* line 2089, main.scss */
+  /* line 2093, main.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 2092, main.scss */
+  /* line 2096, main.scss */
   10% {
     opacity: 0;
   }
 
-  /* line 2095, main.scss */
+  /* line 2099, main.scss */
   20% {
     opacity: 1;
   }
 
-  /* line 2098, main.scss */
+  /* line 2102, main.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 2101, main.scss */
+  /* line 2105, main.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes helpToScroling {
-  /* line 2106, main.scss */
+  /* line 2110, main.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 2109, main.scss */
+  /* line 2113, main.scss */
   10% {
     opacity: 0;
   }
 
-  /* line 2112, main.scss */
+  /* line 2116, main.scss */
   20% {
     opacity: 1;
   }
 
-  /* line 2115, main.scss */
+  /* line 2119, main.scss */
   30% {
     opacity: 0;
   }
 
-  /* line 2118, main.scss */
+  /* line 2122, main.scss */
   100% {
     opacity: 0;
   }

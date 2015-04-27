@@ -108,7 +108,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
   }
-  .orderCall, .orderFire {
+  .orderCall, .orderFire, .sunSet {
     top: 35%;
     text-align: center;
     border: 1px solid #fff;
@@ -1681,7 +1681,7 @@ body {
 
 }
 
-#orderCallModal, #orderFireModal {
+#orderCallModal, #orderFireModal, #sunSatCalc {
   z-index: 50;
   top: 0;
   left: 0;
@@ -1746,6 +1746,10 @@ body {
       &:focus{
         border: 1px solid red;
       }
+    }
+    #anotherDaySun{
+      text-align: center;
+      width:  50%;
     }
 
     button{

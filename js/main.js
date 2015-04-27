@@ -240,14 +240,29 @@ $(document).ready(function(){
 
     /* -------------  Date for modals     -------------- */
     $( "#customerDateFire" ).dateDropper({ animation: 'dropdown', format: 'd-m-y', lang:'ru' });
+    $( "#anotherDaySun" ).dateDropper({ animation: 'dropdown', format: 'd,m,y', lang:'ru' });
     /* -------------  Date for modals END -------------- */
 
 
 // temp for sunSet time calculations
     var vinnGeo = {'latitude':49.233705, 'longitude': 28.466359};
-  //  new Date(2015, 3/*Апрель*/, 25/*24е число*/ );
+//  new Date(2015, 3/*Апрель*/, 25/*24е число*/ );
     var currentSunSet = SunCalc.getTimes(new Date(), vinnGeo['latitude'], vinnGeo['longitude']);
-    console.log('Солнце заходит сегодня в '+currentSunSet.sunset.getHours() + ':' + currentSunSet.sunset.getMinutes());
+    $(".todaySun").html(currentSunSet.sunset.getHours() + ':' + currentSunSet.sunset.getMinutes());
+
+
+
+    $('.dd_submit').click(function () {
+        var anotherDate = $("#anotherDaySun").val().split(',');
+        var anotherSunSet = SunCalc.getTimes(new Date(anotherDate[2], anotherDate[1]-1, parseFloat(anotherDate[0])+1 ), vinnGeo['latitude'], vinnGeo['longitude']);
+        console.log(anotherSunSet.sunset.getHours() + ':' + anotherSunSet.sunset.getMinutes());
+       var customMinut = anotherSunSet.sunset.getMinutes();
+        if(customMinut < 9){
+            customMinut = '0' + customMinut;
+        }
+        $(".anotherSunResult").html($("#anotherDaySun").val() + ' солнце зайдет в ' +anotherSunSet.sunset.getHours() + ':' + customMinut);
+
+    });
 
 });
 

@@ -262,6 +262,9 @@
     <a href="#orderCallModal" role="button" class="btn orderCall" data-toggle="modal">Перезвонить мне</a>
     <a href="#orderFireModal" role="button" class="btn orderFire" data-toggle="modal">Заказать Огненное Шоу</a>
 
+<br><br><br><br>
+    <a href="#sunSatCalc" role="button" class="btn sunSet" data-toggle="modal">Заход солнца</a>
+
 </div>
 
 <div id="pagepiling">
@@ -803,6 +806,22 @@
 
             <button class="fakeBTN" name="ok" type="submit" title="Кнопка не работает :(">Заказать шоу</button>
         </div>
+    </div>
+</div>
+<div class="modal" id="sunSatCalc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-body">
+        <div class="modal-header">
+            <div class="closeBtn" data-dismiss="modal" aria-hidden="true">×</div>
+        </div>
+        <div class="modal-text">
+            <h3> Калькулятор захода солнца </h3>
+            <div>Сегодня, солнце зайдет в <span class="todaySun"></span></div><br><br><br>
+            <input id="anotherDaySun" class="form-control" name="date" required="" type="text" value="" placeholder="Выбрать другой день для расчетов">
+            <div class="anotherSunResult"></div>
+
+        </div>
+
     </div>
 </div>
 <!--MODALS END-->

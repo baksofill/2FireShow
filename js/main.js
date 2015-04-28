@@ -260,7 +260,7 @@ $(document).ready(function(){
         if(customMinut < 9){
             customMinut = '0' + customMinut;
         }
-        $(".anotherSunResult").html($("#anotherDaySun").val() + ' солнце зайдет в ' +anotherSunSet.sunset.getHours() + ':' + customMinut);
+        $(".anotherSunResult").html($("#anotherDaySun").val() + ' солнце зайдет в <span>' +anotherSunSet.sunset.getHours() + ':' + customMinut+ '</span>');
 
     });
 

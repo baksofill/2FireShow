@@ -255,6 +255,22 @@ body {
         position: relative;
       }
     }
+    .sunIco{
+      display: block;
+      content: '';
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background: url("../img/cool_sun.png") no-repeat;
+      background-position: top;
+      background-size:  100% auto ;
+      right: 2px;
+      top: 2px;
+      opacity: 0.4;
+      @include tablet{
+        display: none;
+      }
+    }
     .topMenu {
       color: #000;
       padding: 5px;
@@ -1724,14 +1740,20 @@ body {
     z-index: 50;
     position: absolute;
     display: block;
-    width: 500px;
+    width: 270px;
     height: 300px;
     left: 50%;
-    margin-left: -250px;
+    margin-left: -135px;
     margin-top: -150px;
     background: #fff;
     top: 50%;
     text-align: center;
+    @include tablet{
+      width: 500px;
+      height: 300px;
+      margin-left: -250px;
+      margin-top: -150px;
+    }
     input, select, textarea {
       font-family: HeliosCondThin;
       border: 1px solid #c2c2cc;
@@ -1750,6 +1772,11 @@ body {
     #anotherDaySun{
       text-align: center;
       width:  50%;
+    }
+    .todaySun, .anotherSunResult>span{
+      font-weight: bold;
+      color: red;
+      text-shadow: 1px 1px 1px rgba(0,0,0,.2);
     }
 
     button{

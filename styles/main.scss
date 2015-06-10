@@ -1528,8 +1528,8 @@ body {
       width: 1000px;
     }
     @include desktop {
-      top: 10%;
-      width: 1000px;
+      top: 5%;
+      width: 1100px;
     }
 
     #vk_comments {
@@ -1563,7 +1563,7 @@ body {
     padding-left: 50px;
     margin-top: 0px;
     @include tablet {
-      width: 340px;
+      width: 380px;
       padding-left: 120px;
       margin-top: 10px;
       min-height: 100px;
@@ -1668,9 +1668,7 @@ body {
       background: url("../img/comments/poroh.jpg") no-repeat;
       background-size: 100%;
     }
-    @include desktop {
-      display: inline-table;
-    }
+
 
   }
   .homi{
@@ -1678,6 +1676,9 @@ body {
     &:before{
       background: url("../img/comments/homi.jpg") no-repeat;
       background-size: 100%;
+    }
+    @include desktop {
+      display: inline-table;
     }
 
   }
@@ -1690,7 +1691,7 @@ body {
     }
     @include tablet {
       display: inline-table;
-      margin-left: 20px;
+      margin-left: 40px;
     }
 
   }

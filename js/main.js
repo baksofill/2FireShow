@@ -146,21 +146,75 @@ $(document).ready(function(){
 
     calendar();
 
+
+    function showSecret() {
+
+        if ($('.popover-content').css('display') == 'none') {
+            $('.popover-content').show();
+            $('.dopLink').remove();
+            $('#calendari_lateral1').append('<span class="dopLink"><a class="calendarLink" target="_blank" href="http://fierydream.com/grafik.html">ГРАФИК РАБОТЫ</a></span>');
+            //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+        } else {
+            $('.popover-content').hide();
+            $('.dopLink').remove();
+            //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+        }
+
+    }
+
     var isShift = false;
+
     $(document).keyup(function (e) {
         if (e.which == 16) isShift = false;
     }).keydown(function (e) {
         if (e.which == 16) {
-            if ($('.popover-content').css('display') == 'none') {
-                $('.popover-content').show();
-                //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
-            } else {
-                $('.popover-content').hide();
-                //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
-            }
+            showSecret();
             return false;
         }
     });
+    //$('.popover').on( "taphold",  showSecret() );
+
+
+    /** triple click hack */
+    (function($) {
+        // Usefull variables
+        var clicks = 0;
+        var longclick = false;
+        // Change the long click duration (in ms):
+        //jQuery.longclick.duration = 500;
+        $(document).ready(function() {
+            // Event click handlers
+            $('a').bind({
+                click: function(){ // Left (normal) click
+                    if (longclick == true) {
+                        longclick = false;
+                    }else {
+                        clicks++;
+                        if (clicks == 1) {
+                            setTimeout(function() {
+                                if (clicks == 1) { // One click
+
+                                } else if (clicks == 2) { // Double click
+
+                                } else { // Triple click
+                                    showSecret();
+                                }
+                                clicks = 0;
+                            }, 500);
+                        }
+                    }
+                },
+                contextmenu: function(){ // Right click
+                    //$('.popover').html('left-click');
+                    return false; // The retun false avoid show the context menu
+                },
+                longclick: function(){ // Long click
+                    //$('.popover').html('long click');
+                    longclick = true; // Stop the "normal" click to execute
+                }
+            });
+        });
+    })(window.jQuery);
 
     /* -------------  Calendar END -------------- */
 

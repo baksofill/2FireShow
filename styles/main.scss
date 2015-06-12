@@ -1454,6 +1454,10 @@ body {
   background-image: linear-gradient(-30deg, #FF2200, #FFD500);
   overflow: hidden;
 
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+
   h1 {
     text-align: center;
     text-transform: uppercase;
@@ -1502,6 +1506,23 @@ body {
 
       }
     }
+
+  }
+
+  .calendarLink{
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+  .event{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+
 
   }
 }

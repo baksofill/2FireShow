@@ -123,8 +123,69 @@ $.fn.bic_calendar = function (options) {
             //show the days of the month n year configured
             showMonthDays(month, year);
 
+            /** triple click hack */
+            function forReranderDomAndShowSecret(){
+                function showSecret() {
+                    if ($('.popover-content').css('display') == 'none') {
+                        $('.popover-content').show();
+                        $('.dopLink').remove();
+                        $('#calendari_lateral1').append('<span class="dopLink"><a class="calendarLink" target="_blank" href="http://fierydream.com/grafik.html">?????? ??????</a></span>');
+                        //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+                    } else {
+                        $('.popover-content').hide();
+                        $('.dopLink').remove();
+                        //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+                    }
+                }
+                (function($) {
+                    // Usefull variables
+                    var clicks = 0;
+                    var longclick = false;
+                    // Change the long click duration (in ms):
+                    //jQuery.longclick.duration = 500;
+                    $(document).ready(function() {
+                        // Event click handlers
+                        $('a').bind({
+                            click: function(){ // Left (normal) click
+                                if (longclick == true) {
+                                    longclick = false;
+                                }else {
+                                    clicks++;
+                                    if (clicks == 1) {
+                                        setTimeout(function() {
+                                            if (clicks == 1) { // One click
+
+                                            } else if (clicks == 2) { // Double click
+
+                                            } else { // Triple click
+                                                showSecret();
+                                            }
+                                            clicks = 0;
+                                        }, 500);
+                                    }
+                                }
+                            },
+                            contextmenu: function(){ // Right click
+                                //$('.popover').html('left-click');
+                                return false; // The retun false avoid show the context menu
+                            },
+                            longclick: function(){ // Long click
+                                //$('.popover').html('long click');
+                                longclick = true; // Stop the "normal" click to execute
+                            }
+                        });
+                    });
+                })(window.jQuery);
+
+                return this;
+            }
+            forReranderDomAndShowSecret();
+
+
             //next-previous month controllers
             var nextMonthButton = $('.myNext'); //<td><a href="#" class="button-month-next"><i class="glyphicon glyphicon-arrow-right" ></i></a></td>
+
+
             //event
             nextMonthButton.click(function (e) {
                 e.preventDefault();
@@ -132,6 +193,9 @@ $.fn.bic_calendar = function (options) {
                 if (month == 0)
                     year++;
                 changeDate(month, year);
+
+                forReranderDomAndShowSecret();
+
             })
             var previousMonthButton = $('.myPrev'); //<td><a href="#" class="button-month-previous"><i class="glyphicon glyphicon-arrow-left" ></i></a></td>
             //event
@@ -143,6 +207,8 @@ $.fn.bic_calendar = function (options) {
                     month = 11;
                 }
                 changeDate(month, year);
+
+                forReranderDomAndShowSecret();
             })
 
             //next-previous year controllers
@@ -543,6 +609,8 @@ $.fn.bic_calendar = function (options) {
 
             //fire calendar!
         showCalendar();
+
+
 
 
     });

@@ -2,35 +2,35 @@
   "training": [
     {
       "month": "июнь",
-      "date": "",
-      "time": "",
+      "date": "23, Вт",
+      "time": "20:00",
       "info": "Гаваи",
       "status": ""
     },
     {
       "month": "июнь",
-      "date": "17",
+      "date": "17, Ср",
       "time": "19:00",
       "info": "Гаваи и Украина",
       "status": "complet"
     },
     {
       "month": "июнь",
-      "date": "15",
+      "date": "15, Пн",
       "time": "18:30",
       "info": "Гаваи",
       "status": "complet"
     },
     {
       "month": "июнь",
-      "date": "9",
+      "date": "9, Вт",
       "time": "19:30",
       "info": "Гаваи",
       "status": "complet"
     },
     {
       "month": "июнь",
-      "date": "4",
+      "date": "4, Чт",
       "time": "19:30",
       "info": "Гаваи и Украина",
       "status": "complet"

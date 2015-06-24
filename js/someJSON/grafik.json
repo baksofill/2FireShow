@@ -2,10 +2,17 @@
   "training": [
     {
       "month": "июнь",
+      "date": "25, Чт",
+      "time": "19:30",
+      "info": "Гаваи, реквизит",
+      "status": ""
+    },
+    {
+      "month": "июнь",
       "date": "23, Вт",
       "time": "20:00",
-      "info": "Гаваи",
-      "status": ""
+      "info": "Гаваи, выбросы на даблах",
+      "status": "complet"
     },
     {
       "month": "июнь",
@@ -132,6 +139,48 @@
       "name": "Паша",
       "info": "штраф за 04.06",
       "class": "shtraf"
+    },
+    {
+      "dateAndPlace": "11.07.15 <br>Винница",
+      "name": "Миня",
+      "info": "-",
+      "class": "non1"
+    },
+    {
+      "dateAndPlace": "12.07.15 <br>Винница",
+      "name": "Паша",
+      "info": "-",
+      "class": "non1"
+    },
+    {
+      "dateAndPlace": "18.07.15 <br>Винница",
+      "name": "Таня",
+      "info": "-",
+      "class": "non1"
+    },
+    {
+      "dateAndPlace": "19.07.15 <br>Калиновка",
+      "name": "Алина",
+      "info": "-",
+      "class": "non1"
+    },
+    {
+      "dateAndPlace": "19.07.15 <br>Винница",
+      "name": "Алина",
+      "info": "-",
+      "class": "non2"
+    },
+    {
+      "dateAndPlace": "24.07.15 <br>Винница",
+      "name": "Миня",
+      "info": "-",
+      "class": "non2"
+    },
+    {
+      "dateAndPlace": "25.07.15 <br>Винница",
+      "name": "Паша",
+      "info": "-",
+      "class": "non2"
     }
   ],
   "punishment": [

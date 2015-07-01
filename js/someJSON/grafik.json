@@ -1,11 +1,32 @@
 {
   "training": [
     {
+      "month": "июль",
+      "date": "1, Ср",
+      "time": "19:00",
+      "info": "Гаваи",
+      "status": ""
+    },
+    {
+      "month": "июнь",
+      "date": "30, Вт",
+      "time": "19:30",
+      "info": "Гаваи",
+      "status": "complet"
+    },
+    {
+      "month": "июнь",
+      "date": "29, Пн",
+      "time": "18:00",
+      "info": "Гаваи",
+      "status": "complet"
+    },
+    {
       "month": "июнь",
       "date": "25, Чт",
       "time": "19:30",
       "info": "Гаваи, реквизит",
-      "status": ""
+      "status": "complet"
     },
     {
       "month": "июнь",
@@ -143,20 +164,20 @@
     {
       "dateAndPlace": "11.07.15 <br>Винница",
       "name": "Миня",
-      "info": "-",
-      "class": "non1"
+      "info": "штраф за 28.06.15",
+      "class": "shtraf"
     },
     {
       "dateAndPlace": "12.07.15 <br>Винница",
-      "name": "Паша",
-      "info": "-",
-      "class": "non1"
+      "name": "Миня",
+      "info": "штраф за 28.06.15",
+      "class": "shtraf"
     },
     {
       "dateAndPlace": "18.07.15 <br>Винница",
-      "name": "Таня",
-      "info": "-",
-      "class": "non1"
+      "name": "Миня",
+      "info": "штраф за 28.06.15",
+      "class": "shtraf"
     },
     {
       "dateAndPlace": "19.07.15 <br>Калиновка",
@@ -174,13 +195,13 @@
       "dateAndPlace": "24.07.15 <br>Винница",
       "name": "Миня",
       "info": "-",
-      "class": "non2"
+      "class": "non1"
     },
     {
       "dateAndPlace": "25.07.15 <br>Винница",
       "name": "Паша",
       "info": "-",
-      "class": "non2"
+      "class": "non1"
     }
   ],
   "punishment": [
@@ -233,16 +254,34 @@
       "closed": "20.06.15"
     },
     {
+      "name": "Паша",
+      "date": "04.06.15",
+      "reason": "провтык тренировки",
+      "closed": "28.06.15"
+    },
+    {
       "name": "Миня",
       "date": "15.06.15",
       "reason": "опоздание на тренировеу",
       "closed": "24.06.15"
     },
     {
-      "name": "Паша",
-      "date": "04.06.15",
-      "reason": "провтык тренировки",
-      "closed": "21.06.15"
+      "name": "Миня",
+      "date": "28.06.15",
+      "reason": "прогул",
+      "closed": ""
+    },
+    {
+      "name": "Миня",
+      "date": "28.06.15",
+      "reason": "прогул",
+      "closed": ""
+    },
+    {
+      "name": "Миня",
+      "date": "28.06.15",
+      "reason": "прогул",
+      "closed": ""
     }
   ]
 }

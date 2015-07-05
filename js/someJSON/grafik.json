@@ -2,10 +2,17 @@
   "training": [
     {
       "month": "июль",
+      "date": "5, Вс",
+      "time": "13:00",
+      "info": "Техническая",
+      "status": ""
+    },
+    {
+      "month": "июль",
       "date": "1, Ср",
       "time": "19:00",
       "info": "Гаваи",
-      "status": ""
+      "status": "complet"
     },
     {
       "month": "июнь",
@@ -162,6 +169,12 @@
       "class": "shtraf"
     },
     {
+      "dateAndPlace": "7.07.15 <br>Хмельницкий",
+      "name": "Миня",
+      "info": "штраф за 28.06.15",
+      "class": "shtraf"
+    },
+    {
       "dateAndPlace": "11.07.15 <br>Винница",
       "name": "Миня",
       "info": "штраф за 28.06.15",
@@ -175,9 +188,9 @@
     },
     {
       "dateAndPlace": "18.07.15 <br>Винница",
-      "name": "Миня",
-      "info": "штраф за 28.06.15",
-      "class": "shtraf"
+      "name": "Taня",
+      "info": "-",
+      "class": "non1"
     },
     {
       "dateAndPlace": "19.07.15 <br>Калиновка",

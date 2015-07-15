@@ -2,17 +2,24 @@
   "training": [
     {
       "month": "июль",
+      "date": "16, Чт",
+      "time": "19:30",
+      "info": "Гаваи",
+      "status": ""
+    },
+    {
+      "month": "июль",
       "date": "10, Ср",
       "time": "19:00",
-      "info": "Гаваи",
-      "status": "Гаваи + Новая"
+      "info": "Гаваи + Новая",
+      "status": "complet"
     },
     {
       "month": "июль",
       "date": "9, Ср",
       "time": "20:00",
       "info": "Гаваи + Новая",
-      "status": ""
+      "status": "complet"
     },
     {
       "month": "июль",
@@ -30,60 +37,12 @@
     },
     {
       "month": "июнь",
-      "date": "30, Вт",
-      "time": "19:30",
-      "info": "Гаваи",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "29, Пн",
-      "time": "18:00",
-      "info": "Гаваи",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "25, Чт",
-      "time": "19:30",
-      "info": "Гаваи, реквизит",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "23, Вт",
-      "time": "20:00",
-      "info": "Гаваи, выбросы на даблах",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "17, Ср",
-      "time": "19:00",
-      "info": "Гаваи и Украина",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "15, Пн",
-      "time": "18:30",
-      "info": "Гаваи",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "9, Вт",
-      "time": "19:30",
-      "info": "Гаваи",
-      "status": "complet"
-    },
-    {
-      "month": "июнь",
-      "date": "4, Чт",
-      "time": "19:30",
+      "date": "30-Вт, 29-Пн, 25-Чт, 23-Вт, 17-Ср, 15-Пн, 9-Вт, 4-Чт",
+      "time": "18:00 - 20:00",
       "info": "Гаваи и Украина",
       "status": "complet"
     }
+
   ],
   "work": [
     {
@@ -189,22 +148,16 @@
       "class": "shtraf"
     },
     {
-      "dateAndPlace": "11.07.15 <br>Винница",
-      "name": "Миня",
-      "info": "штраф за 28.06.15",
-      "class": "shtraf"
-    },
-    {
       "dateAndPlace": "12.07.15 <br>Винница",
       "name": "Миня",
       "info": "штраф за 28.06.15",
       "class": "shtraf"
     },
     {
-      "dateAndPlace": "18.07.15 <br>Винница",
-      "name": "Taня",
-      "info": "-",
-      "class": "non1"
+      "dateAndPlace": "14.07.15 <br>Винница",
+      "name": "Миня",
+      "info": "штраф за 28.06.15",
+      "class": "shtraf"
     },
     {
       "dateAndPlace": "19.07.15 <br>Калиновка",
@@ -217,19 +170,8 @@
       "name": "Алина",
       "info": "-",
       "class": "non2"
-    },
-    {
-      "dateAndPlace": "24.07.15 <br>Винница",
-      "name": "Миня",
-      "info": "-",
-      "class": "non1"
-    },
-    {
-      "dateAndPlace": "25.07.15 <br>Винница",
-      "name": "Паша",
-      "info": "-",
-      "class": "non1"
     }
+
   ],
   "punishment": [
     {
@@ -296,19 +238,19 @@
       "name": "Миня",
       "date": "28.06.15",
       "reason": "прогул",
-      "closed": ""
+      "closed": "07.07.15"
     },
     {
       "name": "Миня",
       "date": "28.06.15",
       "reason": "прогул",
-      "closed": ""
+      "closed": "12.07.15"
     },
     {
       "name": "Миня",
       "date": "28.06.15",
       "reason": "прогул",
-      "closed": ""
+      "closed": "14.07.15"
     }
   ]
 }

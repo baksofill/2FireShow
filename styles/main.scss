@@ -1414,13 +1414,13 @@ body {
       @include desktop {
         background-position: 0px -1465px;
       }
-
     }
     .artistBtn:before{
       background-position-y: -265px;
     }
   }
   .serg {
+    display: none;
     .back {
       @include tablet {
         background-position: 0px -780px;

@@ -128,13 +128,11 @@ $.fn.bic_calendar = function (options) {
                 function showSecret() {
                     if ($('.popover-content').css('display') == 'none') {
                         $('.popover-content').show();
-                        $('.dopLink').remove();
-                        $('#calendari_lateral1').append('<span class="dopLink"><a class="calendarLink" target="_blank" href="http://fierydream.com/grafik.html">?????? ??????</a></span>');
-                        //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+                        $('.dopLink').removeClass('visible');
+                        $('.dopLink').addClass('visible');
                     } else {
                         $('.popover-content').hide();
-                        $('.dopLink').remove();
-                        //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+                        $('.dopLink').removeClass('visible');
                     }
                 }
                 (function($) {

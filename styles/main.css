@@ -952,6 +952,7 @@ div.t3,
 div.t4 {
   float: left;
   width: 95%;
+  height: 400px;
   background: #fff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -963,6 +964,51 @@ div.t4 {
   position: relative;
   margin: -2px;
   text-align: justify;
+}
+@media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
+  /* line 128, _tabs.scss */
+  div.t1,
+  div.t2,
+  div.t3,
+  div.t4 {
+    height: 220px;
+  }
+}
+@media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 128, _tabs.scss */
+  div.t1,
+  div.t2,
+  div.t3,
+  div.t4 {
+    height: 750px;
+  }
+}
+@media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
+  /* line 128, _tabs.scss */
+  div.t1,
+  div.t2,
+  div.t3,
+  div.t4 {
+    height: 650px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 128, _tabs.scss */
+  div.t1,
+  div.t2,
+  div.t3,
+  div.t4 {
+    height: 500px;
+  }
+}
+@media only screen and (min-width: 1280px) and (min-height: 750px) {
+  /* line 128, _tabs.scss */
+  div.t1,
+  div.t2,
+  div.t3,
+  div.t4 {
+    height: 750px;
+  }
 }
 
 /* line 1, _calendar.scss */
@@ -3507,7 +3553,8 @@ body {
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
   /* line 1220, main.scss */
   .artistes .artistCard {
-    top: 0%;
+    margin-top: 50px;
+    top: 10%;
     position: relative;
     width: 200px;
     height: 370px;
@@ -3538,7 +3585,7 @@ body {
     margin-right: 0px;
   }
 }
-/* line 1255, main.scss */
+/* line 1257, main.scss */
 .artistes .artistCard .artistBtn {
   position: relative;
   width: auto;
@@ -3549,13 +3596,13 @@ body {
   color: #fff;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1255, main.scss */
+  /* line 1257, main.scss */
   .artistes .artistCard .artistBtn {
     text-align: right;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1255, main.scss */
+  /* line 1257, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 200px;
@@ -3570,7 +3617,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3) and (min-width: 1280px) and (min-height: 750px), only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1255, main.scss */
+  /* line 1257, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -3586,7 +3633,7 @@ body {
 }
 
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1255, main.scss */
+  /* line 1257, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -3600,7 +3647,7 @@ body {
     padding-left: 0;
   }
 }
-/* line 1303, main.scss */
+/* line 1305, main.scss */
 .artistes .artistCard .artistBtn:before {
   content: '';
   width: 80px;
@@ -3613,24 +3660,24 @@ body {
   border-radius: 50%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1303, main.scss */
+  /* line 1305, main.scss */
   .artistes .artistCard .artistBtn:before {
     left: 20px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1303, main.scss */
+  /* line 1305, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1303, main.scss */
+  /* line 1305, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
-/* line 1325, main.scss */
+/* line 1327, main.scss */
 .artistes .card {
   top: 0;
   left: 0;
@@ -3647,18 +3694,18 @@ body {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1325, main.scss */
+  /* line 1327, main.scss */
   .artistes .card {
     display: block;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1325, main.scss */
+  /* line 1327, main.scss */
   .artistes .card {
     display: block;
   }
 }
-/* line 1345, main.scss */
+/* line 1347, main.scss */
 .artistes .card figure {
   width: 100%;
   height: 100%;
@@ -3670,12 +3717,12 @@ body {
   margin: 0;
   border-radius: 5px;
 }
-/* line 1356, main.scss */
+/* line 1358, main.scss */
 .artistes .card .back {
   background: url("../img/artists.png") no-repeat;
   background-size: 100% auto;
 }
-/* line 1360, main.scss */
+/* line 1362, main.scss */
 .artistes .card .front {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
@@ -3684,7 +3731,7 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 1367, main.scss */
+/* line 1369, main.scss */
 .artistes .card .front .artistsText {
   position: absolute;
   margin: 10px;
@@ -3692,24 +3739,24 @@ body {
   text-align: justify;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1367, main.scss */
+  /* line 1369, main.scss */
   .artistes .card .front .artistsText {
     height: 350px;
     overflow: hidden;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1367, main.scss */
+  /* line 1369, main.scss */
   .artistes .card .front .artistsText {
     overflow: visible;
   }
 }
-/* line 1380, main.scss */
+/* line 1382, main.scss */
 .artistes .card .front .artistsText .bold {
   font-weight: bold;
   color: red;
 }
-/* line 1388, main.scss */
+/* line 1390, main.scss */
 .artistes .card.flip, .artistes .card:hover {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -3718,73 +3765,69 @@ body {
   transform: rotateY(180deg);
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1397, main.scss */
+  /* line 1399, main.scss */
   .artistes .me .back {
     background-position: 0px -390px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1397, main.scss */
+  /* line 1399, main.scss */
   .artistes .me .back {
     background-position: 0px -488px;
   }
 }
-/* line 1405, main.scss */
+/* line 1407, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1410, main.scss */
+  /* line 1412, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1170px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1410, main.scss */
+  /* line 1412, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1465px;
   }
 }
-/* line 1418, main.scss */
+/* line 1420, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
-/* line 1422, main.scss */
-.artistes .serg {
-  display: none;
-}
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1424, main.scss */
+  /* line 1426, main.scss */
   .artistes .serg .back {
     background-position: 0px -780px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1424, main.scss */
+  /* line 1426, main.scss */
   .artistes .serg .back {
     background-position: 0px -977px;
   }
 }
-/* line 1432, main.scss */
+/* line 1434, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1436, main.scss */
+  /* line 1438, main.scss */
   .artistes .alina {
     margin-top: -20px;
   }
 }
-/* line 1440, main.scss */
+/* line 1442, main.scss */
 .artistes .alina .back {
   background-position: 0px bottom;
 }
-/* line 1443, main.scss */
+/* line 1445, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
 }
 
-/* line 1450, main.scss */
+/* line 1452, main.scss */
 .mainCalendar {
   width: 100%;
   height: 100%;
@@ -3795,7 +3838,7 @@ body {
   -khtml-user-select: none;
   user-select: none;
 }
-/* line 1461, main.scss */
+/* line 1463, main.scss */
 .mainCalendar h1 {
   text-align: center;
   text-transform: uppercase;
@@ -3804,18 +3847,18 @@ body {
   top: 10%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1461, main.scss */
+  /* line 1463, main.scss */
   .mainCalendar h1 {
     top: 2%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1461, main.scss */
+  /* line 1463, main.scss */
   .mainCalendar h1 {
     font-size: 130%;
   }
 }
-/* line 1475, main.scss */
+/* line 1477, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
   margin: 0 auto;
@@ -3823,48 +3866,48 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 1475, main.scss */
+  /* line 1477, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 400px;
     top: 10%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1475, main.scss */
+  /* line 1477, main.scss */
   .mainCalendar #calendari_lateral1 {
     top: 5%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1475, main.scss */
+  /* line 1477, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1475, main.scss */
+  /* line 1477, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 700px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1475, main.scss */
+  /* line 1477, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 800px;
   }
 }
-/* line 1499, main.scss */
+/* line 1501, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1502, main.scss */
+  /* line 1504, main.scss */
   .mainCalendar #calendari_lateral1 .table tr {
     height: 50px;
   }
 }
-/* line 1512, main.scss */
+/* line 1514, main.scss */
 .mainCalendar .calendarLink {
   text-decoration: underline;
   font-weight: bold;
@@ -3873,22 +3916,37 @@ body {
   display: block;
   margin-top: 10px;
 }
-/* line 1520, main.scss */
+/* line 1522, main.scss */
 .mainCalendar .event {
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   -webkit-user-select: none;
 }
+/* line 1528, main.scss */
+.mainCalendar .dopLink {
+  display: none;
+  position: absolute;
+  bottom: 12px;
+  width: 200px;
+  height: auto;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center;
+}
+/* line 1538, main.scss */
+.mainCalendar .dopLink.visible {
+  display: block;
+}
 
-/* line 1530, main.scss */
+/* line 1544, main.scss */
 .feedback {
   width: 100%;
   height: 100%;
   display: block;
   background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
 }
-/* line 1535, main.scss */
+/* line 1549, main.scss */
 .feedback > div {
   width: 300px;
   overflow: hidden;
@@ -3897,32 +3955,36 @@ body {
   position: relative;
   top: 10px;
 }
+/* line 1556, main.scss */
+.feedback > div .scrolable {
+  overflow-X: hidden;
+}
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1535, main.scss */
+  /* line 1549, main.scss */
   .feedback > div {
     width: 500px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1535, main.scss */
+  /* line 1549, main.scss */
   .feedback > div {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1535, main.scss */
+  /* line 1549, main.scss */
   .feedback > div {
     width: 1000px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1535, main.scss */
+  /* line 1549, main.scss */
   .feedback > div {
     top: 5%;
     width: 1100px;
   }
 }
-/* line 1562, main.scss */
+/* line 1579, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
   margin: 0 auto;
@@ -3930,21 +3992,21 @@ body {
   overflow: scroll;
   text-align: center;
 }
-/* line 1568, main.scss */
+/* line 1585, main.scss */
 .feedback .commentsVK .fb_iframe_widget iframe, .feedback .commentsFB .fb_iframe_widget iframe, .feedback .commentsG .fb_iframe_widget iframe {
   width: 500px !important;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1568, main.scss */
+  /* line 1585, main.scss */
   .feedback .commentsVK .fb_iframe_widget iframe, .feedback .commentsFB .fb_iframe_widget iframe, .feedback .commentsG .fb_iframe_widget iframe {
     width: 800px !important;
   }
 }
-/* line 1575, main.scss */
+/* line 1592, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
-/* line 1579, main.scss */
+/* line 1596, main.scss */
 .feedback .wedComments {
   width: 220px;
   height: auto;
@@ -3954,15 +4016,15 @@ body {
   margin-top: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1579, main.scss */
+  /* line 1596, main.scss */
   .feedback .wedComments {
-    width: 380px;
+    width: 350px;
     padding-left: 120px;
     margin-top: 10px;
     min-height: 100px;
   }
 }
-/* line 1593, main.scss */
+/* line 1610, main.scss */
 .feedback .wedComments:before {
   content: '';
   width: 50px;
@@ -3975,35 +4037,35 @@ body {
   left: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1593, main.scss */
+  /* line 1610, main.scss */
   .feedback .wedComments:before {
     width: 100px;
     height: 100px;
   }
 }
-/* line 1608, main.scss */
+/* line 1625, main.scss */
 .feedback .wedComments .quote {
   position: relative;
   display: inline-block;
   text-indent: 30px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1608, main.scss */
+  /* line 1625, main.scss */
   .feedback .wedComments .quote {
     width: 400px;
   }
 }
-/* line 1615, main.scss */
+/* line 1632, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1615, main.scss */
+  /* line 1632, main.scss */
   .feedback .wedComments .quote .notForMobyle {
     display: inline-block;
   }
 }
-/* line 1622, main.scss */
+/* line 1639, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -4013,7 +4075,7 @@ body {
   position: absolute;
   left: 0px;
 }
-/* line 1632, main.scss */
+/* line 1649, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -4025,101 +4087,76 @@ body {
   position: absolute;
   margin-right: 20px;
 }
-/* line 1647, main.scss */
+/* line 1664, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
   font-weight: bold;
   font-style: italic;
   margin: 5px;
 }
-/* line 1654, main.scss */
-.feedback .teren {
-  display: none;
-}
-/* line 1656, main.scss */
+/* line 1673, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1654, main.scss */
+  /* line 1671, main.scss */
   .feedback .teren {
     display: inline-table;
   }
 }
-/* line 1665, main.scss */
-.feedback .terel {
-  display: none;
-}
-/* line 1667, main.scss */
+/* line 1684, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1665, main.scss */
+  /* line 1682, main.scss */
   .feedback .terel {
     display: inline-table;
   }
 }
-/* line 1675, main.scss */
-.feedback .slavko {
-  display: none;
-}
-/* line 1677, main.scss */
+/* line 1694, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1675, main.scss */
+  /* line 1692, main.scss */
   .feedback .slavko {
     display: inline-table;
   }
 }
-/* line 1686, main.scss */
-.feedback .poroh {
-  display: none;
-}
-/* line 1688, main.scss */
+/* line 1705, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1695, main.scss */
-.feedback .homi {
-  display: none;
-}
-/* line 1697, main.scss */
+/* line 1714, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1695, main.scss */
+  /* line 1712, main.scss */
   .feedback .homi {
     display: inline-table;
   }
 }
-/* line 1706, main.scss */
-.feedback .stars {
-  display: none;
-}
-/* line 1708, main.scss */
+/* line 1725, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;
   border: 1px solid grey;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1706, main.scss */
+  /* line 1723, main.scss */
   .feedback .stars {
     display: inline-table;
-    margin-left: 40px;
   }
 }
 
-/* line 1722, main.scss */
+/* line 1739, main.scss */
 #orderCallModal, #orderFireModal, #sunSatCalc {
   z-index: 50;
   top: 0;
@@ -4129,7 +4166,7 @@ body {
   position: absolute;
   display: none;
 }
-/* line 1730, main.scss */
+/* line 1747, main.scss */
 #orderCallModal .closeBtn, #orderFireModal .closeBtn, #sunSatCalc .closeBtn {
   cursor: pointer;
   width: 30px;
@@ -4143,7 +4180,7 @@ body {
   background-color: #fff;
   color: red;
 }
-/* line 1743, main.scss */
+/* line 1760, main.scss */
 #orderCallModal .modal-backdrop, #orderFireModal .modal-backdrop, #sunSatCalc .modal-backdrop {
   width: 100%;
   height: 100% !important;
@@ -4154,17 +4191,17 @@ body {
   content: '';
   z-index: 50;
 }
-/* line 1753, main.scss */
+/* line 1770, main.scss */
 #orderCallModal .modal-header, #orderFireModal .modal-header, #sunSatCalc .modal-header {
   text-align: right;
 }
-/* line 1756, main.scss */
+/* line 1773, main.scss */
 #orderCallModal h3, #orderFireModal h3, #sunSatCalc h3 {
   color: #000;
   font-size: 130%;
   margin: 15px;
 }
-/* line 1761, main.scss */
+/* line 1778, main.scss */
 #orderCallModal > .modal-body, #orderFireModal > .modal-body, #sunSatCalc > .modal-body {
   z-index: 50;
   position: absolute;
@@ -4179,7 +4216,7 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1761, main.scss */
+  /* line 1778, main.scss */
   #orderCallModal > .modal-body, #orderFireModal > .modal-body, #sunSatCalc > .modal-body {
     width: 500px;
     height: 300px;
@@ -4187,7 +4224,7 @@ body {
     margin-top: -150px;
   }
 }
-/* line 1779, main.scss */
+/* line 1796, main.scss */
 #orderCallModal > .modal-body input, #orderCallModal > .modal-body select, #orderCallModal > .modal-body textarea, #orderFireModal > .modal-body input, #orderFireModal > .modal-body select, #orderFireModal > .modal-body textarea, #sunSatCalc > .modal-body input, #sunSatCalc > .modal-body select, #sunSatCalc > .modal-body textarea {
   font-family: HeliosCondThin;
   border: 1px solid #c2c2cc;
@@ -4200,22 +4237,22 @@ body {
   outline: none;
   width: 65%;
 }
-/* line 1790, main.scss */
+/* line 1807, main.scss */
 #orderCallModal > .modal-body input:focus, #orderCallModal > .modal-body select:focus, #orderCallModal > .modal-body textarea:focus, #orderFireModal > .modal-body input:focus, #orderFireModal > .modal-body select:focus, #orderFireModal > .modal-body textarea:focus, #sunSatCalc > .modal-body input:focus, #sunSatCalc > .modal-body select:focus, #sunSatCalc > .modal-body textarea:focus {
   border: 1px solid red;
 }
-/* line 1794, main.scss */
+/* line 1811, main.scss */
 #orderCallModal > .modal-body #anotherDaySun, #orderFireModal > .modal-body #anotherDaySun, #sunSatCalc > .modal-body #anotherDaySun {
   text-align: center;
   width: 50%;
 }
-/* line 1798, main.scss */
+/* line 1815, main.scss */
 #orderCallModal > .modal-body .todaySun, #orderCallModal > .modal-body .anotherSunResult > span, #orderFireModal > .modal-body .todaySun, #orderFireModal > .modal-body .anotherSunResult > span, #sunSatCalc > .modal-body .todaySun, #sunSatCalc > .modal-body .anotherSunResult > span {
   font-weight: bold;
   color: red;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 1804, main.scss */
+/* line 1821, main.scss */
 #orderCallModal > .modal-body button, #orderFireModal > .modal-body button, #sunSatCalc > .modal-body button {
   font-family: HeliosCondThin;
   border-radius: 3px;
@@ -4233,22 +4270,22 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 1824, main.scss */
+/* line 1841, main.scss */
 #orderFireModal > .modal-body {
   height: 600px;
   margin-top: -300px;
 }
-/* line 1828, main.scss */
+/* line 1845, main.scss */
 #orderFireModal > .modal-body #customerProgramFire {
   margin: 10px 0px;
   width: 68%;
 }
-/* line 1832, main.scss */
+/* line 1849, main.scss */
 #orderFireModal > .modal-body #customerNotesFire {
   height: 100px;
 }
 
-/* line 1841, main.scss */
+/* line 1858, main.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -4256,13 +4293,13 @@ body {
   animation-fill-mode: both;
 }
 
-/* line 1847, main.scss */
+/* line 1864, main.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 1851, main.scss */
+/* line 1868, main.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -4318,7 +4355,7 @@ body {
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-/* line 1905, main.scss */
+/* line 1922, main.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -4388,7 +4425,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 1973, main.scss */
+/* line 1990, main.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
@@ -4428,7 +4465,7 @@ body {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-/* line 2011, main.scss */
+/* line 2028, main.scss */
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
@@ -4504,13 +4541,13 @@ body {
     opacity: 0;
   }
 }
-/* line 2085, main.scss */
+/* line 2102, main.scss */
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
 }
 
-/* line 2090, main.scss */
+/* line 2107, main.scss */
 .arrowNav {
   position: absolute;
   width: 0px;
@@ -4525,7 +4562,7 @@ body {
   transition: 0.5s;
 }
 
-/* line 2104, main.scss */
+/* line 2121, main.scss */
 .arrowNav:before {
   content: '';
   width: 0px;
@@ -4536,7 +4573,7 @@ body {
   -webkit-transform: translate(-13px, -24px);
 }
 
-/* line 2114, main.scss */
+/* line 2131, main.scss */
 .arrowNav.down {
   transform: rotate(90deg) translate(0px, 13px);
   -webkit-transform: rotate(90deg) translate(0px, 13px);

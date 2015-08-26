@@ -33,6 +33,7 @@ $(document).ready(function(){
         menu: '#menu',
         anchors: ['main', 'programs', 'artistes', 'calendar', 'feedback'],
         sectionsColor: ['#000', 'green', '#ee005a', '#39C', 'blue'],
+        normalScrollElements: '.scrolable',
         navigation: {
             'position': 'left',
             'tooltips': ['Винницкий Театр Огня', 'Программы', 'Артисты', 'Календарь', 'Отзывы']
@@ -150,12 +151,12 @@ $(document).ready(function(){
     function showSecret() {
         if ($('.popover-content').css('display') == 'none') {
             $('.popover-content').show();
-            $('.dopLink').remove();
-            $('#calendari_lateral1').append('<span class="dopLink"><a class="calendarLink" target="_blank" href="http://fierydream.com/grafik.html">ГРАФИК РАБОТЫ</a></span>');
-            //document.cookie="apanel=1; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+            $('.dopLink').removeClass('visible');
+            $('.dopLink').addClass('visible');
+
         } else {
             $('.popover-content').hide();
-            $('.dopLink').remove();
+            $('.dopLink').removeClass('visible');
             //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
         }
     }

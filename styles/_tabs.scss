@@ -131,6 +131,7 @@ div.t3,
 div.t4 {
   float: left;
   width: 95%;
+  height: 400px;
   background: #fff;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -142,4 +143,19 @@ div.t4 {
   position: relative;
   margin: -2px;
   text-align: justify;
+  @include mobile-landscape{
+    height: 220px;
+  }
+  @include tablet{
+    height: 750px;
+  }
+  @include tablet-landscape{
+    height: 650px;
+  }
+  @include desktop-short{
+    height: 500px;
+  }
+  @include desktop{
+    height: 750px;
+  }
 }

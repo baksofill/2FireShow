@@ -1219,6 +1219,7 @@ body {
 
   .artistCard {
     top: 10px;
+
     position: relative;
     width: 100%;
     height: 100px;
@@ -1227,7 +1228,8 @@ body {
       width: 45%;
     }
     @include tablet {
-      top: 0%;
+      margin-top: 50px;
+      top: 10%;
       position: relative;
       width: 200px;
       height: 370px;
@@ -1420,7 +1422,7 @@ body {
     }
   }
   .serg {
-    display: none;
+    //display: none;
     .back {
       @include tablet {
         background-position: 0px -780px;
@@ -1522,8 +1524,20 @@ body {
     -khtml-user-select: none;
     user-select: none;
     -webkit-user-select: none;
+  }
+  .dopLink{
+    display: none;
+    position: absolute;
+    bottom: 12px;
+    width: 200px;
+    height: auto;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
 
-
+    &.visible{
+      display: block;
+    }
   }
 }
 
@@ -1539,6 +1553,9 @@ body {
     display: block;
     position: relative;
     top: 10px;
+    .scrolable{
+      overflow-X: hidden;
+    }
     @include mobile-landscape {
       width: 500px;
     }
@@ -1584,7 +1601,7 @@ body {
     padding-left: 50px;
     margin-top: 0px;
     @include tablet {
-      width: 380px;
+      width: 350px;
       padding-left: 120px;
       margin-top: 10px;
       min-height: 100px;
@@ -1652,7 +1669,7 @@ body {
     }
   }
   .teren{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/teren.jpg") no-repeat;
       background-size: 100%;
@@ -1663,7 +1680,7 @@ body {
 
   }
   .terel{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/vadim.jpg") no-repeat;
       background-size: 100%;
@@ -1673,7 +1690,7 @@ body {
     }
   }
   .slavko{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/slavko.jpg") no-repeat;
       background-size: 100%;
@@ -1684,7 +1701,7 @@ body {
 
   }
   .poroh{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/poroh.jpg") no-repeat;
       background-size: 100%;
@@ -1693,7 +1710,7 @@ body {
 
   }
   .homi{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/homi.jpg") no-repeat;
       background-size: 100%;
@@ -1704,7 +1721,7 @@ body {
 
   }
   .stars{
-    display: none;
+    //display: none;
     &:before{
       background: url("../img/comments/stars.jpg") no-repeat;
       background-size: 100%;
@@ -1712,7 +1729,7 @@ body {
     }
     @include tablet {
       display: inline-table;
-      margin-left: 40px;
+      //margin-left: 40px;
     }
 
   }

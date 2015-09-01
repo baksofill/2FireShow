@@ -163,6 +163,15 @@ body {
       -webkit-transform: rotate(90deg);
     }
   }
+  #myCopyright{
+    position: absolute;
+    bottom: 10px;
+    top: inherit;
+    color: #fff;
+    a{
+      color: #fff;
+    }
+  }
 
 
 }
@@ -305,16 +314,18 @@ body {
         top: 80px;
         margin: 0 auto;
         margin-left: 300px;
-        width: 700px;
+        width: 760px;
         line-height: 50px;
         height: 50px;
+        left: 40px;
       }
       @include desktop-short {
         top: 80px;
         margin: 0 auto;
-        width: 860px;
+        width: 900px;
         line-height: 50px;
         height: 50px;
+        left: initial;
       }
 
       .noMobyle {
@@ -349,7 +360,7 @@ body {
           &:nth-child(10) > a:before {
             background-position: -113px 0;
           }
-          &:nth-child(5) > a:before {
+          &:nth-child(6) > a:before {
             background-position: -203px 0;
           }
 
@@ -1216,6 +1227,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  overflow: hidden;
 
   .artistCard {
     top: 10px;
@@ -1494,9 +1506,15 @@ body {
       width: 700px;
       top: 20%;
     }
+    @include desktop-short{
+      top: 20px;
+    }
     @include desktop {
       width: 800px;
+      top: 20%;
+
     }
+
 
     .table {
       width: 100%;
@@ -1601,10 +1619,13 @@ body {
     padding-left: 50px;
     margin-top: 0px;
     @include tablet {
-      width: 350px;
+      width: 330px;
       padding-left: 120px;
       margin-top: 10px;
       min-height: 100px;
+    }
+    @include desktop{
+      width: 350px;
     }
 
     &:before {

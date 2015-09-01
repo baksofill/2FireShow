@@ -1,0 +1,53 @@
+@import "_lib";
+
+
+
+
+body {
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background-color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  font-family: HeliosCondThin;
+  font-size: 110%;
+}
+
+@font-face {
+  font-family: 'HeliosCondThin';
+  src: url('../fonts/HeliosCondThin.otf ');
+}
+
+a{
+  color: #000;
+  text-transform: uppercase;
+  &:hover{
+    color: red;
+  }
+}
+li{
+  margin: 20px;
+}
+.mainWrapp{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+.fun{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 200px;
+
+  right: 0;
+  z-index: -1;
+  background: url("../img/error404.jpg") no-repeat;
+  background-size: auto 100%;
+
+}

@@ -208,7 +208,6 @@
 </head>
 <body>
 
-
 <div class="loader">
     <div id="skypestyle">
 
@@ -250,21 +249,27 @@
 
 </div>
 
-<div class="callMe">
+<div class="callMe" itemscope="" itemtype="http://schema.org/Organization">
     <div class="mainCallButton">
         <div class="arrowNav down"></div>
         Связаться
     </div>
     <div class="firstTitle"> Свяжитесь с нами:</div>
-    <div class="callTel"><a href="tel:+380983320640">098 33 20 640</a></div>
-    <div class="callEmail">FireShow@FieryDream.com</div>
+    <div class="callTel"><a  itemprop="telephone" href="tel:+380983320640">098 33 20 640</a></div>
+    <div class="callEmail" itemprop="email">FireShow@FieryDream.com</div>
 
     <a href="#orderCallModal" role="button" class="btn orderCall" data-toggle="modal">Перезвонить мне</a>
     <a href="#orderFireModal" role="button" class="btn orderFire" data-toggle="modal">Заказать Огненное Шоу</a>
 
 <br><br><br><br>
     <a href="#sunSatCalc" role="button" class="btn sunSet" data-toggle="modal">Заход солнца</a>
-
+    <div id="myCopyright">
+        © 2011-2015, 	<a title="заказать огненное шоу в Хмельницком" href="/"> Fiery Dream.com </a>
+        <br>
+        <span itemtype="http://schema.org/LocalBusiness"> <span itemprop="addressLocality">г. Винница</span></span>
+        <br>
+        <span>Разработка - <a href="/" title="контакты артистов на свадьбу">Антон </a> <a href="https://plus.google.com/118225124857572848287?rel=author" title="Антон Обертинский личный сайт"> Обертинский</a></span>
+    </div>
 </div>
 
 <div id="pagepiling">
@@ -281,8 +286,8 @@
 
                         <li data-menuanchor="page3"><a href="#artistes">АРТИСТЫ <span>ТЕАТРА</span></a></li>
                         <li data-menuanchor="page4"><a href="#feedback" class="noMobyle">ОТЗЫВЫ</a></li>
-                        <li data-menuanchor="page3"><a href="#calendar" class="noMobyle">КАЛЕНДАРЬ
-                            <span>ЗАНЯТОСТИ</span></a></li>
+                        <li data-menuanchor="page3"><a href="#calendar" class="noMobyle">КАЛЕНДАРЬ <span>ЗАНЯТОСТИ</span></a></li>
+                        <li><a href="/blog/index.php/blog" class="noMobyle">БЛОГ</a></li>
                         <li data-menuanchor="page3" class="kontakts"><a href="#kontakts" class="">КОНТАКТЫ</a></li>
                     </ul>
                 </div>
@@ -312,7 +317,7 @@
                         <li><a href="https://www.facebook.com/groups/fierydream.vn.ua/"></a></li>
                         <li><a href="https://plus.google.com/u/0/b/104227155905182321468/+Fierydream/posts"></a></li>
                         <li><a href="https://www.youtube.com/c/Fierydream"></a></li>
-                        <li><a href="https://blackcat.vn.ua">ПАРТНЕРЫ</a></li>
+                        <li><a href="/blog/">ПАРТНЕРЫ</a></li>
 
                     </ul>
                 </div>
@@ -848,7 +853,7 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-61417075-1', 'auto');
+    ga('create', 'UA-27927097-1', 'auto');
     ga('send', 'pageview');
 
 </script>

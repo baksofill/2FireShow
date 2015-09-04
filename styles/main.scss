@@ -230,15 +230,15 @@ body {
   }
 
   .wrapper {
-    & > a.logo {
-      content: '';
+    .logo{
+      //content: '';
       margin: 0 auto;
       display: block;
       width: 200px;
       height: 60px;
       top: 5px;
       position: relative;
-      background: url("../img/logo.png") no-repeat;
+      //background: url("../img/logo.png") no-repeat;
       background-position: top;
       background-size: auto 100%;
 
@@ -326,6 +326,9 @@ body {
         line-height: 50px;
         height: 50px;
         left: initial;
+      }
+      @include desktop{
+        width: 900px;
       }
 
       .noMobyle {

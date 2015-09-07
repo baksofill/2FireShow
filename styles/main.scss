@@ -309,26 +309,34 @@ body {
         margin: 0 auto;
         top: 50px;
         line-height: 2;
+
       }
       @include tablet-landscape {
         top: 80px;
         margin: 0 auto;
-        margin-left: 300px;
-        width: 760px;
+        margin-left: 260px;
+        width: 700px;
         line-height: 50px;
         height: 50px;
         left: 40px;
       }
       @include desktop-short {
         top: 80px;
+        left: 40px;
         margin: 0 auto;
+        margin-left: 300px;
         width: 900px;
         line-height: 50px;
         height: 50px;
-        left: initial;
+        //left: initial;
+
       }
       @include desktop{
         width: 900px;
+        left: initial;
+        margin-left: 0;
+
+        margin: 0 auto;
       }
 
       .noMobyle {
@@ -370,6 +378,9 @@ body {
           @include mobile-landscape {
             display: block;
             margin: 15px 5px;
+          }
+          @include tablet-landscape{
+            margin-right: 15px;
           }
           @include tablet {
             margin-right: 15px;

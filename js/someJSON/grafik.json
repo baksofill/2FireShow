@@ -2,10 +2,17 @@
   "training": [
     {
       "month": "сентябрь",
-      "date": "",
-      "time": "",
-      "info": "",
+      "date": "30-Ср",
+      "time": "19:00",
+      "info": "Новогодняя",
       "status": ""
+    },
+    {
+      "month": "сентябрь",
+      "date": "9-Ср, 16-Ср, 18-Пт,26-Сб",
+      "time": "19:30",
+      "info": "Rock Brama",
+      "status": "complet"
     },
     {
       "month": "август",

@@ -1,0 +1,54 @@
+/* line 6, 404.scss */
+body {
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent;
+  background-color: white;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  font-family: HeliosCondThin;
+  font-size: 110%;
+}
+
+@font-face {
+  font-family: 'HeliosCondThin';
+  src: url("../fonts/HeliosCondThin.otf ");
+}
+/* line 23, 404.scss */
+a {
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 26, 404.scss */
+a:hover {
+  color: red;
+}
+
+/* line 30, 404.scss */
+li {
+  margin: 20px;
+}
+
+/* line 33, 404.scss */
+.mainWrapp {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 20%;
+}
+
+/* line 40, 404.scss */
+.fun {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  height: 200px;
+  right: 0;
+  z-index: -1;
+  background: url("../img/error404.jpg") no-repeat;
+  background-size: auto 100%;
+}

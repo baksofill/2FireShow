@@ -1040,6 +1040,10 @@ body {
       .programTitle {
         color: red;
         font-weight: bold;
+        a{
+          text-decoration: underline;
+          color:  darkred;
+        }
         & > span {
           font-weight: normal;
           color: #000;

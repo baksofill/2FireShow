@@ -366,7 +366,7 @@
                     </div>
                     <div class="description">
                         <p>
-                            <span class="programTitle"> <span>Шоу-программа</span> ОГНЕННЫЙ МИР (Классика)</span> - это
+                            <span class="programTitle"> <span>Шоу-программа</span> ОГНЕННЫЙ МИР (Классика) <a class="notForMobyle" href="http://best.fierydream.com">[более детальная инфо]</a></span> - это
                             классическое исполнение огненного шоу под мировые
                             хиты в современной обработке. Это наиболее успешный наш проект. ТОП продаж прошлого года.
                             Самая универасальная программа для любого типа мероприятия.
@@ -422,7 +422,7 @@
                     </div>
                     <div class="description">
                         <p>
-                            <span class="programTitle"> <span>Шоу-программа</span> "ПАЛАЮЧЕ СЕРЦЕ"(Украина)</span> -
+                            <span class="programTitle"> <span>Шоу-программа</span> "ПАЛАЮЧЕ СЕРЦЕ"(Украина)  <a class="notForMobyle" href="http://ukr.fierydream.com">[более детальная инфо]</a></span> -
                             выполненна в  лучших традициях украинского этноса! На фоне всего происходящего в нашей стране, эта
                             программа будет ближе сердцу куда больше чем любая другая. Яркие светлые костюмы, ручная вышивка, все
                             это позволит насладится исключительностью культуры нашей страны и национальных традиций.
@@ -465,7 +465,7 @@
                     </div>
                     <div class="description">
                         <p>
-                            <span class="programTitle"> <span>Огненное шоу</span> "ГАВАИ".</span>Окунитесь в атмосферу
+                            <span class="programTitle"> <span>Огненное шоу</span> "ГАВАИ". <a class="notForMobyle" href="http://hawaii.fierydream.com">[более детальная инфо]</a></span>Окунитесь в атмосферу
                             жарких
                             тропиков, незабываемых танцев c огнем, и ярких впечатлений
                             вместе с Винницким Театром Огня "Fiery Dream".
@@ -789,29 +789,28 @@
         </div>
         <div class="modal-text">
             <h3> Попробуем заказать Огненное Шоу? :)</h3>
-            <input id="customerNameFire" class="form-control" name="fio" required="" type="text" value=""
-                   placeholder="Имя">
-            <input id="customerPhoneFire" class="form-control" name="tel" required="" type="tel" value=""
-                   placeholder="Телефон">
-            <input id="customerDateFire" class="form-control" name="date" required="" type="text" value="" placeholder="Выберите дату заказа">
-            <input id="customerPlaceFire" class="form-control" name="place" required="" type="text" value=""
-                   placeholder="Место проведения мероприятия">
-            <select id="customerProgramFire" size="1" name="program" required="" class="form-control" type=""
-                    placeholder="ВЫБРАТЬ ПРОГРАМММУ">
-                <option selected disabled>Выбрать программу</option>
-                <option value="Огненный Мир СТАНДАРТ">Огненный Мир "СТАНДАРТ" - 2500грн</option>
-                <option value="Огненный Мир ГРАНД">Огненный Мир "ГРАНД" - 4000грн</option>
-                <option value="Огненный Мир ПРАЙМ">Огненный Мир "ПРАЙМ" - 6000грн</option>
-                <option value="Украина">Украина "ПАЛАЮЧЕ СЕРЦЕ" - 6000грн</option>
-                <option value="Гаваи">"ГАВАИ" - 6000грн</option>
-            </select>
-            <textarea id="customerNotesFire" class="form-control" name="notes" required="" type="te" value=""
-                      placeholder="Возможные нюансы"></textarea>
+            <form method="post" action="" id="ajaxform2">
+                <input id="customerNameFire" class="form-control" name="fio" required="" type="text" value=""  placeholder="Имя">
+                <input id="customerPhoneFire" class="form-control" name="tel" required="" type="tel" value="" placeholder="Телефон">
+                <input id="customerDateFire" class="form-control" name="date" required="" type="text" value="" placeholder="Выберите дату заказа">
+                <input id="customerPlaceFire" class="form-control" name="place" required="" type="text" value=""   placeholder="Место проведения мероприятия">
+                <select id="customerProgramFire" size="1" name="program" required="" class="form-control" type=""  placeholder="ВЫБРАТЬ ПРОГРАМММУ">
+                    <option selected disabled>Выбрать программу</option>
+                    <option value="Огненный Мир СТАНДАРТ">Огненный Мир "СТАНДАРТ" - 2500грн</option>
+                    <option value="Огненный Мир ГРАНД">Огненный Мир "ГРАНД" - 4000грн</option>
+                    <option value="Огненный Мир ПРАЙМ">Огненный Мир "ПРАЙМ" - 6000грн</option>
+                    <option value="Украина">Украина "ПАЛАЮЧЕ СЕРЦЕ" - 6000грн</option>
+                    <option value="Гаваи">"ГАВАИ" - 6000грн</option>
+                </select>
+                <textarea id="customerNotesFire" class="form-control" name="notes" required="" type="te" value=""   placeholder="Возможные нюансы"></textarea>
+
+                <button class="fakeBTN" name="ok" type="submit" title="Кнопка не работает :(">Заказать шоу</button>
+            </form>
         </div>
         <div class="modal-footer">
 
 
-            <button class="fakeBTN" name="ok" type="submit" title="Кнопка не работает :(">Заказать шоу</button>
+
         </div>
     </div>
 </div>

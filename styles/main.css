@@ -3310,6 +3310,11 @@ body {
   font-weight: bold;
 }
 /* line 1043, main.scss */
+.programs .description p .programTitle a {
+  text-decoration: underline;
+  color: darkred;
+}
+/* line 1047, main.scss */
 .programs .description p .programTitle > span {
   font-weight: normal;
   color: #000;
@@ -3320,21 +3325,21 @@ body {
     display: block;
   }
 }
-/* line 1051, main.scss */
+/* line 1055, main.scss */
 .programs .description p .preTitle {
   font-weight: bold;
 }
-/* line 1053, main.scss */
+/* line 1057, main.scss */
 .programs .description p .preTitle > span {
   font-weight: normal;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1051, main.scss */
+  /* line 1055, main.scss */
   .programs .description p .preTitle {
     display: block;
   }
 }
-/* line 1061, main.scss */
+/* line 1065, main.scss */
 .programs .description p .price {
   display: block;
   padding: 10px;
@@ -3344,13 +3349,13 @@ body {
   margin-left: 80%;
   text-align: center;
 }
-/* line 1071, main.scss */
+/* line 1075, main.scss */
 .programs .description p.textOM, .programs .description p.textUK, .programs .description p.textGAV {
   margin-right: 20%;
   position: relative;
   height: 20px;
 }
-/* line 1075, main.scss */
+/* line 1079, main.scss */
 .programs .description p.textOM .price, .programs .description p.textUK .price, .programs .description p.textGAV .price {
   padding: 5px;
   position: absolute;
@@ -3360,45 +3365,45 @@ body {
   width: 35%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1075, main.scss */
+  /* line 1079, main.scss */
   .programs .description p.textOM .price, .programs .description p.textUK .price, .programs .description p.textGAV .price {
     padding: 10px;
     width: 20%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1071, main.scss */
+  /* line 1075, main.scss */
   .programs .description p.textOM, .programs .description p.textUK, .programs .description p.textGAV {
     height: auto;
     display: block;
   }
 }
-/* line 1095, main.scss */
+/* line 1099, main.scss */
 .programs .description p .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1095, main.scss */
+  /* line 1099, main.scss */
   .programs .description p .notForMobyle {
     display: inline;
   }
 }
-/* line 1103, main.scss */
+/* line 1107, main.scss */
 .programs .description.active, .programs .media.active {
   display: block;
 }
-/* line 1106, main.scss */
+/* line 1110, main.scss */
 .programs .buttonReadMore {
   width: 200px;
   margin: 5px auto;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1106, main.scss */
+  /* line 1110, main.scss */
   .programs .buttonReadMore {
     display: none;
   }
 }
-/* line 1113, main.scss */
+/* line 1117, main.scss */
 .programs .videoOM, .programs .videoUA, .programs .videoGAV {
   content: '';
   display: block;
@@ -3410,7 +3415,7 @@ body {
   background-size: 100% auto;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1113, main.scss */
+  /* line 1117, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
     display: inline-block;
     width: 240px;
@@ -3419,7 +3424,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1113, main.scss */
+  /* line 1117, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
     display: inline-block;
     width: 240px;
@@ -3429,14 +3434,14 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1113, main.scss */
+  /* line 1117, main.scss */
   .programs .videoOM, .programs .videoUA, .programs .videoGAV {
     width: 300px;
     height: 164px;
     margin: 0;
   }
 }
-/* line 1143, main.scss */
+/* line 1147, main.scss */
 .programs .videoOM a, .programs .videoUA a, .programs .videoGAV a {
   content: '';
   width: 100%;
@@ -3444,42 +3449,42 @@ body {
   position: relative;
   display: block;
 }
-/* line 1151, main.scss */
+/* line 1155, main.scss */
 .programs .videoUA {
   background-position: bottom;
 }
-/* line 1154, main.scss */
+/* line 1158, main.scss */
 .programs .videoGAV {
   background-position: center;
 }
-/* line 1157, main.scss */
+/* line 1161, main.scss */
 .programs .imgOM, .programs .imgGAV, .programs .imgUA {
   display: block;
   width: 250px;
   margin: 0 auto;
 }
-/* line 1161, main.scss */
+/* line 1165, main.scss */
 .programs .imgOM .notForMobyle, .programs .imgGAV .notForMobyle, .programs .imgUA .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1161, main.scss */
+  /* line 1165, main.scss */
   .programs .imgOM .notForMobyle, .programs .imgGAV .notForMobyle, .programs .imgUA .notForMobyle {
     display: inline-block;
   }
 }
-/* line 1167, main.scss */
+/* line 1171, main.scss */
 .programs .imgOM .forDesktop, .programs .imgGAV .forDesktop, .programs .imgUA .forDesktop {
   display: none;
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1167, main.scss */
+  /* line 1171, main.scss */
   .programs .imgOM .forDesktop, .programs .imgGAV .forDesktop, .programs .imgUA .forDesktop {
     display: inline-block;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1157, main.scss */
+  /* line 1161, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     display: inline-block;
     transform: scale(0.9);
@@ -3488,80 +3493,80 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1157, main.scss */
+  /* line 1161, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     display: inline-block;
     width: 370px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1157, main.scss */
+  /* line 1161, main.scss */
   .programs .imgOM, .programs .imgGAV, .programs .imgUA {
     width: 500px;
   }
 }
-/* line 1187, main.scss */
+/* line 1191, main.scss */
 .programs .titlePr {
   width: 100%;
   display: block;
   margin: 0 auto;
 }
-/* line 1191, main.scss */
+/* line 1195, main.scss */
 .programs .titlePr ul {
   text-align: center;
   display: flex;
   display: -webkit-flex;
 }
-/* line 1195, main.scss */
+/* line 1199, main.scss */
 .programs .titlePr ul li {
   margin: 10px;
   flex: 1;
   -webkit-flex: 1;
 }
-/* line 1199, main.scss */
+/* line 1203, main.scss */
 .programs .titlePr ul li a {
   color: #000;
 }
-/* line 1202, main.scss */
+/* line 1206, main.scss */
 .programs .titlePr ul li span {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1202, main.scss */
+  /* line 1206, main.scss */
   .programs .titlePr ul li span {
     display: inline;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1187, main.scss */
+  /* line 1191, main.scss */
   .programs .titlePr {
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1187, main.scss */
+  /* line 1191, main.scss */
   .programs .titlePr {
     margin-top: 5px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1187, main.scss */
+  /* line 1191, main.scss */
   .programs .titlePr {
     margin-top: 50px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1225, main.scss */
+  /* line 1229, main.scss */
   .programs .bxslider > li {
     padding: 10px;
   }
 }
-/* line 1233, main.scss */
+/* line 1237, main.scss */
 .programs .bxslider > li:nth-child(1) {
   padding: 20px;
 }
 
-/* line 1239, main.scss */
+/* line 1243, main.scss */
 .artistes {
   background-image: linear-gradient(-90deg, #FFA200, #F600FF);
   width: 100%;
@@ -3569,7 +3574,7 @@ body {
   text-align: center;
   overflow: hidden;
 }
-/* line 1246, main.scss */
+/* line 1250, main.scss */
 .artistes .artistCard {
   top: 10px;
   position: relative;
@@ -3578,13 +3583,13 @@ body {
   display: inline-block;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1246, main.scss */
+  /* line 1250, main.scss */
   .artistes .artistCard {
     width: 45%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1246, main.scss */
+  /* line 1250, main.scss */
   .artistes .artistCard {
     margin-top: 50px;
     top: 10%;
@@ -3598,13 +3603,13 @@ body {
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1246, main.scss */
+  /* line 1250, main.scss */
   .artistes .artistCard {
     top: 10%;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1246, main.scss */
+  /* line 1250, main.scss */
   .artistes .artistCard {
     top: 10%;
     position: relative;
@@ -3618,7 +3623,7 @@ body {
     margin-right: 0px;
   }
 }
-/* line 1283, main.scss */
+/* line 1287, main.scss */
 .artistes .artistCard .artistBtn {
   position: relative;
   width: auto;
@@ -3629,13 +3634,13 @@ body {
   color: #fff;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1283, main.scss */
+  /* line 1287, main.scss */
   .artistes .artistCard .artistBtn {
     text-align: right;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1283, main.scss */
+  /* line 1287, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 200px;
@@ -3650,7 +3655,7 @@ body {
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3) and (min-width: 1280px) and (min-height: 750px), only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1283, main.scss */
+  /* line 1287, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -3666,7 +3671,7 @@ body {
 }
 
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1283, main.scss */
+  /* line 1287, main.scss */
   .artistes .artistCard .artistBtn {
     position: absolute;
     width: 250px;
@@ -3680,7 +3685,7 @@ body {
     padding-left: 0;
   }
 }
-/* line 1331, main.scss */
+/* line 1335, main.scss */
 .artistes .artistCard .artistBtn:before {
   content: '';
   width: 80px;
@@ -3693,24 +3698,24 @@ body {
   border-radius: 50%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1331, main.scss */
+  /* line 1335, main.scss */
   .artistes .artistCard .artistBtn:before {
     left: 20px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1331, main.scss */
+  /* line 1335, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1331, main.scss */
+  /* line 1335, main.scss */
   .artistes .artistCard .artistBtn:before {
     display: none;
   }
 }
-/* line 1353, main.scss */
+/* line 1357, main.scss */
 .artistes .card {
   top: 0;
   left: 0;
@@ -3727,18 +3732,18 @@ body {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1353, main.scss */
+  /* line 1357, main.scss */
   .artistes .card {
     display: block;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1353, main.scss */
+  /* line 1357, main.scss */
   .artistes .card {
     display: block;
   }
 }
-/* line 1373, main.scss */
+/* line 1377, main.scss */
 .artistes .card figure {
   width: 100%;
   height: 100%;
@@ -3750,12 +3755,12 @@ body {
   margin: 0;
   border-radius: 5px;
 }
-/* line 1384, main.scss */
+/* line 1388, main.scss */
 .artistes .card .back {
   background: url("../img/artists.png") no-repeat;
   background-size: 100% auto;
 }
-/* line 1388, main.scss */
+/* line 1392, main.scss */
 .artistes .card .front {
   background-color: #fff;
   -webkit-transform: rotateY(180deg);
@@ -3764,7 +3769,7 @@ body {
   -o-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
-/* line 1395, main.scss */
+/* line 1399, main.scss */
 .artistes .card .front .artistsText {
   position: absolute;
   margin: 10px;
@@ -3772,24 +3777,24 @@ body {
   text-align: justify;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1395, main.scss */
+  /* line 1399, main.scss */
   .artistes .card .front .artistsText {
     height: 350px;
     overflow: hidden;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1395, main.scss */
+  /* line 1399, main.scss */
   .artistes .card .front .artistsText {
     overflow: visible;
   }
 }
-/* line 1408, main.scss */
+/* line 1412, main.scss */
 .artistes .card .front .artistsText .bold {
   font-weight: bold;
   color: red;
 }
-/* line 1416, main.scss */
+/* line 1420, main.scss */
 .artistes .card.flip, .artistes .card:hover {
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
@@ -3798,69 +3803,69 @@ body {
   transform: rotateY(180deg);
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1425, main.scss */
+  /* line 1429, main.scss */
   .artistes .me .back {
     background-position: 0px -390px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1425, main.scss */
+  /* line 1429, main.scss */
   .artistes .me .back {
     background-position: 0px -488px;
   }
 }
-/* line 1433, main.scss */
+/* line 1437, main.scss */
 .artistes .me .artistBtn:before {
   background-position-y: -88px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1438, main.scss */
+  /* line 1442, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1170px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1438, main.scss */
+  /* line 1442, main.scss */
   .artistes .pasha .back {
     background-position: 0px -1465px;
   }
 }
-/* line 1446, main.scss */
+/* line 1450, main.scss */
 .artistes .pasha .artistBtn:before {
   background-position-y: -265px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1452, main.scss */
+  /* line 1456, main.scss */
   .artistes .serg .back {
     background-position: 0px -780px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1452, main.scss */
+  /* line 1456, main.scss */
   .artistes .serg .back {
     background-position: 0px -977px;
   }
 }
-/* line 1460, main.scss */
+/* line 1464, main.scss */
 .artistes .serg .artistBtn:before {
   background-position-y: -352px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1464, main.scss */
+  /* line 1468, main.scss */
   .artistes .alina {
     margin-top: -20px;
   }
 }
-/* line 1468, main.scss */
+/* line 1472, main.scss */
 .artistes .alina .back {
   background-position: 0px bottom;
 }
-/* line 1471, main.scss */
+/* line 1475, main.scss */
 .artistes .alina .artistBtn:before {
   background-position-y: -176px;
 }
 
-/* line 1478, main.scss */
+/* line 1482, main.scss */
 .mainCalendar {
   width: 100%;
   height: 100%;
@@ -3871,7 +3876,7 @@ body {
   -khtml-user-select: none;
   user-select: none;
 }
-/* line 1489, main.scss */
+/* line 1493, main.scss */
 .mainCalendar h1 {
   text-align: center;
   text-transform: uppercase;
@@ -3880,18 +3885,18 @@ body {
   top: 10%;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1489, main.scss */
+  /* line 1493, main.scss */
   .mainCalendar h1 {
     top: 2%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1489, main.scss */
+  /* line 1493, main.scss */
   .mainCalendar h1 {
     font-size: 130%;
   }
 }
-/* line 1503, main.scss */
+/* line 1507, main.scss */
 .mainCalendar #calendari_lateral1 {
   width: 230px;
   margin: 0 auto;
@@ -3899,55 +3904,55 @@ body {
   position: relative;
 }
 @media only screen and (min-aspect-ratio: 4 / 3) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 400px;
     top: 10%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     top: 5%;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 700px;
     top: 20%;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     top: 20px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1503, main.scss */
+  /* line 1507, main.scss */
   .mainCalendar #calendari_lateral1 {
     width: 800px;
     top: 20%;
   }
 }
-/* line 1533, main.scss */
+/* line 1537, main.scss */
 .mainCalendar #calendari_lateral1 .table {
   width: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1536, main.scss */
+  /* line 1540, main.scss */
   .mainCalendar #calendari_lateral1 .table tr {
     height: 50px;
   }
 }
-/* line 1546, main.scss */
+/* line 1550, main.scss */
 .mainCalendar .calendarLink {
   text-decoration: underline;
   font-weight: bold;
@@ -3956,14 +3961,14 @@ body {
   display: block;
   margin-top: 10px;
 }
-/* line 1554, main.scss */
+/* line 1558, main.scss */
 .mainCalendar .event {
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   -webkit-user-select: none;
 }
-/* line 1560, main.scss */
+/* line 1564, main.scss */
 .mainCalendar .dopLink {
   display: none;
   position: absolute;
@@ -3974,19 +3979,19 @@ body {
   margin-left: -100px;
   text-align: center;
 }
-/* line 1570, main.scss */
+/* line 1574, main.scss */
 .mainCalendar .dopLink.visible {
   display: block;
 }
 
-/* line 1576, main.scss */
+/* line 1580, main.scss */
 .feedback {
   width: 100%;
   height: 100%;
   display: block;
   background-image: linear-gradient(-90deg, #0051FF, #00B7FF);
 }
-/* line 1581, main.scss */
+/* line 1585, main.scss */
 .feedback > div {
   width: 300px;
   overflow: hidden;
@@ -3995,36 +4000,36 @@ body {
   position: relative;
   top: 10px;
 }
-/* line 1588, main.scss */
+/* line 1592, main.scss */
 .feedback > div .scrolable {
   overflow-X: hidden;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1581, main.scss */
+  /* line 1585, main.scss */
   .feedback > div {
     width: 500px;
   }
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1581, main.scss */
+  /* line 1585, main.scss */
   .feedback > div {
     width: 600px;
   }
 }
 @media only screen and (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1581, main.scss */
+  /* line 1585, main.scss */
   .feedback > div {
     width: 1000px;
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1581, main.scss */
+  /* line 1585, main.scss */
   .feedback > div {
     top: 5%;
     width: 1100px;
   }
 }
-/* line 1611, main.scss */
+/* line 1615, main.scss */
 .feedback .commentsVK, .feedback .commentsFB, .feedback .commentsG {
   display: block;
   margin: 0 auto;
@@ -4032,21 +4037,21 @@ body {
   overflow: scroll;
   text-align: center;
 }
-/* line 1617, main.scss */
+/* line 1621, main.scss */
 .feedback .commentsVK .fb_iframe_widget iframe, .feedback .commentsFB .fb_iframe_widget iframe, .feedback .commentsG .fb_iframe_widget iframe {
   width: 500px !important;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1617, main.scss */
+  /* line 1621, main.scss */
   .feedback .commentsVK .fb_iframe_widget iframe, .feedback .commentsFB .fb_iframe_widget iframe, .feedback .commentsG .fb_iframe_widget iframe {
     width: 800px !important;
   }
 }
-/* line 1624, main.scss */
+/* line 1628, main.scss */
 .feedback .commentsVK #vk_comments, .feedback .commentsVK #___comments_0, .feedback .commentsFB #vk_comments, .feedback .commentsFB #___comments_0, .feedback .commentsG #vk_comments, .feedback .commentsG #___comments_0 {
   width: initial !important;
 }
-/* line 1628, main.scss */
+/* line 1632, main.scss */
 .feedback .wedComments {
   width: 220px;
   height: auto;
@@ -4056,7 +4061,7 @@ body {
   margin-top: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1628, main.scss */
+  /* line 1632, main.scss */
   .feedback .wedComments {
     width: 330px;
     padding-left: 120px;
@@ -4065,12 +4070,12 @@ body {
   }
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1628, main.scss */
+  /* line 1632, main.scss */
   .feedback .wedComments {
     width: 350px;
   }
 }
-/* line 1645, main.scss */
+/* line 1649, main.scss */
 .feedback .wedComments:before {
   content: '';
   width: 50px;
@@ -4083,35 +4088,35 @@ body {
   left: 0px;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1645, main.scss */
+  /* line 1649, main.scss */
   .feedback .wedComments:before {
     width: 100px;
     height: 100px;
   }
 }
-/* line 1660, main.scss */
+/* line 1664, main.scss */
 .feedback .wedComments .quote {
   position: relative;
   display: inline-block;
   text-indent: 30px;
 }
 @media only screen and (min-width: 480px) and (max-width: 640px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1660, main.scss */
+  /* line 1664, main.scss */
   .feedback .wedComments .quote {
     width: 400px;
   }
 }
-/* line 1667, main.scss */
+/* line 1671, main.scss */
 .feedback .wedComments .quote .notForMobyle {
   display: none;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1667, main.scss */
+  /* line 1671, main.scss */
   .feedback .wedComments .quote .notForMobyle {
     display: inline-block;
   }
 }
-/* line 1674, main.scss */
+/* line 1678, main.scss */
 .feedback .wedComments .quote:before {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -4121,7 +4126,7 @@ body {
   position: absolute;
   left: 0px;
 }
-/* line 1684, main.scss */
+/* line 1688, main.scss */
 .feedback .wedComments .quote:after {
   content: '';
   background: url("../img/quote.png") no-repeat;
@@ -4133,76 +4138,76 @@ body {
   position: absolute;
   margin-right: 20px;
 }
-/* line 1699, main.scss */
+/* line 1703, main.scss */
 .feedback .wedComments .commentsTitle {
   display: block;
   font-weight: bold;
   font-style: italic;
   margin: 5px;
 }
-/* line 1708, main.scss */
+/* line 1712, main.scss */
 .feedback .teren:before {
   background: url("../img/comments/teren.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1706, main.scss */
+  /* line 1710, main.scss */
   .feedback .teren {
     display: inline-table;
   }
 }
-/* line 1719, main.scss */
+/* line 1723, main.scss */
 .feedback .terel:before {
   background: url("../img/comments/vadim.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1717, main.scss */
+  /* line 1721, main.scss */
   .feedback .terel {
     display: inline-table;
   }
 }
-/* line 1729, main.scss */
+/* line 1733, main.scss */
 .feedback .slavko:before {
   background: url("../img/comments/slavko.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1727, main.scss */
+  /* line 1731, main.scss */
   .feedback .slavko {
     display: inline-table;
   }
 }
-/* line 1740, main.scss */
+/* line 1744, main.scss */
 .feedback .poroh:before {
   background: url("../img/comments/poroh.jpg") no-repeat;
   background-size: 100%;
 }
-/* line 1749, main.scss */
+/* line 1753, main.scss */
 .feedback .homi:before {
   background: url("../img/comments/homi.jpg") no-repeat;
   background-size: 100%;
 }
 @media only screen and (min-width: 1280px) and (min-height: 750px) {
-  /* line 1747, main.scss */
+  /* line 1751, main.scss */
   .feedback .homi {
     display: inline-table;
   }
 }
-/* line 1760, main.scss */
+/* line 1764, main.scss */
 .feedback .stars:before {
   background: url("../img/comments/stars.jpg") no-repeat;
   background-size: 100%;
   border: 1px solid grey;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1758, main.scss */
+  /* line 1762, main.scss */
   .feedback .stars {
     display: inline-table;
   }
 }
 
-/* line 1774, main.scss */
+/* line 1778, main.scss */
 #orderCallModal, #orderFireModal, #sunSatCalc {
   z-index: 50;
   top: 0;
@@ -4212,7 +4217,7 @@ body {
   position: absolute;
   display: none;
 }
-/* line 1782, main.scss */
+/* line 1786, main.scss */
 #orderCallModal .closeBtn, #orderFireModal .closeBtn, #sunSatCalc .closeBtn {
   cursor: pointer;
   width: 30px;
@@ -4226,7 +4231,7 @@ body {
   background-color: #fff;
   color: red;
 }
-/* line 1795, main.scss */
+/* line 1799, main.scss */
 #orderCallModal .modal-backdrop, #orderFireModal .modal-backdrop, #sunSatCalc .modal-backdrop {
   width: 100%;
   height: 100% !important;
@@ -4237,17 +4242,17 @@ body {
   content: '';
   z-index: 50;
 }
-/* line 1805, main.scss */
+/* line 1809, main.scss */
 #orderCallModal .modal-header, #orderFireModal .modal-header, #sunSatCalc .modal-header {
   text-align: right;
 }
-/* line 1808, main.scss */
+/* line 1812, main.scss */
 #orderCallModal h3, #orderFireModal h3, #sunSatCalc h3 {
   color: #000;
   font-size: 130%;
   margin: 15px;
 }
-/* line 1813, main.scss */
+/* line 1817, main.scss */
 #orderCallModal > .modal-body, #orderFireModal > .modal-body, #sunSatCalc > .modal-body {
   z-index: 50;
   position: absolute;
@@ -4262,7 +4267,7 @@ body {
   text-align: center;
 }
 @media only screen and (min-width: 599px) and (max-aspect-ratio: 4 / 3), (min-width: 1024px) and (min-height: 600px) and (min-aspect-ratio: 4 / 3) {
-  /* line 1813, main.scss */
+  /* line 1817, main.scss */
   #orderCallModal > .modal-body, #orderFireModal > .modal-body, #sunSatCalc > .modal-body {
     width: 500px;
     height: 300px;
@@ -4270,7 +4275,7 @@ body {
     margin-top: -150px;
   }
 }
-/* line 1831, main.scss */
+/* line 1835, main.scss */
 #orderCallModal > .modal-body input, #orderCallModal > .modal-body select, #orderCallModal > .modal-body textarea, #orderFireModal > .modal-body input, #orderFireModal > .modal-body select, #orderFireModal > .modal-body textarea, #sunSatCalc > .modal-body input, #sunSatCalc > .modal-body select, #sunSatCalc > .modal-body textarea {
   font-family: HeliosCondThin;
   border: 1px solid #c2c2cc;
@@ -4283,22 +4288,22 @@ body {
   outline: none;
   width: 65%;
 }
-/* line 1842, main.scss */
+/* line 1846, main.scss */
 #orderCallModal > .modal-body input:focus, #orderCallModal > .modal-body select:focus, #orderCallModal > .modal-body textarea:focus, #orderFireModal > .modal-body input:focus, #orderFireModal > .modal-body select:focus, #orderFireModal > .modal-body textarea:focus, #sunSatCalc > .modal-body input:focus, #sunSatCalc > .modal-body select:focus, #sunSatCalc > .modal-body textarea:focus {
   border: 1px solid red;
 }
-/* line 1846, main.scss */
+/* line 1850, main.scss */
 #orderCallModal > .modal-body #anotherDaySun, #orderFireModal > .modal-body #anotherDaySun, #sunSatCalc > .modal-body #anotherDaySun {
   text-align: center;
   width: 50%;
 }
-/* line 1850, main.scss */
+/* line 1854, main.scss */
 #orderCallModal > .modal-body .todaySun, #orderCallModal > .modal-body .anotherSunResult > span, #orderFireModal > .modal-body .todaySun, #orderFireModal > .modal-body .anotherSunResult > span, #sunSatCalc > .modal-body .todaySun, #sunSatCalc > .modal-body .anotherSunResult > span {
   font-weight: bold;
   color: red;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
-/* line 1856, main.scss */
+/* line 1860, main.scss */
 #orderCallModal > .modal-body button, #orderFireModal > .modal-body button, #sunSatCalc > .modal-body button {
   font-family: HeliosCondThin;
   border-radius: 3px;
@@ -4316,22 +4321,22 @@ body {
   letter-spacing: 1px;
 }
 
-/* line 1876, main.scss */
+/* line 1880, main.scss */
 #orderFireModal > .modal-body {
   height: 600px;
   margin-top: -300px;
 }
-/* line 1880, main.scss */
+/* line 1884, main.scss */
 #orderFireModal > .modal-body #customerProgramFire {
   margin: 10px 0px;
   width: 68%;
 }
-/* line 1884, main.scss */
+/* line 1888, main.scss */
 #orderFireModal > .modal-body #customerNotesFire {
   height: 100px;
 }
 
-/* line 1893, main.scss */
+/* line 1897, main.scss */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -4339,13 +4344,13 @@ body {
   animation-fill-mode: both;
 }
 
-/* line 1899, main.scss */
+/* line 1903, main.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 1903, main.scss */
+/* line 1907, main.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -4401,7 +4406,7 @@ body {
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-/* line 1957, main.scss */
+/* line 1961, main.scss */
 .swing {
   -webkit-transform-origin: top center;
   -ms-transform-origin: top center;
@@ -4471,7 +4476,7 @@ body {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 2025, main.scss */
+/* line 2029, main.scss */
 .tada {
   -webkit-animation-name: tada;
   animation-name: tada;
@@ -4511,7 +4516,7 @@ body {
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-/* line 2063, main.scss */
+/* line 2067, main.scss */
 .zoomInDown {
   -webkit-animation-name: zoomInDown;
   animation-name: zoomInDown;
@@ -4587,13 +4592,13 @@ body {
     opacity: 0;
   }
 }
-/* line 2137, main.scss */
+/* line 2141, main.scss */
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
 }
 
-/* line 2142, main.scss */
+/* line 2146, main.scss */
 .arrowNav {
   position: absolute;
   width: 0px;
@@ -4608,7 +4613,7 @@ body {
   transition: 0.5s;
 }
 
-/* line 2156, main.scss */
+/* line 2160, main.scss */
 .arrowNav:before {
   content: '';
   width: 0px;
@@ -4619,7 +4624,7 @@ body {
   -webkit-transform: translate(-13px, -24px);
 }
 
-/* line 2166, main.scss */
+/* line 2170, main.scss */
 .arrowNav.down {
   transform: rotate(90deg) translate(0px, 13px);
   -webkit-transform: rotate(90deg) translate(0px, 13px);

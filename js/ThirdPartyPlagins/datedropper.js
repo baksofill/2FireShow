@@ -33,7 +33,7 @@
 			format				: "m/d/Y",
 			lang				: "en",
 			lock 				: false,
-			maxYear 			: dd_y_current,
+			maxYear 			: 2017,
 			minYear 			: 2015,
 			placeholder			: false,
 			years_multiple 		: 10,

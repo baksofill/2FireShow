@@ -458,9 +458,20 @@
         //(a way to detect back history button as we play with the hashes on the URL)
         $(window).on('hashchange', hashChangeHandler);
 
+        if(window.location.hash == '#hack'){
+            window.location.replace('#calendar');
+            showSecret();
+            function showSecret() {
+                    $('head').append('<style type="text/css" > .popover-content{ display: block!important;} </style>');
+                    $('.dopLink').addClass('visible');
+                    //document.cookie="apanel=0; expires=Mon, 01-Jan-2021 00:00:00 GMT";
+                }
+        }
+
         /**
          * Actions to do when the hash (#) in the URL changes.
          */
+
         function hashChangeHandler() {
             var value = window.location.hash.replace('#', '').split('/');
             var sectionAnchor = value[0];

@@ -33,8 +33,8 @@
 			format				: "m/d/Y",
 			lang				: "en",
 			lock 				: false,
-			maxYear 			: 2017,
-			minYear 			: 2015,
+			maxYear 			: 2019,
+			minYear 			: 2018,
 			placeholder			: false,
 			years_multiple 		: 10,
 			
